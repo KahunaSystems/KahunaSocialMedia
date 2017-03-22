@@ -1,5 +1,5 @@
 PODS:
-  - KahunaSocialMedia (0.1.0)
+  - KahunaSocialMedia (0.1.1)
 
 DEPENDENCIES:
   - KahunaSocialMedia (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KahunaSocialMedia: 609d1aeebb64e08fd7a99492efa9d9dc656f9e39
+  KahunaSocialMedia: dcba85747d16b22a5b61eeee901cacfca7da3bf9
 
 PODFILE CHECKSUM: 138d03b6c7329e371120cf77e4783dc28d3c4714
 
