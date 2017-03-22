@@ -33,7 +33,7 @@ class FacebookFeedsJsonParser: NSObject {
                     if message == nil {
                         message = innerFeedsDict["description"] as? String
                     }
-                    if (message?.characters.count)! > 0 {
+                    if message != nil && (message?.characters.count)! > 0 {
                         var coreDataObj: FacebookFeedDataInfo? = FacebookFeedDataInfo()
                         var authorName = fromDict["name"] as! NSString
                         authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
