@@ -25,13 +25,15 @@ pod 'KahunaSocialMedia', '~> 0.1.3’
 ```
 
 ## Set Server URL
-
+```swift
 let socialHandler = SocialOperationHandler.sharedInstance
 socialHandler.socialDelegate = self
 socialHandler.initServerBaseURL(serverBaseURL: kServerBaseURL)
-
+```
 ## To fetch from our server or social media server 
+```swift
 socialHandler.isLoadFromServer = true (i.e. our server and false for social media server)
+```
 
 Note:
 Add import KahunaSocialMedia into respected file
