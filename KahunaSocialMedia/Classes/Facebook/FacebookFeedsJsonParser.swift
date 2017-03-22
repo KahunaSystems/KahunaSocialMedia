@@ -39,23 +39,41 @@ class FacebookFeedsJsonParser: NSObject {
                         authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
                         authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
                         coreDataObj?.fbAuthorName = authorName as String
-                        coreDataObj?.fbUserId = fromDict["id"] as? String
+                        if let userId = fromDict["id"] as? String {
+                            coreDataObj?.fbUserId = userId
+                        }
                         if let msg = message as? String? {
                             let returnDescString = self.replaceOccuranceOfString(inputString: msg!)
                             coreDataObj?.fbDescription = returnDescString
                             coreDataObj?.fbMessage = returnDescString
                         }
-                        coreDataObj?.fbPostPictureLink = innerFeedsDict["picture"] as? String
-                        coreDataObj?.fbVideoLink = innerFeedsDict["link"] as? String
-                        coreDataObj?.fbUserIcon = innerFeedsDict["icon"] as? String
-                        coreDataObj?.fbPostType = innerFeedsDict["type"] as? String
-                        if innerFeedsDict["updated_time"] != nil {
-                            coreDataObj?.fbUpdatedTime = innerFeedsDict["updated_time"] as? String
-                        } else {
-                            coreDataObj?.fbUpdatedTime = innerFeedsDict["created_time"] as? String
+                        if let picture = innerFeedsDict["picture"] as? String {
+                            coreDataObj?.fbPostPictureLink = picture
                         }
-                        coreDataObj?.fbCreatedTime = innerFeedsDict["created_time"] as? String
-                        coreDataObj?.fbFeedId = innerFeedsDict["id"] as? String
+                        if let link = innerFeedsDict["link"] as? String {
+                            coreDataObj?.fbVideoLink = link
+                        }
+                        if let icon = innerFeedsDict["icon"] as? String {
+                            coreDataObj?.fbUserIcon = icon
+                        }
+                        if let type = innerFeedsDict["type"] as? String {
+                            coreDataObj?.fbPostType = type
+                        }
+                        if innerFeedsDict["updated_time"] != nil {
+                            if let updated_time = innerFeedsDict["updated_time"] as? String {
+                                coreDataObj?.fbUpdatedTime = updated_time
+                            }
+                        } else {
+                            if let created_time = innerFeedsDict["created_time"] as? String {
+                                coreDataObj?.fbUpdatedTime = created_time
+                            }
+                        }
+                        if let created_time = innerFeedsDict["created_time"] as? String {
+                            coreDataObj?.fbCreatedTime = created_time
+                        }
+                        if let fbFeedId = innerFeedsDict["id"] as? String {
+                            coreDataObj?.fbFeedId = fbFeedId
+                        }
                         if let tempDic = innerFeedsDict["shares"] as? NSDictionary {
                             if let count = tempDic["count"] as? String {
                                 coreDataObj?.fbLikesCount = count

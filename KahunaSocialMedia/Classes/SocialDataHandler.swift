@@ -176,7 +176,7 @@ public class SocialDataHandler: NSObject {
                 try database.run(twitterTable.delete())
                 for twitterInfo in twitterFeedArray {
                     if let info = twitterInfo as? TwitterDataInfo {
-                        let insert = twitterTable.insert(profileIcon <- info.profileIcon!, tweetDate <- info.tweetDate!, tweetText <- info.tweetText!, tweeterUserId <- info.tweeterUserId!, tweeterUserName <- info.tweeterUserName!, tweetId <- info.tweetId!)
+                        let insert = twitterTable.insert(profileIcon <- info.profileIcon, tweetDate <- info.tweetDate, tweetText <- info.tweetText, tweeterUserId <- info.tweeterUserId, tweeterUserName <- info.tweeterUserName, tweetId <- info.tweetId!)
                         let rowId = try database.run(insert)
                     }
                 }
@@ -205,7 +205,7 @@ public class SocialDataHandler: NSObject {
                 try database.run(fbTable.delete())
                 for fbInfo in fbFeedArray {
                     if let info = fbInfo as? FacebookFeedDataInfo {
-                        let insert = fbTable.insert(fbAuthorName <- info.fbAuthorName!, fbCommentsCount <- info.fbCommentsCount!, fbCreatedTime <- info.fbCreatedTime!, fbDescription <- info.fbDescription!, fbFeedId <- info.fbFeedId!, fbLikesCount <- info.fbLikesCount!, fbMessage <- info.fbMessage!, fbPostPictureLink <- info.fbPostPictureLink!, fbPostType <- info.fbPostType!, fbSharesCount <- info.fbSharesCount!, fbTitle <- info.fbTitle!, fbUpdatedTime <- info.fbUpdatedTime!, fbUserIcon <- info.fbUserIcon!, fbUserId <- info.fbUserId!, fbVideoLink <- info.fbVideoLink!)
+                        let insert = fbTable.insert(fbAuthorName <- info.fbAuthorName, fbCommentsCount <- info.fbCommentsCount, fbCreatedTime <- info.fbCreatedTime, fbDescription <- info.fbDescription, fbFeedId <- info.fbFeedId, fbLikesCount <- info.fbLikesCount, fbMessage <- info.fbMessage, fbPostPictureLink <- info.fbPostPictureLink, fbPostType <- info.fbPostType, fbSharesCount <- info.fbSharesCount, fbTitle <- info.fbTitle, fbUpdatedTime <- info.fbUpdatedTime, fbUserIcon <- info.fbUserIcon, fbUserId <- info.fbUserId, fbVideoLink <- info.fbVideoLink)
                         let rowId = try database.run(insert)
                     }
                 }
@@ -234,7 +234,7 @@ public class SocialDataHandler: NSObject {
                 try database.run(youtTubeTable.delete())
                 for youtubeInfo in youtubeFeedArray {
                     if let info = youtubeInfo as? YouTubeInterfaceDataInfo {
-                        let insert = youtTubeTable.insert(updatedDateTime <- info.updatedDateTime! as Date, youtubeAuthor <- info.youtubeAuthor!, youtubeDescription <- info.youtubeDescription!, youtubeImage <- info.youtubeImage!, youtubeLink <- info.youtubeLink!, youtubeTime <- info.youtubeTime!, youtubeTitle <- info.youtubeTitle!, youtubeViews <- info.youtubeViews!)
+                        let insert = youtTubeTable.insert(updatedDateTime <- info.updatedDateTime as! Date, youtubeAuthor <- info.youtubeAuthor, youtubeDescription <- info.youtubeDescription, youtubeImage <- info.youtubeImage, youtubeLink <- info.youtubeLink, youtubeTime <- info.youtubeTime, youtubeTitle <- info.youtubeTitle, youtubeViews <- info.youtubeViews)
                         let rowId = try database.run(insert)
                     }
                 }

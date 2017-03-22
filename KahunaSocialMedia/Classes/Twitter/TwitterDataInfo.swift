@@ -10,11 +10,11 @@ import UIKit
 
 public class TwitterDataInfo: NSObject {
 
-    var profileIcon: String?
-    var tweetDate: String?
-    var tweeterUserId: String?
-    var tweeterUserName: String?
+    var profileIcon = String()
+    var tweetDate = String()
+    var tweeterUserId = String()
+    var tweeterUserName = String()
     var tweetId: String?
-    var tweetText: String?
+    var tweetText = String()
 
 }

@@ -59,24 +59,26 @@ class TwitterJSONParser: NSObject {
             }
             if var tweetText = dict["text"] {
                 tweetText = self.replaceOccuranceOfString(tweetText as? String)
-                coreDataObj?.tweetText = tweetText as? String
+                if let tempStr = tweetText as? String {
+                    coreDataObj?.tweetText = tempStr
+                }
             }
             if let createAt = dict["created_at"] {
                 if createAt as? String != nil {
-                    coreDataObj?.tweetDate = createAt as? String
+                    coreDataObj?.tweetDate = createAt as! String
                 } else {
                     coreDataObj?.tweetDate = getDate(createAt as! Int, timezone: "UTC")
                 }
             }
             if let userInfo = dict["user"] as? NSDictionary {
-                if let screenName = userInfo["screen_name"] {
-                    coreDataObj?.tweeterUserId = screenName as? String
+                if let screenName = userInfo["screen_name"] as? String {
+                    coreDataObj?.tweeterUserId = screenName
                 }
-                if let name = userInfo["name"] {
-                    coreDataObj?.tweeterUserName = name as? String
+                if let name = userInfo["name"] as? String {
+                    coreDataObj?.tweeterUserName = name
                 }
-                if let imageURL = userInfo["profile_image_url"] {
-                    coreDataObj?.profileIcon = imageURL as? String
+                if let imageURL = userInfo["profile_image_url"] as? String {
+                    coreDataObj?.profileIcon = imageURL
                 }
             }
             tweetsArray.add(coreDataObj!)

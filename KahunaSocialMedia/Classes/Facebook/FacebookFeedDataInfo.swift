@@ -10,20 +10,20 @@ import UIKit
 
 public class FacebookFeedDataInfo: NSObject {
 
-    var fbAuthorName: String?
-    var fbCommentsCount: String?
-    var fbCreatedTime: String?
-    var fbDescription: String?
-    var fbFeedId: String?
-    var fbLikesCount: String?
-    var fbMessage: String?
-    var fbPostPictureLink: String?
-    var fbPostType: String?
-    var fbSharesCount: String?
-    var fbTitle: String?
-    var fbUpdatedTime: String?
-    var fbUserIcon: String?
-    var fbUserId: String?
-    var fbVideoLink: String?
+    var fbAuthorName = String()
+    var fbCommentsCount = String()
+    var fbCreatedTime = String()
+    var fbDescription = String()
+    var fbFeedId = String()
+    var fbLikesCount = String()
+    var fbMessage = String()
+    var fbPostPictureLink = String()
+    var fbPostType = String()
+    var fbSharesCount = String()
+    var fbTitle = String()
+    var fbUpdatedTime = String()
+    var fbUserIcon = String()
+    var fbUserId = String()
+    var fbVideoLink = String()
 
 }

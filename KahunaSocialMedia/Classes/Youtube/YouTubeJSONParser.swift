@@ -34,27 +34,27 @@ class YouTubeJSONParser: NSObject {
                         if let publishAt = snippet["publishedAt"] {
                             dataObj.updatedDateTime = self.formatDateWithStringDate(stringDate: publishAt as! String)
                         }
-                        if let title = snippet["title"] {
-                            dataObj.youtubeTitle = title as? String
+                        if let title = snippet["title"] as? String {
+                            dataObj.youtubeTitle = title
                         }
-                        if let descriptionText = snippet["description"] {
-                            dataObj.youtubeDescription = descriptionText as? String
+                        if let descriptionText = snippet["description"] as? String {
+                            dataObj.youtubeDescription = descriptionText
                         }
                         if let thumb = snippet["thumbnails"] as? NSDictionary {
-                            if let thumbnailDict = thumb["default"] as? NSDictionary {
-                                dataObj.youtubeImage = thumbnailDict["url"] as? String
-                            } else if let thumbnailDict = thumb["medium"] as? NSDictionary {
-                                dataObj.youtubeImage = thumbnailDict["url"] as? String
+                            if let thumbnailDict = thumb["default"] as? NSDictionary, let url = thumbnailDict["url"] as? String {
+                                dataObj.youtubeImage = url
+                            } else if let thumbnailDict = thumb["medium"] as? NSDictionary, let url = thumbnailDict["url"] as? String {
+                                dataObj.youtubeImage = url
                             }
                         }
-                        if let channelTitle = snippet["channelTitle"] {
-                            dataObj.youtubeAuthor = channelTitle as? String
+                        if let channelTitle = snippet["channelTitle"] as? String {
+                            dataObj.youtubeAuthor = channelTitle
                         }
                         if let idDict = dict["id"] as? NSDictionary, let videoID = idDict["videoId"] {
                             let urlString = String(format: "https://www.youtube.com/watch?v=%@", (videoID as! String))
                             dataObj.youtubeLink = urlString
                         }
-                        if (dataObj.youtubeLink?.characters.count)! > 0 {
+                        if dataObj.youtubeLink != nil && dataObj.youtubeLink.characters.count > 0 {
                             feedsArray.add(dataObj)
                         }
                     }
