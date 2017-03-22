@@ -41,6 +41,9 @@ class FacebookPublicFeedsHandler: NSObject {
                     DispatchQueue.main.async {
                         let parcer = FacebookFeedsJsonParser()
                         let parsedArray = parcer.parseData(feedsData: data! as NSData)
+                        if parsedArray != nil && (parsedArray?.count)! > 0 {
+                            SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                        }
                         if self.fBFeedFetchDelegate != nil {
                             self.fBFeedFetchDelegate.facebookFeedFetchSuccess!(parsedArray)
                         }
@@ -99,6 +102,9 @@ class FacebookPublicFeedsHandler: NSObject {
                 DispatchQueue.main.async {
                     let parcer = FacebookFeedsJsonParser()
                     let parsedArray = parcer.parseData(feedsData: data! as NSData)
+                    if parsedArray != nil && (parsedArray?.count)! > 0 {
+                        SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                    }
                     if self.fBFeedFetchDelegate != nil {
                         self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(parsedArray)
                     }

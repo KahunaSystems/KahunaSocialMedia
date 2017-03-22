@@ -43,6 +43,9 @@ class YouTubePublicFeedsHandler: NSObject {
                 let parcer = YouTubeJSONParser()
                 let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                 DispatchQueue.main.async {
+                    if parserArray.count > 0 {
+                        SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
+                    }
                     if self.youTubeDelegate != nil {
                         self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
                     }
@@ -72,6 +75,9 @@ class YouTubePublicFeedsHandler: NSObject {
                     let parcer = YouTubeJSONParser()
                     let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                     DispatchQueue.main.async {
+                        if parserArray.count > 0 {
+                            SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
+                        }
                         if self.youTubeDelegate != nil {
                             self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
                         }
@@ -114,6 +120,9 @@ class YouTubePublicFeedsHandler: NSObject {
             }
         }
         DispatchQueue.main.async {
+            if parserArray.count > 0 {
+                SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
+            }
             if self.youTubeDelegate != nil {
                 self.youTubeDelegate!.youTubeFeedFetchSuccess!(parserArray)
             }

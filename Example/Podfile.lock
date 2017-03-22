@@ -1,5 +1,5 @@
 PODS:
-  - KahunaSocialMedia (0.1.3):
+  - KahunaSocialMedia (0.1.4):
     - SQLite.swift (~> 0.11.2)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KahunaSocialMedia: 06abd9d67834a0c6dce78cfa04407d67831fd45f
+  KahunaSocialMedia: 8e67b6e8b41ae1035cf43983cca92eebc1a72d05
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
 PODFILE CHECKSUM: 796f418bd5a61741942483bff52a1d28bf34c6df
