@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/KahunaSocialMedia.svg?style=flat)](http://cocoapods.org/pods/KahunaSocialMedia)
 [![Platform](https://img.shields.io/cocoapods/p/KahunaSocialMedia.svg?style=flat)](http://cocoapods.org/pods/KahunaSocialMedia)
 
+![LogCamp](http://www.kahuna-mobihub.com/templates/ja_puresite/images/logo-trans.png)
+
+KahunaSocialMedia is written in Swift
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
