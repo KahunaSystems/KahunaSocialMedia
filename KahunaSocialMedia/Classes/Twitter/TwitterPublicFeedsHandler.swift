@@ -53,6 +53,9 @@ class TwitterPublicFeedsHandler: NSObject {
                         var tweetsArray = NSMutableArray()
                         DispatchQueue.main.async {
                             tweetsArray = jsonParser.parseTwitterFeedData(data!, parserArray: parserArray) as NSMutableArray
+                            if tweetsArray.count > 0 {
+                                SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
+                            }
                             if self.twitterDelegate != nil {
                                 self.twitterDelegate.twitterFeedFetchSuccess!(tweetsArray)
                             }

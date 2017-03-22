@@ -1,16 +1,22 @@
 PODS:
-  - KahunaSocialMedia (0.1.1)
+  - KahunaSocialMedia (0.1.3):
+    - SQLite.swift (~> 0.11.2)
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
 
 DEPENDENCIES:
   - KahunaSocialMedia (from `../`)
+  - SQLite.swift (~> 0.11.2)
 
 EXTERNAL SOURCES:
   KahunaSocialMedia:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KahunaSocialMedia: dcba85747d16b22a5b61eeee901cacfca7da3bf9
+  KahunaSocialMedia: 06abd9d67834a0c6dce78cfa04407d67831fd45f
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 138d03b6c7329e371120cf77e4783dc28d3c4714
+PODFILE CHECKSUM: 796f418bd5a61741942483bff52a1d28bf34c6df
 
 COCOAPODS: 1.2.0

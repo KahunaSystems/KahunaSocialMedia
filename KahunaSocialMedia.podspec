@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KahunaSocialMedia'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'KahunaSocialMedia helps to retrieve twitter, facebook and youtube data from server'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ KahunaSocialMedia helps to retrieve twitter, facebook and youtube data from serv
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SQLite.swift', '~> 0.11.2'
 end
