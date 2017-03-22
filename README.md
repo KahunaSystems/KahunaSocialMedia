@@ -24,6 +24,17 @@ it, simply add the following line to your Podfile:
 pod 'KahunaSocialMedia', '~> 0.1.3’
 ```
 
+## Set Server URL
+
+let socialHandler = SocialOperationHandler.sharedInstance
+socialHandler.socialDelegate = self
+socialHandler.initServerBaseURL(serverBaseURL: kServerBaseURL)
+
+## To fetch from our server or social media server 
+socialHandler.isLoadFromServer = true (i.e. our server and false for social media server)
+
+Note:
+Add import KahunaSocialMedia into respected file
  
 ## Retrieve Twitter Feeds from twitter server or from our server
 
