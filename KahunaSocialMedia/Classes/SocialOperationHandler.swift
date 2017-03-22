@@ -26,7 +26,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
     var isFacebookFirstTime = false
     var isTwitterFirstTime = false
     var isYouTubeFirstTime = false
-    var isLoadFromServer = false
+    public var isLoadFromServer = false
 
     var fbGraphURL = String()
     var fbFromName = String()
@@ -92,7 +92,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         print("** SocialOperationHandler deinit called **")
     }
 
-    func getFacebookFeeds() {
+    public func getFacebookFeeds() {
         if self.checkCurrentProccessIsGoingOn() {
             return
         }
@@ -132,7 +132,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         }
     }
 
-    func getYouTubeFeeds() {
+    public func getYouTubeFeeds() {
         if self.checkCurrentProccessIsGoingOn() {
             return
         }

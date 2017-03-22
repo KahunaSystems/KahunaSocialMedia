@@ -9,8 +9,8 @@
 import UIKit
 
 @objc protocol YouTubeFeedDelegate: class {
-    @objc optional func youTubeFeedFetchSuccess(feedArray: NSArray?)
-    @objc optional func youTubeFeedFetchError(error: NSError?)
+    @objc optional func youTubeFeedFetchSuccess(_ feedArray: NSArray?)
+    @objc optional func youTubeFeedFetchError(_ error: NSError?)
 }
 
 class YouTubePublicFeedsHandler: NSObject {
@@ -36,7 +36,7 @@ class YouTubePublicFeedsHandler: NSObject {
         let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
             if error != nil {
                 if self.youTubeDelegate != nil {
-                    self.youTubeDelegate?.youTubeFeedFetchError!(error: error! as NSError?)
+                    self.youTubeDelegate!.youTubeFeedFetchError!(error! as NSError?)
                 }
             } else if data != nil {
                 let parserArray = NSMutableArray()
@@ -44,7 +44,7 @@ class YouTubePublicFeedsHandler: NSObject {
                 let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                 DispatchQueue.main.async {
                     if self.youTubeDelegate != nil {
-                        self.youTubeDelegate?.youTubeFeedFetchSuccess!(feedArray: parsedArray)
+                        self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
                     }
                 }
             }
@@ -65,7 +65,7 @@ class YouTubePublicFeedsHandler: NSObject {
             let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 if error != nil {
                     if self.youTubeDelegate != nil {
-                        self.youTubeDelegate?.youTubeFeedFetchError!(error: error! as NSError?)
+                        self.youTubeDelegate!.youTubeFeedFetchError!(error! as NSError?)
                     }
                 } else if data != nil {
                     let parserArray = NSMutableArray()
@@ -73,7 +73,7 @@ class YouTubePublicFeedsHandler: NSObject {
                     let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                     DispatchQueue.main.async {
                         if self.youTubeDelegate != nil {
-                            self.youTubeDelegate?.youTubeFeedFetchSuccess!(feedArray: parsedArray)
+                            self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
                         }
                     }
                 }
@@ -108,14 +108,14 @@ class YouTubePublicFeedsHandler: NSObject {
                 } catch (let e) {
                     print(e)
                     if self.youTubeDelegate != nil {
-                        self.youTubeDelegate?.youTubeFeedFetchError!(error: nil)
+                        self.youTubeDelegate!.youTubeFeedFetchError!(nil)
                     }
                 }
             }
         }
         DispatchQueue.main.async {
             if self.youTubeDelegate != nil {
-                self.youTubeDelegate?.youTubeFeedFetchSuccess!(feedArray: parserArray)
+                self.youTubeDelegate!.youTubeFeedFetchSuccess!(parserArray)
             }
         }
     }
@@ -143,7 +143,7 @@ class YouTubePublicFeedsHandler: NSObject {
                 catch (let e) {
                     print(e)
                     if self.youTubeDelegate != nil {
-                        self.youTubeDelegate?.youTubeFeedFetchError!(error: nil)
+                        self.youTubeDelegate?.youTubeFeedFetchError!(nil)
                     }
                 }
             }
@@ -195,7 +195,7 @@ class YouTubePublicFeedsHandler: NSObject {
         } catch (let e) {
             print(e)
             if self.youTubeDelegate != nil {
-                self.youTubeDelegate?.youTubeFeedFetchError!(error: nil)
+                self.youTubeDelegate?.youTubeFeedFetchError!(nil)
             }
         }
         return nil

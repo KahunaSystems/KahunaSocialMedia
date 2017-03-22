@@ -18,15 +18,14 @@ class FacebookFeedsJsonParser: NSObject {
     }
 
     func parseData(feedsData: NSData) -> NSArray? {
+        let feedsArray = NSMutableArray()
         autoreleasepool() {
             let stringData = String(data: feedsData as Data, encoding: String.Encoding.utf8)
-            let feedsArray = NSMutableArray()
             let feedsDict = readFileFromPathAndSerializeIt(stringData: stringData!)
             var fbFromName = SocialOperationHandler.sharedInstance.fbFromName as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-            if let myArray = feedsDict!["data"] {
-                let arrayFeeds: NSArray = (myArray as? NSArray)!
+            if let myArray = feedsDict!["data"], let arrayFeeds = myArray as? NSArray {
                 for i in 0 ..< arrayFeeds.count {
                     let innerFeedsDict = arrayFeeds[i] as! NSDictionary
                     let fromDict = innerFeedsDict["from"] as! NSDictionary
@@ -70,7 +69,7 @@ class FacebookFeedsJsonParser: NSObject {
                 }
             }
         }
-        return nil
+        return feedsArray
     }
 
 

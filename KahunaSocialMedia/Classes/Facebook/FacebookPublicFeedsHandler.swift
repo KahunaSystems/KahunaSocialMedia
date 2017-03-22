@@ -9,14 +9,14 @@
 import UIKit
 
 @objc protocol FacebookFeedDelegate: class {
-    @objc optional func facebookFeedFetchSuccess(feedArray: NSArray?)
-    @objc optional func facebookFeedFetchError(errorType: NSError)
+    @objc optional func facebookFeedFetchSuccess(_ feedArray: NSArray?)
+    @objc optional func facebookFeedFetchError(_ errorType: NSError)
 }
 
 class FacebookPublicFeedsHandler: NSObject {
 
     static let sharedInstance = FacebookPublicFeedsHandler()
-    weak var fBFeedFetchDelegate: FacebookFeedDelegate?
+    weak var fBFeedFetchDelegate: FacebookFeedDelegate!
     let userDefault = UserDefaults.standard
 
     override init() {
@@ -36,13 +36,13 @@ class FacebookPublicFeedsHandler: NSObject {
             let session = URLSession(configuration: config)
             let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 if error != nil && self.fBFeedFetchDelegate != nil {
-                    self.fBFeedFetchDelegate?.facebookFeedFetchError!(errorType: error! as NSError)
+                    self.fBFeedFetchDelegate.facebookFeedFetchError!(error! as NSError)
                 } else if data != nil {
                     DispatchQueue.main.async {
                         let parcer = FacebookFeedsJsonParser()
                         let parsedArray = parcer.parseData(feedsData: data! as NSData)
                         if self.fBFeedFetchDelegate != nil {
-                            self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(feedArray: parsedArray)
+                            self.fBFeedFetchDelegate.facebookFeedFetchSuccess!(parsedArray)
                         }
                     }
                 }
@@ -66,7 +66,7 @@ class FacebookPublicFeedsHandler: NSObject {
             let session = URLSession(configuration: config)
             let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 if error != nil && self.fBFeedFetchDelegate != nil {
-                    self.fBFeedFetchDelegate?.facebookFeedFetchError!(errorType: error! as NSError)
+                    self.fBFeedFetchDelegate?.facebookFeedFetchError!(error! as NSError)
                 } else if data != nil {
                     let dataString = String(data: data!, encoding: String.Encoding.utf8)
                     if (dataString?.characters.count)! > 0 {
@@ -94,13 +94,13 @@ class FacebookPublicFeedsHandler: NSObject {
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
             if error != nil && self.fBFeedFetchDelegate != nil {
-                self.fBFeedFetchDelegate?.facebookFeedFetchError!(errorType: error! as NSError)
+                self.fBFeedFetchDelegate?.facebookFeedFetchError!(error! as NSError)
             } else if data != nil {
                 DispatchQueue.main.async {
                     let parcer = FacebookFeedsJsonParser()
                     let parsedArray = parcer.parseData(feedsData: data! as NSData)
                     if self.fBFeedFetchDelegate != nil {
-                        self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(feedArray: parsedArray)
+                        self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(parsedArray)
                     }
                 }
             }
