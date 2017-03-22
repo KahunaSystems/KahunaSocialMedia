@@ -1,0 +1,6 @@
+framework module Pods_KahunaSocialMedia_Tests {
+  umbrella header "Pods-KahunaSocialMedia_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

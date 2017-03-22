@@ -1,0 +1,22 @@
+{
+  "name": "KahunaSocialMedia",
+  "version": "0.1.0",
+  "summary": "A short description of KahunaSocialMedia.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/siddharthchopra/KahunaSocialMedia",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "siddharthchopra": "siddharth.chopra@kahunasystems.com"
+  },
+  "source": {
+    "git": "https://github.com/siddharthchopra/KahunaSocialMedia.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KahunaSocialMedia/Classes/**/*"
+}

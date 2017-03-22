@@ -1,0 +1,6 @@
+framework module KahunaSocialMedia {
+  umbrella header "KahunaSocialMedia-umbrella.h"
+
+  export *
+  module * { export * }
+}
