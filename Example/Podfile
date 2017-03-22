@@ -1,0 +1,6 @@
+use_frameworks!
+target 'KahunaSocialMedia_Tests' do
+  pod 'KahunaSocialMedia', :path => '../'
+  
+  
+end
