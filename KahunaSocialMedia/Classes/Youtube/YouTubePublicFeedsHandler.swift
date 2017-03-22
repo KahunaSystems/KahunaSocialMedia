@@ -173,7 +173,7 @@ class YouTubePublicFeedsHandler: NSObject {
     //MARK: GET CHANNEL ID FOR YOUTUBE
     func getUserChannelID() -> String? {
         print("Fetching Current Users Channel ID")
-        var userName = SocialOperationHandler.sharedInstance.youTubeUser
+        let userName = SocialOperationHandler.sharedInstance.youTubeUser
         var urlString = String(format: "https://www.googleapis.com/youtube/v3/channels?part=id&forUsername=  %@&fields=items(id,statistics,status,topicDetails)&key=%@", userName, SocialOperationHandler.sharedInstance.youTubeAPIKey) as NSString
         urlString = urlString.replacingOccurrences(of: " ", with: "%20") as NSString
         let url = NSURL(string: urlString as String)
