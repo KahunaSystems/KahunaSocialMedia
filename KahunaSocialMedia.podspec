@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KahunaSocialMedia'
   s.version          = '0.1.8'
-  s.summary          = 'KahunaSocialMedia helps to retrieve twitter, facebook and youtube data from server'
+  s.summary          = 'KahunaSocialMedia helps to retrieve twitter, facebook, instagram and youtube data from server'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-KahunaSocialMedia helps to retrieve twitter, facebook and youtube data from server
+KahunaSocialMedia helps to retrieve twitter, facebook, instagram and youtube data from server. It can be configured with a paramters.
                        DESC
 
   s.homepage         = 'https://github.com/siddharthchopra/KahunaSocialMedia'
