@@ -52,8 +52,14 @@ socialHandler.getTwitterFeeds()
 socialHandler.initAllFacebookKeys(fbGraphURL: kFbGraphURL, fbFromName: kFbFromName, fbAppSecret: kFbAppSecret, fbAppID: kFbAppID)
 socialHandler.getFacebookFeeds()
   ```
-  
-     
+   
+## Retrieve Instagram Feeds from instagram server or from our server
+
+```swift
+socialHandler.initAllInstagramKeys(instaURL: instaURL)
+socialHandler.getInstagramFeeds()
+  ```
+ 
 ## Retrieve Youtube Feeds from youtube server or from our server
 Retrieve based on user channel
 ```swift
