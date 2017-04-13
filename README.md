@@ -24,7 +24,7 @@ it, simply add the following line to your Podfile:
 pod 'KahunaSocialMedia', '~> 0.1.9’
 ```
 
-## Set Server URL
+## Give a reference of sqlite db
 ```swift
 SocialDataHandler.sharedInstance.initSqliteName(kSqliteName)
 ```
