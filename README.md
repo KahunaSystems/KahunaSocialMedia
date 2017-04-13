@@ -23,6 +23,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'KahunaSocialMedia', '~> 0.1.8’
 ```
+> New development will happen exclusively on the master/Swift 3 branch.
 
 ## Set Server URL
 ```swift
@@ -75,11 +76,10 @@ socialHandler.getYouTubeFeeds()
   ## Installation
 
 > _Note:_ KahunaSocialMedia requires Swift 3 (and Xcode 8) or greater. If you absolutely
-> need compatibility with Swift 2.3 you can use the swift2.3 branch
+> need compatibility with Swift 2.3 you can use the swift2.3 branch by adding following line to your Podfile:
 ```ruby
 pod 'KahunaSocialMedia', '~> 0.1.9’
 ```
-> New development will happen exclusively on the master/Swift 3 branch.
 
 ## Author
 
