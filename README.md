@@ -27,7 +27,7 @@ pod 'KahunaSocialMedia', '~> 0.1.10’
 
 ## Give a reference of sqlite db
 ```swift
-SocialDataHandler.sharedInstance.initSqliteName(kSqliteName)
+SocialDataHandler.sharedInstance.initSqliteName(sqliteName: kSqliteName)
 ```
 
 ## Set Server URL
