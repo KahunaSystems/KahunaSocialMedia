@@ -141,7 +141,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         }
     }
 
-    func getInstagramFeeds() {
+    public func getInstagramFeeds() {
         if self.checkCurrentProccessIsGoingOn() {
             return
         }

@@ -54,14 +54,14 @@ public class SocialDataHandler: NSObject {
 
     //Column name of instagram
     let createdDate = Expression<Date>("createdDate")
-    let commentCount = Expression<Int>("commentCount")
+    let commentCount = Expression<String>("commentCount")
     let feedText = Expression<String>("feedText")
     let userFullName = Expression<String>("userFullName")
-    let likeCount = Expression<Int>("likeCount")
-    let mediaID = Expression<Double>("mediaID")
+    let likeCount = Expression<String>("likeCount")
+    let mediaID = Expression<String>("mediaID")
     let standardImg = Expression<String>("standardImg")
     let thumbnailImg = Expression<String>("thumbnailImg")
-    let userID = Expression<Double>("userID")
+    let userID = Expression<String>("userID")
     let userName = Expression<String>("userName")
     let webLink = Expression<String>("webLink")
 
@@ -310,8 +310,9 @@ public class SocialDataHandler: NSObject {
             if instagramFeedArray.count > 0 {
                 try database.run(instagramTable.delete())
                 for instagramInfo in instagramFeedArray {
-                    if let info = instagramInfo as? InstagramFeedDataInfo {
-                        let insert = instagramTable.insert(updatedDateTime <- info.createdDate as! Date, webLink <- info.webLink, userFullName <- info.userFullName, userName <- info.userName, userID <- info.userID, likeCount <- info.likeCount, commentCount <- info.commentCount, feedText <- info.feedText, mediaID <- info.mediaID, thumbnailImg <- info.thumbnailImg, standardImg <- info.standardImg)
+                    if let igdata = instagramInfo as? IGData {
+                        let info = InstagramFeedHandler.sharedInstance.setValueToInstaFeedObject(item: igdata)
+                        let insert = instagramTable.insert(createdDate <- info.createdDate as! Date, webLink <- info.webLink, userFullName <- info.userFullName, userName <- info.userName, userID <- info.userID, likeCount <- info.likeCount, commentCount <- info.commentCount, feedText <- info.feedText, mediaID <- info.mediaID, thumbnailImg <- info.thumbnailImg, standardImg <- info.standardImg)
                         let rowId = try database.run(insert)
                     }
                 }

@@ -14,11 +14,11 @@ public class InstagramFeedDataInfo: NSObject {
     var webLink = String()
     var userFullName = String()
     var userName = String()
-    var userID: Double = 0
-    var likeCount = 0
-    var commentCount = 0
+    var userID = String()
+    var likeCount = String()
+    var commentCount = String()
     var feedText = String()
-    var mediaID: Double = 0
+    var mediaID = String()
     var thumbnailImg = String()
     var standardImg = String()
 

@@ -62,7 +62,8 @@ class InstagramFeedHandler: NSObject {
         }
     }
 
-    func setValueToInstaFeedObject(coreDataObject: InstagramFeedDataInfo, item: IGData) {
+    func setValueToInstaFeedObject(item: IGData) -> InstagramFeedDataInfo {
+        let coreDataObject = InstagramFeedDataInfo()
         if let fullName = item.user.fullName {
             coreDataObject.userFullName = fullName
         }
@@ -70,18 +71,16 @@ class InstagramFeedHandler: NSObject {
             coreDataObject.userName = userName
         }
         if let userID = item.user.id {
-            if let myInteger = Double(userID) {
-                coreDataObject.userID = myInteger
-            }
+            coreDataObject.userID = item.user.id
         }
         if let weblink = item.link {
             coreDataObject.webLink = weblink
         }
         if let likes = item.likes.count {
-            coreDataObject.likeCount = Int(likes)
+            coreDataObject.likeCount = String(likes)
         }
         if let CommentCount = item.comments.count {
-            coreDataObject.commentCount = Int(CommentCount)
+            coreDataObject.commentCount = String(CommentCount)
         }
         if let caption = item.caption, let feedText = caption.text {
             coreDataObject.feedText = feedText
@@ -94,9 +93,7 @@ class InstagramFeedHandler: NSObject {
             coreDataObject.createdDate = date
         }
         if let caption = item.caption, let mediaId = caption.id {
-            if let myInteger = Double(mediaId) {
-                coreDataObject.mediaID = myInteger
-            }
+            coreDataObject.mediaID = mediaId
         }
         if let thumbImg = item.images.thumbnail.url {
             coreDataObject.thumbnailImg = thumbImg
@@ -104,5 +101,7 @@ class InstagramFeedHandler: NSObject {
         if let stdImg = item.images.standardResolution.url {
             coreDataObject.standardImg = stdImg
         }
+        return coreDataObject
     }
+
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KahunaSocialMedia'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'KahunaSocialMedia helps to retrieve twitter, facebook and youtube data from server'
 
 # This description is used to generate tags and improve search results.

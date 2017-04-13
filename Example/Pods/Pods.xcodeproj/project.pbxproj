@@ -7,93 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09319B4F8B0EFC8824BD800002A6227C /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */; };
-		0C2B2E95AD27FA09426A19CEF2E7A469 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44F0C85553660857F351B59660E399 /* SQLite.framework */; };
-		1121CAC7900BB86D635885F3F5B13649 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */; };
-		1B69BDEAE92CFE53C091631ACF1BA3F3 /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F7356F9BD47DA9D832C8C656EF25D4D1 /* FHSStream.m */; };
-		1BF84BFCDC9B55512043FDE2278288B3 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */; };
-		20722A5D08D2610D3E42ED696F5379D5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA86AD441076D928D0621530CD5E745 /* Operators.swift */; };
-		2A42B400AB759BF4F386F069984A7CD5 /* TwitterDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBD8A317EE4AAAB5DA7C8DB5372FC0 /* TwitterDataInfo.swift */; };
-		2A96E993244633F50CA3174F40B73BAB /* KahunaSocialMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D78867BC280790270F28A5968CC577B /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7855DE178D22988512E88C68325BE /* Collation.swift */; };
-		32FF82EF5FAC23150F90F786EA0D2E64 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33D84D7DC44B88E39AC29967583DE2D6 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */; };
-		3727D1F48B332151FF6DE9D05139EC64 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */; };
-		37347654E2A5A69C6538BA6332F3F12C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */; };
+		007FBDC24040BA725E3060CFB89E6667 /* IGMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */; };
+		03558CEA3DFFF9522C5D0A460835DDFB /* IGFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */; };
+		062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */; };
+		0C65A1C06DF16E6566F8A780A2D1C22C /* IGUsersInPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */; };
+		1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */; };
+		21F924B76C76AE1EC840BB67E0EE5E8B /* FacebookFeedsJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */; };
+		230C68D05CB7A5EA285FA25B33A2C792 /* SocialDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */; };
+		2A24E6F99C107170CD30CCB1316B5895 /* IGLowResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */; };
+		313A591CE709C33191F06085E82924B5 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */; };
 		37712E190008D63E07846F7D3C4969A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
+		39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */; };
 		3C9D1BBBC6E021270E33631193BDAA61 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */; };
-		4006C3ACD9AF66E402F724DAC75EF7DB /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */; };
-		500FE20F5B120122709E3F0F84B878E2 /* FacebookFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB2BDA6F7F2831D506C5C6B7C7AC51 /* FacebookFeedDataInfo.swift */; };
+		3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680617B7B3999D016982CD479DADCCB0 /* Blob.swift */; };
+		3F1455938F6DA586551E05CBAF4055D0 /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4246330FC78670B8AA91EAE293F2D8E4 /* IGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */; };
+		42B6B8BFAB7C9D67BA841BD9FC8C268A /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42D4CFDF76875B3979DBAC3BB140968C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44F0C85553660857F351B59660E399 /* SQLite.framework */; };
+		42FCA5C50805248D4C10FB75535C5A08 /* TwitterPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */; };
+		4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */; };
+		490A3A4672084C4000CE12FB330DD47C /* KahunaSocialMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */; };
+		4AC1C27F5A4408C081998EC190B12581 /* InstagramFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */; };
+		506C541B1D9E1F915595E72F6615890C /* IGPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */; };
+		52BBD39BE53C2D8815AA0D02BA9FE4BF /* IGPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */; };
 		5436213BB3E5D11534572D6982FBAF63 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		570FCCC915C52FE669B7CA05190F36E2 /* YouTubeInterfaceDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED8ABFF7A827A9D16182C09EB80F3F /* YouTubeInterfaceDataInfo.swift */; };
-		57F507D74528A53DDBB4945B7C04BE2C /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		5EC90AAA2F1FA746981AEB5086335B09 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */; };
-		5F4AA76BA5CD9E4C2119F47EEC0757A7 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */; };
-		65400F858D01771A040282075C5BAF36 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */; };
-		69A591D11939B9E40EEAD0A1027F48DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		6C4C8D61401CD73C48282C8BF998C1BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		70EDE67339B0E6287B8B9CFBB9D44FDA /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680617B7B3999D016982CD479DADCCB0 /* Blob.swift */; };
-		71B6526266BCDA3C6D4B94FA0315657C /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DEEC037BC9AE655B7137881479529D /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71E2A366AA8C856F3A872D6605846B52 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */; };
-		7722F0F8A47FC8B7F404DF18A8BC9741 /* SocialCheckConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EE5EB4E31F87C19B292BAC39FFB468 /* SocialCheckConnectivity.m */; };
-		7A484BD2A049FBEEE0C09009A934A8B1 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */; };
-		7C294A6C2B9BB1A1FF7E8D2A0DD5D9EC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */; };
-		7ECF2CCD3CFFFB6C614A39D4F4CC4B30 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FAB34A6296945B6C692F7D765A26A38 /* KahunaSocialMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */; };
-		85BFE20EDB9FCED7BE7200FD9CDC6FE5 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */; };
-		982206D34CC9D66EF9F837C4A1033C04 /* TwitterJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F156477B4309E76397A25C4A8B9AAE /* TwitterJSONParser.swift */; };
-		9AC1B0F547E5C096CE3A7B49A1340249 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459711ECFF3B63B44DD922C9FA1774 /* FHSTwitterEngine.m */; };
-		A35D55B826CECE1B166246CEC2230ED2 /* YouTubeJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735A780D2774AFF524F2AF151748052 /* YouTubeJSONParser.swift */; };
-		A6C25A8FB7D3C5449C440F7D8C9E7CCA /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */; };
-		A95B3F8FA1C834A040BEAEB73B51C8C9 /* YouTubePublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD45F47FDDE8387B1A6F89B15B447E5 /* YouTubePublicFeedsHandler.swift */; };
-		AF26EAE9AB1CE8DA0BC7676ABB2FC292 /* SocialOperationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F5C0D73173F4DC2A52CBFF3FD095D /* SocialOperationHandler.swift */; };
-		BA222CAEEE2B5F271AEFF102CD8F3C42 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */; };
-		BA442B5CA26BF0EAD620F875B1260E5B /* TwitterPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A671718689C4564E1414C81F36DE1 /* TwitterPublicFeedsHandler.swift */; };
-		CC51E4E21E9F569F00815150 /* InstagramFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4D11E9F569F00815150 /* InstagramFeedDataInfo.swift */; };
-		CC51E4E31E9F569F00815150 /* InstagramFeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4D21E9F569F00815150 /* InstagramFeedHandler.swift */; };
-		CC51E4FF1E9F592F00815150 /* IGCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F31E9F592F00815150 /* IGCaption.swift */; };
-		CC51E5001E9F592F00815150 /* IGComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F41E9F592F00815150 /* IGComment.swift */; };
-		CC51E5011E9F592F00815150 /* IGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F51E9F592F00815150 /* IGData.swift */; };
-		CC51E5021E9F592F00815150 /* IGFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F61E9F592F00815150 /* IGFrom.swift */; };
-		CC51E5031E9F592F00815150 /* IGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F71E9F592F00815150 /* IGImage.swift */; };
-		CC51E5041E9F592F00815150 /* IGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F81E9F592F00815150 /* IGLocation.swift */; };
-		CC51E5051E9F592F00815150 /* IGLowResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4F91E9F592F00815150 /* IGLowResolution.swift */; };
-		CC51E5061E9F592F00815150 /* IGMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4FA1E9F592F00815150 /* IGMain.swift */; };
-		CC51E5071E9F592F00815150 /* IGMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4FB1E9F592F00815150 /* IGMeta.swift */; };
-		CC51E5081E9F592F00815150 /* IGPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4FC1E9F592F00815150 /* IGPagination.swift */; };
-		CC51E5091E9F592F00815150 /* IGPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4FD1E9F592F00815150 /* IGPosition.swift */; };
-		CC51E50A1E9F592F00815150 /* IGUsersInPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51E4FE1E9F592F00815150 /* IGUsersInPhoto.swift */; };
-		D1E1F4B516BD50BDC029D8DEB3578A30 /* SocialCheckConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5303BA080DED4480FB6EF1C4457AA9 /* SocialCheckConnectivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA67D6A02295DB27895EC4100217ACC9 /* FacebookPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FF654D0007AE3D4B6657CC221816A /* FacebookPublicFeedsHandler.swift */; };
-		E07037F1504882A3720CA33EF9B05901 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7AAF757CD58707545B4BE64994C8CDB /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 59184A3F9C8C902F3DFD0ABB2B7D9CAC /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDDB232CF9C0EBBE63468802F20BAC15 /* SocialDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661774E14FC03CEE71E546382F22B05B /* SocialDataHandler.swift */; };
-		F7A4AF3D9EA2C6FF5BC9757CBF10F511 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */; };
-		FDD54A3FE91DB4C665001CDA37424A97 /* FacebookFeedsJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E386D40E5A2A702C1C8759B2FEAA8 /* FacebookFeedsJsonParser.swift */; };
-		FE53925BB9751196CE1C1FE7F74D287E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D9D463B11177240A422CB47EC5A08 /* Constants.swift */; };
+		5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7855DE178D22988512E88C68325BE /* Collation.swift */; };
+		5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */; };
+		5E4F90AF9C58EDED680F96EB1E1DF948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
+		6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA86AD441076D928D0621530CD5E745 /* Operators.swift */; };
+		6954B5A75AFACF701E269CF17B3F45D4 /* IGCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */; };
+		6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */; };
+		7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */; };
+		70C46C838C6519E3516EFD6BD613F898 /* KahunaSocialMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */; };
+		76F31231A4FB158F9E157D43B65A24DF /* YouTubeInterfaceDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */; };
+		788A5D9F53BD1FCEAAA65ED22743CF42 /* SocialOperationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */; };
+		78944736179EEC2BAC0480CF79781FAF /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */; };
+		7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8E299E674DE6451FD8197305D109B386 /* IGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */; };
+		8EE29B3D5EB556A0DE3010CC0D5AF77A /* SocialCheckConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */; };
+		8F94E072C335CB29F87847E29347DB7C /* YouTubePublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */; };
+		9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */; };
+		93F2B5A64CC9E4111F6AC1A76DDBD980 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386864375E51EDE77AE0390F52808C48 /* Constants.swift */; };
+		9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */; };
+		9DC28EBCD74D55FBE69B10B7DEDE0A09 /* FacebookPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */; };
+		A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */; };
+		A8EC7212197FB653AE243C4D99B7A708 /* IGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */; };
+		B1814CE7CDC29C67558098B85DE2161A /* TwitterJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */; };
+		B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */; };
+		B99509E059B0DF8ECCDF4EB0D11A508E /* YouTubeJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */; };
+		BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */; };
+		BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD31C862EAF81720462D1DE7D2BB58D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
+		C1E49CF23D423C6C5E02FDA15B10CC84 /* IGComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */; };
+		C2CBB5BFD4900AB3D1780AD3E61DB4E2 /* IGMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */; };
+		C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */; };
+		CAF7A15F9982D489A2A8F39112CF062C /* InstagramFeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */; };
+		DC9758AEFAF72E0F5EA753F7C4F3E3AF /* FacebookFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */; };
+		DE05705E6B01D7413291B08C6642F6E5 /* TwitterDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */; };
+		E4F26E64D16700CF453FA10DC6CE7A68 /* SocialCheckConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */; };
+		EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */; };
+		FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		275E3BF6612BFA22D5D887678969E81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F57D0D6628E5E89F38BF6889BD7B623;
+			remoteInfo = SQLite.swift;
+		};
 		7043A03F2181C60524B56FE2150AEF46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B53838ABCADB85AC7A5A1FA0A5F06AD;
+			remoteGlobalIDString = 9F57D0D6628E5E89F38BF6889BD7B623;
 			remoteInfo = SQLite.swift;
 		};
 		B7FA8427E305156F7023D55F207FE34A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E71DC7C06C31B0A9D9A28A948E0F6B0D;
+			remoteGlobalIDString = 12CB57BDC6833D72E34C4448C6D9A2AF;
 			remoteInfo = KahunaSocialMedia;
-		};
-		F1756AC3A8AA271D517F3E687FADB9D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B53838ABCADB85AC7A5A1FA0A5F06AD;
-			remoteInfo = SQLite.swift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -101,94 +101,94 @@
 		00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KahunaSocialMedia-dummy.m"; sourceTree = "<group>"; };
 		06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KahunaSocialMedia.xcconfig; sourceTree = "<group>"; };
 		0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterPublicFeedsHandler.swift; sourceTree = "<group>"; };
 		0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
-		1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SocialCheckConnectivity.m; sourceTree = "<group>"; };
+		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
+		1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
 		1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialOperationHandler.swift; sourceTree = "<group>"; };
 		27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubePublicFeedsHandler.swift; sourceTree = "<group>"; };
 		348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		386864375E51EDE77AE0390F52808C48 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeInterfaceDataInfo.swift; sourceTree = "<group>"; };
 		3BC1655EDD9CFA6D921E19350386812F /* Pods-KahunaSocialMedia_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3BD45F47FDDE8387B1A6F89B15B447E5 /* YouTubePublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubePublicFeedsHandler.swift; sourceTree = "<group>"; };
 		3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
 		4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		557A671718689C4564E1414C81F36DE1 /* TwitterPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterPublicFeedsHandler.swift; sourceTree = "<group>"; };
-		5735A780D2774AFF524F2AF151748052 /* YouTubeJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeJSONParser.swift; sourceTree = "<group>"; };
-		59184A3F9C8C902F3DFD0ABB2B7D9CAC /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterDataInfo.swift; sourceTree = "<group>"; };
+		4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGFrom.swift; sourceTree = "<group>"; };
+		52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
+		55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedsJsonParser.swift; sourceTree = "<group>"; };
 		5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
 		60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		63FBD8A317EE4AAAB5DA7C8DB5372FC0 /* TwitterDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterDataInfo.swift; sourceTree = "<group>"; };
-		661774E14FC03CEE71E546382F22B05B /* SocialDataHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialDataHandler.swift; sourceTree = "<group>"; };
 		6731F2DF4DF29B845540478A6E3E7C37 /* Pods-KahunaSocialMedia_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		680617B7B3999D016982CD479DADCCB0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C8D9D463B11177240A422CB47EC5A08 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMain.swift; sourceTree = "<group>"; };
+		69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9ADB2B7B94D965897303FEDF4A83BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KahunaSocialMedia_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6F9F5C0D73173F4DC2A52CBFF3FD095D /* SocialOperationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialOperationHandler.swift; sourceTree = "<group>"; };
-		846E386D40E5A2A702C1C8759B2FEAA8 /* FacebookFeedsJsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedsJsonParser.swift; sourceTree = "<group>"; };
+		7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLocation.swift; sourceTree = "<group>"; };
+		8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterJSONParser.swift; sourceTree = "<group>"; };
 		88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
 		8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-umbrella.h"; sourceTree = "<group>"; };
-		8BCB2BDA6F7F2831D506C5C6B7C7AC51 /* FacebookFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedDataInfo.swift; sourceTree = "<group>"; };
-		8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EED8ABFF7A827A9D16182C09EB80F3F /* YouTubeInterfaceDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeInterfaceDataInfo.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialDataHandler.swift; sourceTree = "<group>"; };
+		8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KahunaSocialMedia.framework; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookPublicFeedsHandler.swift; sourceTree = "<group>"; };
+		92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPosition.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		98DEEC037BC9AE655B7137881479529D /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
 		9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
+		9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
+		9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
 		A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KahunaSocialMedia_Tests-dummy.m"; sourceTree = "<group>"; };
 		A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		A7EE5EB4E31F87C19B292BAC39FFB468 /* SocialCheckConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SocialCheckConnectivity.m; sourceTree = "<group>"; };
-		A9F156477B4309E76397A25C4A8B9AAE /* TwitterJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterJSONParser.swift; sourceTree = "<group>"; };
-		AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KahunaSocialMedia_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KahunaSocialMedia_Tests.framework; path = "Pods-KahunaSocialMedia_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
 		B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		BD5303BA080DED4480FB6EF1C4457AA9 /* SocialCheckConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SocialCheckConnectivity.h; sourceTree = "<group>"; };
 		BDA86AD441076D928D0621530CD5E745 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMeta.swift; sourceTree = "<group>"; };
+		C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGComment.swift; sourceTree = "<group>"; };
 		CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		CC51E4D11E9F569F00815150 /* InstagramFeedDataInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramFeedDataInfo.swift; sourceTree = "<group>"; };
-		CC51E4D21E9F569F00815150 /* InstagramFeedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramFeedHandler.swift; sourceTree = "<group>"; };
-		CC51E4F31E9F592F00815150 /* IGCaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGCaption.swift; sourceTree = "<group>"; };
-		CC51E4F41E9F592F00815150 /* IGComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGComment.swift; sourceTree = "<group>"; };
-		CC51E4F51E9F592F00815150 /* IGData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGData.swift; sourceTree = "<group>"; };
-		CC51E4F61E9F592F00815150 /* IGFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGFrom.swift; sourceTree = "<group>"; };
-		CC51E4F71E9F592F00815150 /* IGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGImage.swift; sourceTree = "<group>"; };
-		CC51E4F81E9F592F00815150 /* IGLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGLocation.swift; sourceTree = "<group>"; };
-		CC51E4F91E9F592F00815150 /* IGLowResolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGLowResolution.swift; sourceTree = "<group>"; };
-		CC51E4FA1E9F592F00815150 /* IGMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGMain.swift; sourceTree = "<group>"; };
-		CC51E4FB1E9F592F00815150 /* IGMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGMeta.swift; sourceTree = "<group>"; };
-		CC51E4FC1E9F592F00815150 /* IGPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGPagination.swift; sourceTree = "<group>"; };
-		CC51E4FD1E9F592F00815150 /* IGPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGPosition.swift; sourceTree = "<group>"; };
-		CC51E4FE1E9F592F00815150 /* IGUsersInPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGUsersInPhoto.swift; sourceTree = "<group>"; };
 		CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGUsersInPhoto.swift; sourceTree = "<group>"; };
 		CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGData.swift; sourceTree = "<group>"; };
 		CF3248DC3C434A9CC395CC8FDCF4C6C3 /* Pods-KahunaSocialMedia_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-resources.sh"; sourceTree = "<group>"; };
+		D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGImage.swift; sourceTree = "<group>"; };
 		D2AEDC14326EC0A1E16AF87496E8C90D /* Pods-KahunaSocialMedia_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedDataInfo.swift; sourceTree = "<group>"; };
+		D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
 		D7B7855DE178D22988512E88C68325BE /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
 		DA1983F1AEDBA6625473EEEBD9E27F56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		DB44F0C85553660857F351B59660E399 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB459711ECFF3B63B44DD922C9FA1774 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeJSONParser.swift; sourceTree = "<group>"; };
 		DF63FAE3919C04FC12B055EC04B73ACD /* Pods-KahunaSocialMedia_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedDataInfo.swift; sourceTree = "<group>"; };
+		E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPagination.swift; sourceTree = "<group>"; };
 		E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
 		E8AA707B5F85EC75E74ECA75C56EC6F0 /* Pods-KahunaSocialMedia_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED7FF654D0007AE3D4B6657CC221816A /* FacebookPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookPublicFeedsHandler.swift; sourceTree = "<group>"; };
-		F7356F9BD47DA9D832C8C656EF25D4D1 /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
 		FB479920F3DB923629E92C6775ACE253 /* KahunaSocialMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-prefix.pch"; sourceTree = "<group>"; };
+		FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SocialCheckConnectivity.h; sourceTree = "<group>"; };
+		FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLowResolution.swift; sourceTree = "<group>"; };
+		FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedHandler.swift; sourceTree = "<group>"; };
+		FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGCaption.swift; sourceTree = "<group>"; };
 		FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		093FBE7B378CEC518FF03DBD092A195A /* Frameworks */ = {
+		04422F16EC0E39289D9E633B4DD8DA10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A591D11939B9E40EEAD0A1027F48DC /* Foundation.framework in Frameworks */,
-				0C2B2E95AD27FA09426A19CEF2E7A469 /* SQLite.framework in Frameworks */,
+				BD31C862EAF81720462D1DE7D2BB58D1 /* Foundation.framework in Frameworks */,
+				42D4CFDF76875B3979DBAC3BB140968C /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,11 +200,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A815CB8E515A7635417987773F86277 /* Frameworks */ = {
+		E0F39C986DAC8EF6037B765A022574F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C4C8D61401CD73C48282C8BF998C1BF /* Foundation.framework in Frameworks */,
+				5E4F90AF9C58EDED680F96EB1E1DF948 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +219,17 @@
 				69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		03D47EF4B7737F6065ECE4C39C70C940 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */,
+				8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */,
+				0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */,
+			);
+			name = Twitter;
+			path = Twitter;
 			sourceTree = "<group>";
 		};
 		0CE5F9160B067C829D364E72878D0583 /* Support Files */ = {
@@ -244,29 +255,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2B915F62C073CE0F5D7C594BD1ECA0DA /* Classes */ = {
+		3F0AD42897C8DE7F4A30B2C3D095A376 /* KahunaSocialMedia */ = {
 			isa = PBXGroup;
 			children = (
-				CC51E4D01E9F569F00815150 /* Instagram */,
-				6C8D9D463B11177240A422CB47EC5A08 /* Constants.swift */,
-				661774E14FC03CEE71E546382F22B05B /* SocialDataHandler.swift */,
-				6F9F5C0D73173F4DC2A52CBFF3FD095D /* SocialOperationHandler.swift */,
-				E9DEF199CB6F278200876CA297261712 /* Facebook */,
-				62855E45D01090DDA980DF8AC08F0667 /* ObjectiveC */,
-				DF2041E6F2BD05C5EA0561D391BC2508 /* Twitter */,
-				3C9B936AD10E0B22EA40717DF128C635 /* Youtube */,
+				42069ADE14B2E59A5BB94A3559DDD7D7 /* Classes */,
 			);
-			path = Classes;
+			name = KahunaSocialMedia;
+			path = KahunaSocialMedia;
 			sourceTree = "<group>";
 		};
-		3C9B936AD10E0B22EA40717DF128C635 /* Youtube */ = {
+		42069ADE14B2E59A5BB94A3559DDD7D7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8EED8ABFF7A827A9D16182C09EB80F3F /* YouTubeInterfaceDataInfo.swift */,
-				5735A780D2774AFF524F2AF151748052 /* YouTubeJSONParser.swift */,
-				3BD45F47FDDE8387B1A6F89B15B447E5 /* YouTubePublicFeedsHandler.swift */,
+				386864375E51EDE77AE0390F52808C48 /* Constants.swift */,
+				8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */,
+				24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */,
+				6C32CD08687908A742FE0339261284D6 /* Facebook */,
+				7EA7D5319C59EF672E3A29DF632D5178 /* Instagram */,
+				961C78B85380E344AE660B04968EF5DC /* ObjectiveC */,
+				03D47EF4B7737F6065ECE4C39C70C940 /* Twitter */,
+				EBFC8D0BA07301D2DD77EE5F8AA65F52 /* Youtube */,
 			);
-			path = Youtube;
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		42A565AFFAD6D5669C3E9A617B18206F /* Pods */ = {
@@ -295,14 +306,6 @@
 			path = "Target Support Files/Pods-KahunaSocialMedia_Tests";
 			sourceTree = "<group>";
 		};
-		503128EC4C90346CD9640726D8C4E981 /* KahunaSocialMedia */ = {
-			isa = PBXGroup;
-			children = (
-				2B915F62C073CE0F5D7C594BD1ECA0DA /* Classes */,
-			);
-			path = KahunaSocialMedia;
-			sourceTree = "<group>";
-		};
 		5465A1FD5BAF28162C40A82C117432A0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,14 +314,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		62855E45D01090DDA980DF8AC08F0667 /* ObjectiveC */ = {
+		60646B1F542BE04E505848260A5C079D /* JsonClasses */ = {
 			isa = PBXGroup;
 			children = (
-				BD5303BA080DED4480FB6EF1C4457AA9 /* SocialCheckConnectivity.h */,
-				A7EE5EB4E31F87C19B292BAC39FFB468 /* SocialCheckConnectivity.m */,
-				D4CC189010E83CA440A084A77CDA9B7F /* FHSTwitterEngine */,
+				FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */,
+				C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */,
+				CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */,
+				4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */,
+				D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */,
+				7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */,
+				FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */,
+				69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */,
+				C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */,
+				E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */,
+				92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */,
+				CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */,
 			);
-			path = ObjectiveC;
+			name = JsonClasses;
+			path = JsonClasses;
 			sourceTree = "<group>";
 		};
 		6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */ = {
@@ -327,7 +340,19 @@
 				6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */,
 				0CE5F9160B067C829D364E72878D0583 /* Support Files */,
 			);
+			name = SQLite.swift;
 			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		6C32CD08687908A742FE0339261284D6 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */,
+				55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */,
+				91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */,
+			);
+			name = Facebook;
+			path = Facebook;
 			sourceTree = "<group>";
 		};
 		6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */ = {
@@ -371,6 +396,17 @@
 			);
 			sourceTree = "<group>";
 		};
+		7EA7D5319C59EF672E3A29DF632D5178 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */,
+				FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */,
+				60646B1F542BE04E505848260A5C079D /* JsonClasses */,
+			);
+			name = Instagram;
+			path = Instagram;
+			sourceTree = "<group>";
+		};
 		83DF9252212EBAA039974AFC1AB71A28 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,74 +423,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		961C78B85380E344AE660B04968EF5DC /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */,
+				10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */,
+				F74F89AD136088F3E5C4044EC1081641 /* FHSTwitterEngine */,
+			);
+			name = ObjectiveC;
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
 		98C562F4D3A3A85FF29B0E8275AA9944 /* KahunaSocialMedia */ = {
 			isa = PBXGroup;
 			children = (
-				503128EC4C90346CD9640726D8C4E981 /* KahunaSocialMedia */,
+				3F0AD42897C8DE7F4A30B2C3D095A376 /* KahunaSocialMedia */,
 				EDC8D6FEFABCE84F0C65D2B3766E853B /* Support Files */,
 			);
 			name = KahunaSocialMedia;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		CC51E4D01E9F569F00815150 /* Instagram */ = {
+		EBFC8D0BA07301D2DD77EE5F8AA65F52 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
-				CC51E4D11E9F569F00815150 /* InstagramFeedDataInfo.swift */,
-				CC51E4D21E9F569F00815150 /* InstagramFeedHandler.swift */,
-				CC51E4F21E9F592F00815150 /* JsonClasses */,
+				3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */,
+				DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */,
+				3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */,
 			);
-			path = Instagram;
-			sourceTree = "<group>";
-		};
-		CC51E4F21E9F592F00815150 /* JsonClasses */ = {
-			isa = PBXGroup;
-			children = (
-				CC51E4F31E9F592F00815150 /* IGCaption.swift */,
-				CC51E4F41E9F592F00815150 /* IGComment.swift */,
-				CC51E4F51E9F592F00815150 /* IGData.swift */,
-				CC51E4F61E9F592F00815150 /* IGFrom.swift */,
-				CC51E4F71E9F592F00815150 /* IGImage.swift */,
-				CC51E4F81E9F592F00815150 /* IGLocation.swift */,
-				CC51E4F91E9F592F00815150 /* IGLowResolution.swift */,
-				CC51E4FA1E9F592F00815150 /* IGMain.swift */,
-				CC51E4FB1E9F592F00815150 /* IGMeta.swift */,
-				CC51E4FC1E9F592F00815150 /* IGPagination.swift */,
-				CC51E4FD1E9F592F00815150 /* IGPosition.swift */,
-				CC51E4FE1E9F592F00815150 /* IGUsersInPhoto.swift */,
-			);
-			path = JsonClasses;
-			sourceTree = "<group>";
-		};
-		D4CC189010E83CA440A084A77CDA9B7F /* FHSTwitterEngine */ = {
-			isa = PBXGroup;
-			children = (
-				98DEEC037BC9AE655B7137881479529D /* FHSStream.h */,
-				F7356F9BD47DA9D832C8C656EF25D4D1 /* FHSStream.m */,
-				59184A3F9C8C902F3DFD0ABB2B7D9CAC /* FHSTwitterEngine.h */,
-				DB459711ECFF3B63B44DD922C9FA1774 /* FHSTwitterEngine.m */,
-			);
-			path = FHSTwitterEngine;
-			sourceTree = "<group>";
-		};
-		DF2041E6F2BD05C5EA0561D391BC2508 /* Twitter */ = {
-			isa = PBXGroup;
-			children = (
-				63FBD8A317EE4AAAB5DA7C8DB5372FC0 /* TwitterDataInfo.swift */,
-				A9F156477B4309E76397A25C4A8B9AAE /* TwitterJSONParser.swift */,
-				557A671718689C4564E1414C81F36DE1 /* TwitterPublicFeedsHandler.swift */,
-			);
-			path = Twitter;
-			sourceTree = "<group>";
-		};
-		E9DEF199CB6F278200876CA297261712 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				8BCB2BDA6F7F2831D506C5C6B7C7AC51 /* FacebookFeedDataInfo.swift */,
-				846E386D40E5A2A702C1C8759B2FEAA8 /* FacebookFeedsJsonParser.swift */,
-				ED7FF654D0007AE3D4B6657CC221816A /* FacebookPublicFeedsHandler.swift */,
-			);
-			path = Facebook;
+			name = Youtube;
+			path = Youtube;
 			sourceTree = "<group>";
 		};
 		EDC8D6FEFABCE84F0C65D2B3766E853B /* Support Files */ = {
@@ -471,28 +469,29 @@
 			path = "Example/Pods/Target Support Files/KahunaSocialMedia";
 			sourceTree = "<group>";
 		};
+		F74F89AD136088F3E5C4044EC1081641 /* FHSTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */,
+				52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */,
+				5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */,
+				9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */,
+			);
+			name = FHSTwitterEngine;
+			path = FHSTwitterEngine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		886D19A5213606AE3F41000A5D44782B /* Headers */ = {
+		B0F5250F257EEC91CA561148F5D50FEB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57F507D74528A53DDBB4945B7C04BE2C /* fts3_tokenizer.h in Headers */,
-				E07037F1504882A3720CA33EF9B05901 /* SQLite-Bridging.h in Headers */,
-				7ECF2CCD3CFFFB6C614A39D4F4CC4B30 /* SQLite.h in Headers */,
-				32FF82EF5FAC23150F90F786EA0D2E64 /* SQLite.swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3301C6715975488B7BBCCFE113287AE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71B6526266BCDA3C6D4B94FA0315657C /* FHSStream.h in Headers */,
-				E7AAF757CD58707545B4BE64994C8CDB /* FHSTwitterEngine.h in Headers */,
-				2A96E993244633F50CA3174F40B73BAB /* KahunaSocialMedia-umbrella.h in Headers */,
-				D1E1F4B516BD50BDC029D8DEB3578A30 /* SocialCheckConnectivity.h in Headers */,
+				42B6B8BFAB7C9D67BA841BD9FC8C268A /* FHSStream.h in Headers */,
+				3F1455938F6DA586551E05CBAF4055D0 /* FHSTwitterEngine.h in Headers */,
+				70C46C838C6519E3516EFD6BD613F898 /* KahunaSocialMedia-umbrella.h in Headers */,
+				E4F26E64D16700CF453FA10DC6CE7A68 /* SocialCheckConnectivity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +503,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C98DEBD53EC62731F46F765DA4CBF078 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */,
+				A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */,
+				BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */,
+				39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF8FACA837D1C84C854B6908E2711B5 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */;
+			buildPhases = (
+				B14AC581EE8A530976F5E2FC4AA58E38 /* Sources */,
+				04422F16EC0E39289D9E633B4DD8DA10 /* Frameworks */,
+				B0F5250F257EEC91CA561148F5D50FEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D8E83B15F9A67272D7D885F4C8194F8 /* PBXTargetDependency */,
+			);
+			name = KahunaSocialMedia;
+			productName = KahunaSocialMedia;
+			productReference = 8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2B72DB556229CA098BE05DFCF75816A0 /* Pods-KahunaSocialMedia_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B3F45237ABE8686D7BA53C6F385AE75 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */;
@@ -526,13 +554,13 @@
 			productReference = AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9B53838ABCADB85AC7A5A1FA0A5F06AD /* SQLite.swift */ = {
+		9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4695F9522B49CA8136417079C86755FA /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildConfigurationList = 2EA3C55B9153014FD29CB76FC878D41B /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				0B1BF1BC0B9DA4A66D19AAB5255466F9 /* Sources */,
-				6A815CB8E515A7635417987773F86277 /* Frameworks */,
-				886D19A5213606AE3F41000A5D44782B /* Headers */,
+				508C375DA2E9A84628AD7631736EA6A3 /* Sources */,
+				E0F39C986DAC8EF6037B765A022574F5 /* Frameworks */,
+				C98DEBD53EC62731F46F765DA4CBF078 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -541,24 +569,6 @@
 			name = SQLite.swift;
 			productName = SQLite.swift;
 			productReference = 69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E71DC7C06C31B0A9D9A28A948E0F6B0D /* KahunaSocialMedia */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFD7FBC3C1B8ECA95E91B459E56AC163 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */;
-			buildPhases = (
-				4EFA50D003F03031F956E8D881D21CBF /* Sources */,
-				093FBE7B378CEC518FF03DBD092A195A /* Frameworks */,
-				A3301C6715975488B7BBCCFE113287AE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				544C09D4BCBAA51D7298893F06ACB4D0 /* PBXTargetDependency */,
-			);
-			name = KahunaSocialMedia;
-			productName = KahunaSocialMedia;
-			productReference = 8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -582,41 +592,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E71DC7C06C31B0A9D9A28A948E0F6B0D /* KahunaSocialMedia */,
+				12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */,
 				2B72DB556229CA098BE05DFCF75816A0 /* Pods-KahunaSocialMedia_Tests */,
-				9B53838ABCADB85AC7A5A1FA0A5F06AD /* SQLite.swift */,
+				9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B1BF1BC0B9DA4A66D19AAB5255466F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF84BFCDC9B55512043FDE2278288B3 /* AggregateFunctions.swift in Sources */,
-				70EDE67339B0E6287B8B9CFBB9D44FDA /* Blob.swift in Sources */,
-				2D78867BC280790270F28A5968CC577B /* Collation.swift in Sources */,
-				7C294A6C2B9BB1A1FF7E8D2A0DD5D9EC /* Connection.swift in Sources */,
-				BA222CAEEE2B5F271AEFF102CD8F3C42 /* CoreFunctions.swift in Sources */,
-				4006C3ACD9AF66E402F724DAC75EF7DB /* CustomFunctions.swift in Sources */,
-				37347654E2A5A69C6538BA6332F3F12C /* Expression.swift in Sources */,
-				33D84D7DC44B88E39AC29967583DE2D6 /* Foundation.swift in Sources */,
-				71E2A366AA8C856F3A872D6605846B52 /* FTS4.swift in Sources */,
-				1121CAC7900BB86D635885F3F5B13649 /* FTS5.swift in Sources */,
-				5EC90AAA2F1FA746981AEB5086335B09 /* Helpers.swift in Sources */,
-				20722A5D08D2610D3E42ED696F5379D5 /* Operators.swift in Sources */,
-				A6C25A8FB7D3C5449C440F7D8C9E7CCA /* Query.swift in Sources */,
-				65400F858D01771A040282075C5BAF36 /* RTree.swift in Sources */,
-				09319B4F8B0EFC8824BD800002A6227C /* Schema.swift in Sources */,
-				7A484BD2A049FBEEE0C09009A934A8B1 /* Setter.swift in Sources */,
-				5F4AA76BA5CD9E4C2119F47EEC0757A7 /* SQLite-Bridging.m in Sources */,
-				F7A4AF3D9EA2C6FF5BC9757CBF10F511 /* SQLite.swift-dummy.m in Sources */,
-				85BFE20EDB9FCED7BE7200FD9CDC6FE5 /* Statement.swift in Sources */,
-				3727D1F48B332151FF6DE9D05139EC64 /* Value.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4945B0514E595918F28F3E63600D9DBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,68 +608,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EFA50D003F03031F956E8D881D21CBF /* Sources */ = {
+		508C375DA2E9A84628AD7631736EA6A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE53925BB9751196CE1C1FE7F74D287E /* Constants.swift in Sources */,
-				CC51E4E31E9F569F00815150 /* InstagramFeedHandler.swift in Sources */,
-				500FE20F5B120122709E3F0F84B878E2 /* FacebookFeedDataInfo.swift in Sources */,
-				CC51E5021E9F592F00815150 /* IGFrom.swift in Sources */,
-				CC51E50A1E9F592F00815150 /* IGUsersInPhoto.swift in Sources */,
-				CC51E5061E9F592F00815150 /* IGMain.swift in Sources */,
-				FDD54A3FE91DB4C665001CDA37424A97 /* FacebookFeedsJsonParser.swift in Sources */,
-				CC51E5031E9F592F00815150 /* IGImage.swift in Sources */,
-				DA67D6A02295DB27895EC4100217ACC9 /* FacebookPublicFeedsHandler.swift in Sources */,
-				1B69BDEAE92CFE53C091631ACF1BA3F3 /* FHSStream.m in Sources */,
-				9AC1B0F547E5C096CE3A7B49A1340249 /* FHSTwitterEngine.m in Sources */,
-				CC51E5011E9F592F00815150 /* IGData.swift in Sources */,
-				CC51E5081E9F592F00815150 /* IGPagination.swift in Sources */,
-				CC51E4E21E9F569F00815150 /* InstagramFeedDataInfo.swift in Sources */,
-				7FAB34A6296945B6C692F7D765A26A38 /* KahunaSocialMedia-dummy.m in Sources */,
-				7722F0F8A47FC8B7F404DF18A8BC9741 /* SocialCheckConnectivity.m in Sources */,
-				CC51E5071E9F592F00815150 /* IGMeta.swift in Sources */,
-				EDDB232CF9C0EBBE63468802F20BAC15 /* SocialDataHandler.swift in Sources */,
-				CC51E4FF1E9F592F00815150 /* IGCaption.swift in Sources */,
-				AF26EAE9AB1CE8DA0BC7676ABB2FC292 /* SocialOperationHandler.swift in Sources */,
-				CC51E5001E9F592F00815150 /* IGComment.swift in Sources */,
-				CC51E5051E9F592F00815150 /* IGLowResolution.swift in Sources */,
-				2A42B400AB759BF4F386F069984A7CD5 /* TwitterDataInfo.swift in Sources */,
-				CC51E5091E9F592F00815150 /* IGPosition.swift in Sources */,
-				982206D34CC9D66EF9F837C4A1033C04 /* TwitterJSONParser.swift in Sources */,
-				BA442B5CA26BF0EAD620F875B1260E5B /* TwitterPublicFeedsHandler.swift in Sources */,
-				CC51E5041E9F592F00815150 /* IGLocation.swift in Sources */,
-				570FCCC915C52FE669B7CA05190F36E2 /* YouTubeInterfaceDataInfo.swift in Sources */,
-				A35D55B826CECE1B166246CEC2230ED2 /* YouTubeJSONParser.swift in Sources */,
-				A95B3F8FA1C834A040BEAEB73B51C8C9 /* YouTubePublicFeedsHandler.swift in Sources */,
+				C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */,
+				3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */,
+				5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */,
+				73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */,
+				4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */,
+				5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */,
+				FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */,
+				1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */,
+				7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */,
+				062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */,
+				6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */,
+				6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */,
+				A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */,
+				EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */,
+				9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */,
+				B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */,
+				BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */,
+				3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */,
+				9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */,
+				E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14AC581EE8A530976F5E2FC4AA58E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F2B5A64CC9E4111F6AC1A76DDBD980 /* Constants.swift in Sources */,
+				DC9758AEFAF72E0F5EA753F7C4F3E3AF /* FacebookFeedDataInfo.swift in Sources */,
+				21F924B76C76AE1EC840BB67E0EE5E8B /* FacebookFeedsJsonParser.swift in Sources */,
+				9DC28EBCD74D55FBE69B10B7DEDE0A09 /* FacebookPublicFeedsHandler.swift in Sources */,
+				78944736179EEC2BAC0480CF79781FAF /* FHSStream.m in Sources */,
+				313A591CE709C33191F06085E82924B5 /* FHSTwitterEngine.m in Sources */,
+				6954B5A75AFACF701E269CF17B3F45D4 /* IGCaption.swift in Sources */,
+				C1E49CF23D423C6C5E02FDA15B10CC84 /* IGComment.swift in Sources */,
+				4246330FC78670B8AA91EAE293F2D8E4 /* IGData.swift in Sources */,
+				03558CEA3DFFF9522C5D0A460835DDFB /* IGFrom.swift in Sources */,
+				A8EC7212197FB653AE243C4D99B7A708 /* IGImage.swift in Sources */,
+				8E299E674DE6451FD8197305D109B386 /* IGLocation.swift in Sources */,
+				2A24E6F99C107170CD30CCB1316B5895 /* IGLowResolution.swift in Sources */,
+				C2CBB5BFD4900AB3D1780AD3E61DB4E2 /* IGMain.swift in Sources */,
+				007FBDC24040BA725E3060CFB89E6667 /* IGMeta.swift in Sources */,
+				52BBD39BE53C2D8815AA0D02BA9FE4BF /* IGPagination.swift in Sources */,
+				506C541B1D9E1F915595E72F6615890C /* IGPosition.swift in Sources */,
+				0C65A1C06DF16E6566F8A780A2D1C22C /* IGUsersInPhoto.swift in Sources */,
+				4AC1C27F5A4408C081998EC190B12581 /* InstagramFeedDataInfo.swift in Sources */,
+				CAF7A15F9982D489A2A8F39112CF062C /* InstagramFeedHandler.swift in Sources */,
+				490A3A4672084C4000CE12FB330DD47C /* KahunaSocialMedia-dummy.m in Sources */,
+				8EE29B3D5EB556A0DE3010CC0D5AF77A /* SocialCheckConnectivity.m in Sources */,
+				230C68D05CB7A5EA285FA25B33A2C792 /* SocialDataHandler.swift in Sources */,
+				788A5D9F53BD1FCEAAA65ED22743CF42 /* SocialOperationHandler.swift in Sources */,
+				DE05705E6B01D7413291B08C6642F6E5 /* TwitterDataInfo.swift in Sources */,
+				B1814CE7CDC29C67558098B85DE2161A /* TwitterJSONParser.swift in Sources */,
+				42FCA5C50805248D4C10FB75535C5A08 /* TwitterPublicFeedsHandler.swift in Sources */,
+				76F31231A4FB158F9E157D43B65A24DF /* YouTubeInterfaceDataInfo.swift in Sources */,
+				B99509E059B0DF8ECCDF4EB0D11A508E /* YouTubeJSONParser.swift in Sources */,
+				8F94E072C335CB29F87847E29347DB7C /* YouTubePublicFeedsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		544C09D4BCBAA51D7298893F06ACB4D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = 9B53838ABCADB85AC7A5A1FA0A5F06AD /* SQLite.swift */;
-			targetProxy = F1756AC3A8AA271D517F3E687FADB9D5 /* PBXContainerItemProxy */;
-		};
 		99277CE6888D4131A5530D762E934AA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KahunaSocialMedia;
-			target = E71DC7C06C31B0A9D9A28A948E0F6B0D /* KahunaSocialMedia */;
+			target = 12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */;
 			targetProxy = B7FA8427E305156F7023D55F207FE34A /* PBXContainerItemProxy */;
+		};
+		9D8E83B15F9A67272D7D885F4C8194F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */;
+			targetProxy = 275E3BF6612BFA22D5D887678969E81A /* PBXContainerItemProxy */;
 		};
 		FB721BE1248FBE0BD7ACD615AF5A6265 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = 9B53838ABCADB85AC7A5A1FA0A5F06AD /* SQLite.swift */;
+			target = 9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */;
 			targetProxy = 7043A03F2181C60524B56FE2150AEF46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06D9047B1B3FCE451CC1DE1740EFB571 /* Release */ = {
+		5F90610CCA60F0103E5B55F98DF8D4DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */;
 			buildSettings = {
@@ -694,7 +704,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -707,16 +717,17 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = KahunaSocialMedia;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		60B5A69F1FE938EA186643B080900994 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -752,39 +763,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		7D81C2698B6FFA210B24951B2F1C880E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KahunaSocialMedia/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KahunaSocialMedia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -906,9 +884,9 @@
 			};
 			name = Debug;
 		};
-		E5E5A7C0F01B0D076E6BBDCC6E8E5E3D /* Release */ = {
+		C8F33C3354B78620E14869424255B67A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -921,14 +899,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KahunaSocialMedia/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SQLite;
+				PRODUCT_NAME = KahunaSocialMedia;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -938,7 +916,7 @@
 			};
 			name = Release;
 		};
-		F97EC4574D5A3BAB58B5C42599B805E2 /* Debug */ = {
+		DC54ED6850741020580868CB88DA0F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
 			buildSettings = {
@@ -971,9 +949,50 @@
 			};
 			name = Debug;
 		};
+		FCA2EF95055A66D4A765E96CBA8CB104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CF8FACA837D1C84C854B6908E2711B5 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F90610CCA60F0103E5B55F98DF8D4DE /* Debug */,
+				C8F33C3354B78620E14869424255B67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -983,29 +1002,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2EA3C55B9153014FD29CB76FC878D41B /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC54ED6850741020580868CB88DA0F73 /* Debug */,
+				FCA2EF95055A66D4A765E96CBA8CB104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B3F45237ABE8686D7BA53C6F385AE75 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C82DF131966F7F6D0A3E5D519EC7DB44 /* Debug */,
 				60B5A69F1FE938EA186643B080900994 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4695F9522B49CA8136417079C86755FA /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F97EC4574D5A3BAB58B5C42599B805E2 /* Debug */,
-				E5E5A7C0F01B0D076E6BBDCC6E8E5E3D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFD7FBC3C1B8ECA95E91B459E56AC163 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D81C2698B6FFA210B24951B2F1C880E /* Debug */,
-				06D9047B1B3FCE451CC1DE1740EFB571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
