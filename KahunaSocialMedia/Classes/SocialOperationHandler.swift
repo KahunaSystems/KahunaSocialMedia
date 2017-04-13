@@ -15,17 +15,20 @@ import KahunaSocialMedia
 }
 
 
-public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeedDelegate, TwitterFeedDelegate {
+public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeedDelegate, TwitterFeedDelegate, InstagramFeedDelegate {
 
     public var socialDelegate: SocialOperationHandlerDelegate?
 
     var isFBLoadIsInProcess = false
     var isTwitterLoadIsInProcess = false
     var isYoutubeLoadIsInProcess = false
+    var isInstagramLoadIsProcess = false
 
     var isFacebookFirstTime = false
     var isTwitterFirstTime = false
     var isYouTubeFirstTime = false
+    var isInstagramFirstTime = false
+
     public var isLoadFromServer = false
 
     var fbGraphURL = String()
@@ -50,6 +53,8 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
     var countForSubscribedChannel = String()
     var userChannelOnly = false
     var userChannelId = String()
+
+    var instaURL = String()
 
     public static let sharedInstance = SocialOperationHandler()
 
@@ -86,6 +91,10 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         self.countForSubscribedChannel = countForSubscribedChannel
         self.userChannelOnly = userChannelOnly
         self.userChannelId = userChannelId
+    }
+
+    public func initAllInstagramKeys(instaURL: String) {
+        self.instaURL = instaURL
     }
 
     deinit {
@@ -127,6 +136,20 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
                     twitterPublicHandler.getLatestTweetsFromServerWithURLString(Constants.kTweetUrl)
                 }
             }
+        } else {
+            self.noConnectivityReset()
+        }
+    }
+
+    func getInstagramFeeds() {
+        if self.checkCurrentProccessIsGoingOn() {
+            return
+        }
+        if SocialCheckConnectivity.hasConnectivity() {
+            self.isInstagramLoadIsProcess = true
+            let instaPublicHandler = InstagramFeedHandler.sharedInstance
+            instaPublicHandler.instaFeedFetchDelegate = self
+            instaPublicHandler.getInstaFeedsFromURL(stringURL: instaURL)
         } else {
             self.noConnectivityReset()
         }
@@ -217,6 +240,22 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         }
     }
 
+    func instagramFeedFetchSuccess(_ feedArray: NSArray?) {
+        self.isInstagramLoadIsProcess = false
+        self.isInstagramFirstTime = true
+        if self.socialDelegate != nil {
+            self.socialDelegate?.socialDataFetchSuccess!()
+        }
+    }
+
+    func instagramFeedFetchError(_ errorType: NSError) {
+        self.isInstagramLoadIsProcess = false
+        self.isInstagramFirstTime = true
+        if self.socialDelegate != nil {
+            self.socialDelegate?.socialDataFetchError!()
+        }
+    }
+
     func checkCurrentProccessIsGoingOn() -> Bool {
         var isProcessRunning = false
         if self.isFBLoadIsInProcess {
@@ -224,6 +263,8 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         } else if self.isTwitterLoadIsInProcess {
             isProcessRunning = true
         } else if self.isYoutubeLoadIsInProcess {
+            isProcessRunning = true
+        } else if self.isInstagramLoadIsProcess {
             isProcessRunning = true
         }
         if isProcessRunning && self.socialDelegate != nil {
@@ -241,6 +282,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         self.isFBLoadIsInProcess = false
         self.isTwitterLoadIsInProcess = false
         self.isYoutubeLoadIsInProcess = false
+        self.isInstagramLoadIsProcess = false
         if self.socialDelegate != nil {
             self.socialDelegate?.socialDataFetchError!()
         }

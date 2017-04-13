@@ -71,15 +71,22 @@ class FacebookPublicFeedsHandler: NSObject {
                 if error != nil && self.fBFeedFetchDelegate != nil {
                     self.fBFeedFetchDelegate?.facebookFeedFetchError!(error! as NSError)
                 } else if data != nil {
-                    let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                    if (dataString?.characters.count)! > 0 {
-                        if let seperateArray = dataString?.components(separatedBy: "=") {
-                            if seperateArray.count > 1 {
-                                accessToken = seperateArray[1]
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                        if let jsonDictionary = json as? NSDictionary, let tempToken = jsonDictionary["access_token"] as? String {
+                            accessToken = tempToken
+                        } else {
+                            if let jsonString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) {
+                                var seperateArray = jsonString.components(separatedBy: "=")
+                                if seperateArray.count > 1 {
+                                    accessToken = seperateArray[1]
+                                }
                             }
                         }
-                        self.loadFacebookFeedsWithAccessToken(accessToken: accessToken, facebookURL: paramFBUrl as String)
+                    } catch let error as NSError {
+                        print(error.debugDescription)
                     }
+                    self.loadFacebookFeedsWithAccessToken(accessToken: accessToken, facebookURL: paramFBUrl as String)
                 }
             })
             task.resume()

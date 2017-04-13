@@ -25,7 +25,7 @@ class FacebookFeedsJsonParser: NSObject {
             var fbFromName = SocialOperationHandler.sharedInstance.fbFromName as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-            if let myArray = feedsDict!["data"], let arrayFeeds = myArray as? NSArray {
+            if let myArray = feedsDict!["data"], myArray != nil , let arrayFeeds = myArray as? NSArray {
                 for i in 0 ..< arrayFeeds.count {
                     let innerFeedsDict = arrayFeeds[i] as! NSDictionary
                     let fromDict = innerFeedsDict["from"] as! NSDictionary

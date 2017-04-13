@@ -15,6 +15,7 @@ public class SocialDataHandler: NSObject {
     let twitterTable = Table("TweetInfo")
     let fbTable = Table("FacebookFeedInfo")
     let youtTubeTable = Table("YoutubeInterface")
+    let instagramTable = Table("InstagramFeedInfo")
 
     //Column name of twitter
     let profileIcon = Expression<String>("profileIcon")
@@ -50,6 +51,19 @@ public class SocialDataHandler: NSObject {
     let youtubeTitle = Expression<String>("youtubeTitle")
     let youtubeViews = Expression<String>("youtubeViews")
     let youtubeImage = Expression<String>("youtubeImage")
+
+    //Column name of instagram
+    let createdDate = Expression<Date>("createdDate")
+    let commentCount = Expression<Int>("commentCount")
+    let feedText = Expression<String>("feedText")
+    let userFullName = Expression<String>("userFullName")
+    let likeCount = Expression<Int>("likeCount")
+    let mediaID = Expression<Double>("mediaID")
+    let standardImg = Expression<String>("standardImg")
+    let thumbnailImg = Expression<String>("thumbnailImg")
+    let userID = Expression<Double>("userID")
+    let userName = Expression<String>("userName")
+    let webLink = Expression<String>("webLink")
 
     public override init() {
 
@@ -160,6 +174,40 @@ public class SocialDataHandler: NSObject {
     }
 
     //=================================================
+    /** Fetch data from facebook table from database
+     *@return fbArray contains the array of twitter feeds
+     */
+    //=================================================
+    public func fetchedInstagramFeedsFromDB() -> [InstagramFeedDataInfo] {
+        var fbArray = [InstagramFeedDataInfo]()
+        let writableDBPath = self.getDatabasePath()
+        var database: Connection
+        do {
+            database = try Connection(writableDBPath)
+            let items = try database.prepare(instagramTable)
+            for item in items {
+                let info = InstagramFeedDataInfo()
+                info.createdDate = item[createdDate] as NSDate?
+                info.webLink = item[webLink]
+                info.userFullName = item[userFullName]
+                info.userName = item[userName]
+                info.userID = item[userID]
+                info.likeCount = item[likeCount]
+                info.commentCount = item[commentCount]
+                info.feedText = item[feedText]
+                info.mediaID = item[mediaID]
+                info.thumbnailImg = item[thumbnailImg]
+                info.standardImg = item[standardImg]
+                fbArray.append(info)
+            }
+            return fbArray
+        } catch let error as NSError {
+            print(error)
+        }
+        return fbArray
+    }
+
+    //=================================================
     /** Adding twitter info data into database
      * @param twitterFeedArray contains twitter array
      * @param type checks if whole sqlite needs to be changes or some part
@@ -246,6 +294,35 @@ public class SocialDataHandler: NSObject {
         return 1
     }
 
+    //=================================================
+    /** Adding Instagram info data into database
+     * @param InstagramFeedArray contains Youtube array
+     * @param type checks if whole sqlite needs to be changes or some part
+     * @return 1 if successfully inserted else 0
+     */
+    //=================================================
+    public func saveAllFetchedInstagramFeedsToDB(instagramFeedArray: NSMutableArray) -> Int {
+        let nearbyArray = NSMutableArray()
+        let writableDBPath = self.getDatabasePath()
+        var database: Connection
+        do {
+            database = try Connection(writableDBPath)
+            if instagramFeedArray.count > 0 {
+                try database.run(instagramTable.delete())
+                for instagramInfo in instagramFeedArray {
+                    if let info = instagramInfo as? InstagramFeedDataInfo {
+                        let insert = instagramTable.insert(updatedDateTime <- info.createdDate as! Date, webLink <- info.webLink, userFullName <- info.userFullName, userName <- info.userName, userID <- info.userID, likeCount <- info.likeCount, commentCount <- info.commentCount, feedText <- info.feedText, mediaID <- info.mediaID, thumbnailImg <- info.thumbnailImg, standardImg <- info.standardImg)
+                        let rowId = try database.run(insert)
+                    }
+                }
+            }
+        } catch let error as NSError {
+            print(error)
+            return 0
+        }
+        return 1
+    }
+
     public func deleteTwitterDataInSqlite(deleteSqlite: NSArray) {
         let writableDBPath = self.getDatabasePath()
         var database: Connection
@@ -284,6 +361,21 @@ public class SocialDataHandler: NSObject {
             for twId in deleteSqlite {
                 let twIdValue = twId as! String
                 let query = youtTubeTable.filter(tweetId == twIdValue)
+                try database.run(query.delete())
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+
+    public func deleteInstagramDataInSqlite(deleteSqlite: NSArray) {
+        let writableDBPath = self.getDatabasePath()
+        var database: Connection
+        do {
+            database = try Connection(writableDBPath)
+            for twId in deleteSqlite {
+                let twIdValue = twId as! String
+                let query = instagramTable.filter(tweetId == twIdValue)
                 try database.run(query.delete())
             }
         } catch let error as NSError {
