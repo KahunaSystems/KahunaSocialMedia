@@ -35,14 +35,14 @@ class TwitterPublicFeedsHandler: NSObject {
 
     func getTwitterFeedListFromURL(_ stringURL: String) {
         autoreleasepool() {
-            DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
+            dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) {
                 let basePath = SocialOperationHandler.sharedInstance.serverBaseURL
                 let paramString = basePath + stringURL
-                let loadURL = URL(string: paramString)
-                let request = URLRequest(url: loadURL!)
-                let config = URLSessionConfiguration.default
-                let session = URLSession(configuration: config)
-                let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
+                let loadURL = NSURL(string: paramString)
+                let request = NSURLRequest(URL: loadURL!)
+                let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+                let session = NSURLSession(configuration: config)
+                let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
                     if error != nil {
                         if self.twitterDelegate != nil {
                             self.twitterDelegate?.twitterFeedFetchError!(error! as NSError?)
@@ -51,10 +51,10 @@ class TwitterPublicFeedsHandler: NSObject {
                         let parserArray = NSMutableArray()
                         let jsonParser = TwitterJSONParser()
                         var tweetsArray = NSMutableArray()
-                        DispatchQueue.main.async {
+                        dispatch_async(dispatch_get_main_queue()) {
                             tweetsArray = jsonParser.parseTwitterFeedData(data!, parserArray: parserArray) as NSMutableArray
                             if tweetsArray.count > 0 {
-                                SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
+                                SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(tweetsArray)
                             }
                             if self.twitterDelegate != nil {
                                 self.twitterDelegate.twitterFeedFetchSuccess!(tweetsArray)
@@ -69,7 +69,7 @@ class TwitterPublicFeedsHandler: NSObject {
 
     func getLatestTweetsFromServerWithURLString(_ stringURL: String) {
         autoreleasepool() {
-            DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
+            dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) {
                 // AccessToken
                 self.tweetAccessToken = SocialOperationHandler.sharedInstance.tweetAccessToken
                 // AccessToken Secret
@@ -82,7 +82,7 @@ class TwitterPublicFeedsHandler: NSObject {
                 self.tweetOwnerSecretName = SocialOperationHandler.sharedInstance.tweetOwnerSecretName
                 // SlugName
                 self.tweetSlugName = SocialOperationHandler.sharedInstance.tweetSlugName
-                self.engine = FHSTwitterEngine.shared()
+                self.engine = FHSTwitterEngine.sharedEngine()
                 self.engine.permanentlySetConsumerKey(self.tweetConsumerKey, andSecret: self.tweetConsumerSecret)
                 let token = FHSToken()
                 token.key = self.tweetAccessToken
@@ -90,13 +90,13 @@ class TwitterPublicFeedsHandler: NSObject {
                 self.engine.accessToken = token
                 var tweetsArray = NSMutableArray()
                 var isNoError = false
-                if let tweets = self.engine.getTimelineForList(withID: self.tweetSlugName, self.tweetOwnerSecretName, count: 30, tweetURL: stringURL) as? NSArray {
+                if let tweets = self.engine.getTimelineForListWithID(self.tweetSlugName, self.tweetOwnerSecretName, count: 30, tweetURL: stringURL) as? NSArray {
                     isNoError = true
                     let jsonParser = TwitterJSONParser()
-                    DispatchQueue.main.async {
+                    dispatch_async(dispatch_get_main_queue()) {
                         tweetsArray = jsonParser.parseTwitterData(tweets as? NSArray)
                         if tweetsArray.count > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
+                            SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(tweetsArray)
                         }
                         if self.twitterDelegate != nil {
                             self.twitterDelegate.twitterFeedFetchSuccess!(tweetsArray)
@@ -104,7 +104,7 @@ class TwitterPublicFeedsHandler: NSObject {
                     }
                 }
                 if !isNoError {
-                    DispatchQueue.main.async {
+                    dispatch_async(dispatch_get_main_queue()) {
                         if self.twitterDelegate != nil {
                             self.twitterDelegate.twitterFeedFetchError!(nil)
                         }

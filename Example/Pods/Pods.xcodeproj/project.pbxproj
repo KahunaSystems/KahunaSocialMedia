@@ -9,68 +9,67 @@
 /* Begin PBXBuildFile section */
 		007FBDC24040BA725E3060CFB89E6667 /* IGMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */; };
 		03558CEA3DFFF9522C5D0A460835DDFB /* IGFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */; };
-		062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */; };
+		03865162AEA0ABE3F56858F5E5C68E8E /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C069E20DDEF64B34B672C03C3CD47AF7 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C65A1C06DF16E6566F8A780A2D1C22C /* IGUsersInPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */; };
-		1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */; };
+		0FFA5FB7D34F10A2BCCE88B75CD467F5 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBE1D49B1FEEBE4FA119D4EFEDB3ED /* SQLite-Bridging.m */; };
 		21F924B76C76AE1EC840BB67E0EE5E8B /* FacebookFeedsJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */; };
 		230C68D05CB7A5EA285FA25B33A2C792 /* SocialDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */; };
+		285397A9F13A1497E498CAB6C4A735FB /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84631C774A3B4D8EB83109D8805D91E /* CoreFunctions.swift */; };
 		2A24E6F99C107170CD30CCB1316B5895 /* IGLowResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */; };
 		313A591CE709C33191F06085E82924B5 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */; };
+		35A2CC0FDB857DB484124D602187D2AA /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 51411E977D8E3752F0D68AD1D616FEEA /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37712E190008D63E07846F7D3C4969A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */; };
+		39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F15A794987BA3FF7982936C98D4DD207 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C9D1BBBC6E021270E33631193BDAA61 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */; };
-		3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680617B7B3999D016982CD479DADCCB0 /* Blob.swift */; };
 		3F1455938F6DA586551E05CBAF4055D0 /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4246330FC78670B8AA91EAE293F2D8E4 /* IGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */; };
 		42B6B8BFAB7C9D67BA841BD9FC8C268A /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42D4CFDF76875B3979DBAC3BB140968C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44F0C85553660857F351B59660E399 /* SQLite.framework */; };
 		42FCA5C50805248D4C10FB75535C5A08 /* TwitterPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */; };
-		4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */; };
 		490A3A4672084C4000CE12FB330DD47C /* KahunaSocialMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */; };
 		4AC1C27F5A4408C081998EC190B12581 /* InstagramFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */; };
 		506C541B1D9E1F915595E72F6615890C /* IGPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */; };
+		5255EB6AFB462257B6191D569F58C781 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CCF42A7869EF20FF7AB7B0898368E /* Operators.swift */; };
 		52BBD39BE53C2D8815AA0D02BA9FE4BF /* IGPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */; };
 		5436213BB3E5D11534572D6982FBAF63 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7855DE178D22988512E88C68325BE /* Collation.swift */; };
-		5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */; };
 		5E4F90AF9C58EDED680F96EB1E1DF948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA86AD441076D928D0621530CD5E745 /* Operators.swift */; };
+		64CE3B514B3C76BB6F1081DD2BA5D0AF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0652CFB007BBA46B92138A30E2F0513 /* Connection.swift */; };
 		6954B5A75AFACF701E269CF17B3F45D4 /* IGCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */; };
-		6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */; };
-		7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */; };
 		70C46C838C6519E3516EFD6BD613F898 /* KahunaSocialMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */; };
+		7103AB1D0B7EAB3BCD8B10FF798CECDA /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6DB362DA0D2A1935D75E0A8F808B7 /* AggregateFunctions.swift */; };
 		76F31231A4FB158F9E157D43B65A24DF /* YouTubeInterfaceDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */; };
 		788A5D9F53BD1FCEAAA65ED22743CF42 /* SocialOperationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */; };
 		78944736179EEC2BAC0480CF79781FAF /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */; };
-		7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8D3952153AB258D9827F9ABBFBEFCC93 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691EC58A4A04A4AEF3C759FA995E2747 /* Expression.swift */; };
 		8E299E674DE6451FD8197305D109B386 /* IGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */; };
 		8EE29B3D5EB556A0DE3010CC0D5AF77A /* SocialCheckConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */; };
 		8F94E072C335CB29F87847E29347DB7C /* YouTubePublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */; };
-		9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */; };
 		93F2B5A64CC9E4111F6AC1A76DDBD980 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386864375E51EDE77AE0390F52808C48 /* Constants.swift */; };
-		9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */; };
+		96BF52C75E91DBEEB0E39CCD29BC45C9 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E0DC67512C037897FF9B19B0F4BC616F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9DC28EBCD74D55FBE69B10B7DEDE0A09 /* FacebookPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */; };
-		A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */; };
+		A5F4DA05B321135AAD157114A22B96F4 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1491786CB78977109E7F1AF68DCA8 /* FTS4.swift */; };
+		A7EF5AB6B41D60180886AD71FA85B3B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338CF0803DDE4D7D67626BF31133D5D /* Helpers.swift */; };
 		A8EC7212197FB653AE243C4D99B7A708 /* IGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */; };
+		A8F70EB24262F8C2C03B188980527BB7 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0225E57F58EF2E72B91E96C6A27E0A4 /* Statement.swift */; };
+		B0D7504E613658848EDC7C3984563390 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4A12D2BBB42EB054E1EAC1590385 /* Blob.swift */; };
 		B1814CE7CDC29C67558098B85DE2161A /* TwitterJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */; };
-		B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */; };
 		B99509E059B0DF8ECCDF4EB0D11A508E /* YouTubeJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */; };
-		BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */; };
-		BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA84F65AFB88746E6F5F2A1A8B3F0D1A /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C8F00AF77BD72F5A2A43232F30314 /* Value.swift */; };
 		BD31C862EAF81720462D1DE7D2BB58D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
+		BEB94F8955F1A2E9CB465F9270CBD204 /* R*Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DB78283823A3B7F6E11103F659531 /* R*Tree.swift */; };
+		BFE6C0287059C9D8C17862ECF29C2518 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17220893E9E63E46F70BCA7784198523 /* Schema.swift */; };
 		C1E49CF23D423C6C5E02FDA15B10CC84 /* IGComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */; };
 		C2CBB5BFD4900AB3D1780AD3E61DB4E2 /* IGMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */; };
-		C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */; };
 		CAF7A15F9982D489A2A8F39112CF062C /* InstagramFeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */; };
+		D6121D5E949E63963ED8C3D6E0C54B6D /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B509B4439E05E972E58A507E755440B /* Collation.swift */; };
 		DC9758AEFAF72E0F5EA753F7C4F3E3AF /* FacebookFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */; };
+		DD2550A38B40C05087ED20B7B703F957 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312683405829449442CB839B43181C21 /* Setter.swift */; };
 		DE05705E6B01D7413291B08C6642F6E5 /* TwitterDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */; };
 		E4F26E64D16700CF453FA10DC6CE7A68 /* SocialCheckConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */; };
-		EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */; };
-		FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */; };
+		E652C4B394E471BEEF2DC0D9769F3DBF /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55842CACC1AA5359DE0F6BD1C563C69 /* Query.swift */; };
+		EE50A489CA25F1BEDCE8501D95C627D6 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E632933A41B65B75D355F754C005BA4A /* SQLite.swift-dummy.m */; };
+		F57554F5C1C7998068D00C82D572E4EA /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903C387F9738F8BEA1FB1FB17A88892 /* CustomFunctions.swift */; };
+		F8D07E359954CD929B2BCF22EA85AE85 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03B633F34480A002F9568A44AC5DD6 /* Foundation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,86 +99,85 @@
 /* Begin PBXFileReference section */
 		00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KahunaSocialMedia-dummy.m"; sourceTree = "<group>"; };
 		06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KahunaSocialMedia.xcconfig; sourceTree = "<group>"; };
-		0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		0A0EF42E8B92F8C58A8C7DFEE4D6DB07 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
 		0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterPublicFeedsHandler.swift; sourceTree = "<group>"; };
-		0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
 		10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SocialCheckConnectivity.m; sourceTree = "<group>"; };
-		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
-		1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		141981C3446020463DBC1F7D885E9710 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17220893E9E63E46F70BCA7784198523 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		184B8B0F6C485512E8398AA8757969F9 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		1B509B4439E05E972E58A507E755440B /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
 		24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialOperationHandler.swift; sourceTree = "<group>"; };
-		27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		280CCF42A7869EF20FF7AB7B0898368E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		312683405829449442CB839B43181C21 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubePublicFeedsHandler.swift; sourceTree = "<group>"; };
-		348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		386864375E51EDE77AE0390F52808C48 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeInterfaceDataInfo.swift; sourceTree = "<group>"; };
 		3BC1655EDD9CFA6D921E19350386812F /* Pods-KahunaSocialMedia_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
 		4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterDataInfo.swift; sourceTree = "<group>"; };
 		4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGFrom.swift; sourceTree = "<group>"; };
+		51411E977D8E3752F0D68AD1D616FEEA /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "SQLite/Core/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
 		55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedsJsonParser.swift; sourceTree = "<group>"; };
-		5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
 		5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
-		60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
 		6731F2DF4DF29B845540478A6E3E7C37 /* Pods-KahunaSocialMedia_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		680617B7B3999D016982CD479DADCCB0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		691EC58A4A04A4AEF3C759FA995E2747 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
 		69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMain.swift; sourceTree = "<group>"; };
-		69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9ADB2B7B94D965897303FEDF4A83BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KahunaSocialMedia_Tests-umbrella.h"; sourceTree = "<group>"; };
+		71D6DB362DA0D2A1935D75E0A8F808B7 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		7903C387F9738F8BEA1FB1FB17A88892 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLocation.swift; sourceTree = "<group>"; };
 		8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterJSONParser.swift; sourceTree = "<group>"; };
-		88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
 		8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-umbrella.h"; sourceTree = "<group>"; };
 		8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialDataHandler.swift; sourceTree = "<group>"; };
-		8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KahunaSocialMedia.framework; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		919B4A12D2BBB42EB054E1EAC1590385 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookPublicFeedsHandler.swift; sourceTree = "<group>"; };
 		92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPosition.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A4FB98E4A71B9F4FE0AAC71ACD0069A /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
 		9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		A0225E57F58EF2E72B91E96C6A27E0A4 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		A0652CFB007BBA46B92138A30E2F0513 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KahunaSocialMedia_Tests-dummy.m"; sourceTree = "<group>"; };
-		A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KahunaSocialMedia_Tests.framework; path = "Pods-KahunaSocialMedia_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		BDA86AD441076D928D0621530CD5E745 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		A55842CACC1AA5359DE0F6BD1C563C69 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KahunaSocialMedia_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BBE1D49B1FEEBE4FA119D4EFEDB3ED /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "SQLite/Core/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		B338CF0803DDE4D7D67626BF31133D5D /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = SQLite/Helpers.swift; sourceTree = "<group>"; };
+		C069E20DDEF64B34B672C03C3CD47AF7 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = SQLite/SQLite.h; sourceTree = "<group>"; };
 		C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMeta.swift; sourceTree = "<group>"; };
 		C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGComment.swift; sourceTree = "<group>"; };
-		CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGUsersInPhoto.swift; sourceTree = "<group>"; };
 		CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGData.swift; sourceTree = "<group>"; };
+		CF03B633F34480A002F9568A44AC5DD6 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = SQLite/Foundation.swift; sourceTree = "<group>"; };
 		CF3248DC3C434A9CC395CC8FDCF4C6C3 /* Pods-KahunaSocialMedia_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-resources.sh"; sourceTree = "<group>"; };
 		D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGImage.swift; sourceTree = "<group>"; };
 		D2AEDC14326EC0A1E16AF87496E8C90D /* Pods-KahunaSocialMedia_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedDataInfo.swift; sourceTree = "<group>"; };
 		D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
-		D7B7855DE178D22988512E88C68325BE /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
 		DA1983F1AEDBA6625473EEEBD9E27F56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		DB44F0C85553660857F351B59660E399 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeJSONParser.swift; sourceTree = "<group>"; };
 		DF63FAE3919C04FC12B055EC04B73ACD /* Pods-KahunaSocialMedia_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0DC67512C037897FF9B19B0F4BC616F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = SQLite/Core/fts3_tokenizer.h; sourceTree = "<group>"; };
 		E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedDataInfo.swift; sourceTree = "<group>"; };
 		E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPagination.swift; sourceTree = "<group>"; };
-		E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		E632933A41B65B75D355F754C005BA4A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		E84631C774A3B4D8EB83109D8805D91E /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		E84C8F00AF77BD72F5A2A43232F30314 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		E84DB78283823A3B7F6E11103F659531 /* R*Tree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "R*Tree.swift"; path = "SQLite/Extensions/R*Tree.swift"; sourceTree = "<group>"; };
 		E8AA707B5F85EC75E74ECA75C56EC6F0 /* Pods-KahunaSocialMedia_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9E1491786CB78977109E7F1AF68DCA8 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		F15A794987BA3FF7982936C98D4DD207 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		FB479920F3DB923629E92C6775ACE253 /* KahunaSocialMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-prefix.pch"; sourceTree = "<group>"; };
 		FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SocialCheckConnectivity.h; sourceTree = "<group>"; };
 		FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLowResolution.swift; sourceTree = "<group>"; };
 		FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedHandler.swift; sourceTree = "<group>"; };
 		FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGCaption.swift; sourceTree = "<group>"; };
-		FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,22 +226,7 @@
 				8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */,
 				0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */,
 			);
-			name = Twitter;
 			path = Twitter;
-			sourceTree = "<group>";
-		};
-		0CE5F9160B067C829D364E72878D0583 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */,
-				1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */,
-				88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */,
-				2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */,
-				CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */,
-				27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
 		0E9CC0217CE03B66912982F024F7C64D /* Frameworks */ = {
@@ -260,7 +243,6 @@
 			children = (
 				42069ADE14B2E59A5BB94A3559DDD7D7 /* Classes */,
 			);
-			name = KahunaSocialMedia;
 			path = KahunaSocialMedia;
 			sourceTree = "<group>";
 		};
@@ -276,16 +258,7 @@
 				03D47EF4B7737F6065ECE4C39C70C940 /* Twitter */,
 				EBFC8D0BA07301D2DD77EE5F8AA65F52 /* Youtube */,
 			);
-			name = Classes;
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		42A565AFFAD6D5669C3E9A617B18206F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		45C3B815A886DA32777A21FA376C9C11 /* Pods-KahunaSocialMedia_Tests */ = {
@@ -314,6 +287,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		55EC1D21DBE2EBBA621774D9A2A5A684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				978B579DAF509647A479041740A5B9B4 /* SQLite.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60646B1F542BE04E505848260A5C079D /* JsonClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,18 +311,7 @@
 				92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */,
 				CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */,
 			);
-			name = JsonClasses;
 			path = JsonClasses;
-			sourceTree = "<group>";
-		};
-		6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */,
-				0CE5F9160B067C829D364E72878D0583 /* Support Files */,
-			);
-			name = SQLite.swift;
-			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 		6C32CD08687908A742FE0339261284D6 /* Facebook */ = {
@@ -351,37 +321,7 @@
 				55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */,
 				91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */,
 			);
-			name = Facebook;
 			path = Facebook;
-			sourceTree = "<group>";
-		};
-		6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */,
-				680617B7B3999D016982CD479DADCCB0 /* Blob.swift */,
-				D7B7855DE178D22988512E88C68325BE /* Collation.swift */,
-				CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */,
-				60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */,
-				348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */,
-				44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */,
-				E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */,
-				5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */,
-				B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */,
-				4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */,
-				A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */,
-				BDA86AD441076D928D0621530CD5E745 /* Operators.swift */,
-				3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */,
-				0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */,
-				FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */,
-				DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */,
-				B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */,
-				AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */,
-				0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */,
-				96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */,
-				9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */,
-			);
-			name = standard;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -390,7 +330,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				83DF9252212EBAA039974AFC1AB71A28 /* Development Pods */,
 				0E9CC0217CE03B66912982F024F7C64D /* Frameworks */,
-				42A565AFFAD6D5669C3E9A617B18206F /* Pods */,
+				55EC1D21DBE2EBBA621774D9A2A5A684 /* Pods */,
 				01F35DFAD90DFE9B929C4899252AEC7D /* Products */,
 				93D6F33A8D46A338AA73167E595FD6D0 /* Targets Support Files */,
 			);
@@ -403,7 +343,6 @@
 				FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */,
 				60646B1F542BE04E505848260A5C079D /* JsonClasses */,
 			);
-			name = Instagram;
 			path = Instagram;
 			sourceTree = "<group>";
 		};
@@ -413,6 +352,20 @@
 				98C562F4D3A3A85FF29B0E8275AA9944 /* KahunaSocialMedia */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8C900629ABE3B1BDE7CDD446AA99624D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				141981C3446020463DBC1F7D885E9710 /* Info.plist */,
+				9A4FB98E4A71B9F4FE0AAC71ACD0069A /* SQLite.swift.modulemap */,
+				0A0EF42E8B92F8C58A8C7DFEE4D6DB07 /* SQLite.swift.xcconfig */,
+				E632933A41B65B75D355F754C005BA4A /* SQLite.swift-dummy.m */,
+				184B8B0F6C485512E8398AA8757969F9 /* SQLite.swift-prefix.pch */,
+				F15A794987BA3FF7982936C98D4DD207 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
 		93D6F33A8D46A338AA73167E595FD6D0 /* Targets Support Files */ = {
@@ -430,8 +383,36 @@
 				10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */,
 				F74F89AD136088F3E5C4044EC1081641 /* FHSTwitterEngine */,
 			);
-			name = ObjectiveC;
 			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		978B579DAF509647A479041740A5B9B4 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				71D6DB362DA0D2A1935D75E0A8F808B7 /* AggregateFunctions.swift */,
+				919B4A12D2BBB42EB054E1EAC1590385 /* Blob.swift */,
+				1B509B4439E05E972E58A507E755440B /* Collation.swift */,
+				A0652CFB007BBA46B92138A30E2F0513 /* Connection.swift */,
+				E84631C774A3B4D8EB83109D8805D91E /* CoreFunctions.swift */,
+				7903C387F9738F8BEA1FB1FB17A88892 /* CustomFunctions.swift */,
+				691EC58A4A04A4AEF3C759FA995E2747 /* Expression.swift */,
+				CF03B633F34480A002F9568A44AC5DD6 /* Foundation.swift */,
+				E0DC67512C037897FF9B19B0F4BC616F /* fts3_tokenizer.h */,
+				E9E1491786CB78977109E7F1AF68DCA8 /* FTS4.swift */,
+				B338CF0803DDE4D7D67626BF31133D5D /* Helpers.swift */,
+				280CCF42A7869EF20FF7AB7B0898368E /* Operators.swift */,
+				A55842CACC1AA5359DE0F6BD1C563C69 /* Query.swift */,
+				E84DB78283823A3B7F6E11103F659531 /* R*Tree.swift */,
+				17220893E9E63E46F70BCA7784198523 /* Schema.swift */,
+				312683405829449442CB839B43181C21 /* Setter.swift */,
+				C069E20DDEF64B34B672C03C3CD47AF7 /* SQLite.h */,
+				51411E977D8E3752F0D68AD1D616FEEA /* SQLite-Bridging.h */,
+				B2BBE1D49B1FEEBE4FA119D4EFEDB3ED /* SQLite-Bridging.m */,
+				A0225E57F58EF2E72B91E96C6A27E0A4 /* Statement.swift */,
+				E84C8F00AF77BD72F5A2A43232F30314 /* Value.swift */,
+				8C900629ABE3B1BDE7CDD446AA99624D /* Support Files */,
+			);
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 		98C562F4D3A3A85FF29B0E8275AA9944 /* KahunaSocialMedia */ = {
@@ -451,7 +432,6 @@
 				DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */,
 				3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */,
 			);
-			name = Youtube;
 			path = Youtube;
 			sourceTree = "<group>";
 		};
@@ -477,7 +457,6 @@
 				5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */,
 				9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */,
 			);
-			name = FHSTwitterEngine;
 			path = FHSTwitterEngine;
 			sourceTree = "<group>";
 		};
@@ -507,9 +486,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */,
-				A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */,
-				BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */,
+				96BF52C75E91DBEEB0E39CCD29BC45C9 /* fts3_tokenizer.h in Headers */,
+				35A2CC0FDB857DB484124D602187D2AA /* SQLite-Bridging.h in Headers */,
+				03865162AEA0ABE3F56858F5E5C68E8E /* SQLite.h in Headers */,
 				39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,7 +537,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA3C55B9153014FD29CB76FC878D41B /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				508C375DA2E9A84628AD7631736EA6A3 /* Sources */,
+				A325DB41A03814C66B64B1C2D53997F3 /* Sources */,
 				E0F39C986DAC8EF6037B765A022574F5 /* Frameworks */,
 				C98DEBD53EC62731F46F765DA4CBF078 /* Headers */,
 			);
@@ -608,30 +587,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		508C375DA2E9A84628AD7631736EA6A3 /* Sources */ = {
+		A325DB41A03814C66B64B1C2D53997F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */,
-				3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */,
-				5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */,
-				73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */,
-				4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */,
-				5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */,
-				FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */,
-				1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */,
-				7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */,
-				062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */,
-				6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */,
-				6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */,
-				A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */,
-				EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */,
-				9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */,
-				B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */,
-				BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */,
-				3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */,
-				9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */,
-				E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */,
+				7103AB1D0B7EAB3BCD8B10FF798CECDA /* AggregateFunctions.swift in Sources */,
+				B0D7504E613658848EDC7C3984563390 /* Blob.swift in Sources */,
+				D6121D5E949E63963ED8C3D6E0C54B6D /* Collation.swift in Sources */,
+				64CE3B514B3C76BB6F1081DD2BA5D0AF /* Connection.swift in Sources */,
+				285397A9F13A1497E498CAB6C4A735FB /* CoreFunctions.swift in Sources */,
+				F57554F5C1C7998068D00C82D572E4EA /* CustomFunctions.swift in Sources */,
+				8D3952153AB258D9827F9ABBFBEFCC93 /* Expression.swift in Sources */,
+				F8D07E359954CD929B2BCF22EA85AE85 /* Foundation.swift in Sources */,
+				A5F4DA05B321135AAD157114A22B96F4 /* FTS4.swift in Sources */,
+				A7EF5AB6B41D60180886AD71FA85B3B7 /* Helpers.swift in Sources */,
+				5255EB6AFB462257B6191D569F58C781 /* Operators.swift in Sources */,
+				E652C4B394E471BEEF2DC0D9769F3DBF /* Query.swift in Sources */,
+				BEB94F8955F1A2E9CB465F9270CBD204 /* R*Tree.swift in Sources */,
+				BFE6C0287059C9D8C17862ECF29C2518 /* Schema.swift in Sources */,
+				DD2550A38B40C05087ED20B7B703F957 /* Setter.swift in Sources */,
+				0FFA5FB7D34F10A2BCCE88B75CD467F5 /* SQLite-Bridging.m in Sources */,
+				EE50A489CA25F1BEDCE8501D95C627D6 /* SQLite.swift-dummy.m in Sources */,
+				A8F70EB24262F8C2C03B188980527BB7 /* Statement.swift in Sources */,
+				BA84F65AFB88746E6F5F2A1A8B3F0D1A /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +700,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -799,6 +777,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 2.3;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -844,6 +823,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 2.3;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -909,7 +889,7 @@
 				PRODUCT_NAME = KahunaSocialMedia;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -918,7 +898,7 @@
 		};
 		DC54ED6850741020580868CB88DA0F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 0A0EF42E8B92F8C58A8C7DFEE4D6DB07 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -942,7 +922,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -951,7 +931,7 @@
 		};
 		FCA2EF95055A66D4A765E96CBA8CB104 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 0A0EF42E8B92F8C58A8C7DFEE4D6DB07 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -974,7 +954,7 @@
 				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

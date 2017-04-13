@@ -20,12 +20,12 @@ class FacebookFeedsJsonParser: NSObject {
     func parseData(feedsData: NSData) -> NSArray? {
         let feedsArray = NSMutableArray()
         autoreleasepool() {
-            let stringData = String(data: feedsData as Data, encoding: String.Encoding.utf8)
-            let feedsDict = readFileFromPathAndSerializeIt(stringData: stringData!)
+            let stringData = String(data: feedsData, encoding: NSUTF8StringEncoding)
+            let feedsDict = readFileFromPathAndSerializeIt(stringData!)
             var fbFromName = SocialOperationHandler.sharedInstance.fbFromName as NSString
-            fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-            fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-            if let myArray = feedsDict!["data"], myArray != nil , let arrayFeeds = myArray as? NSArray {
+            fbFromName = fbFromName.stringByReplacingOccurrencesOfString("\\u2019", withString: "'")
+            fbFromName = fbFromName.stringByReplacingOccurrencesOfString("\\u2019", withString: "'")
+            if let myArray = feedsDict!["data"] where myArray != nil , let arrayFeeds = myArray as? NSArray {
                 for i in 0 ..< arrayFeeds.count {
                     let innerFeedsDict = arrayFeeds[i] as! NSDictionary
                     let fromDict = innerFeedsDict["from"] as! NSDictionary
@@ -36,14 +36,14 @@ class FacebookFeedsJsonParser: NSObject {
                     if message != nil && (message?.characters.count)! > 0 {
                         var coreDataObj: FacebookFeedDataInfo? = FacebookFeedDataInfo()
                         var authorName = fromDict["name"] as! NSString
-                        authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-                        authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
+                        authorName = authorName.stringByReplacingOccurrencesOfString("\\u2019", withString: "'")
+                        authorName = authorName.stringByReplacingOccurrencesOfString("\\u2019", withString: "'")
                         coreDataObj?.fbAuthorName = authorName as String
                         if let userId = fromDict["id"] as? String {
                             coreDataObj?.fbUserId = userId
                         }
                         if let msg = message as? String? {
-                            let returnDescString = self.replaceOccuranceOfString(inputString: msg!)
+                            let returnDescString = self.replaceOccuranceOfString(msg!)
                             coreDataObj?.fbDescription = returnDescString
                             coreDataObj?.fbMessage = returnDescString
                         }
@@ -82,7 +82,7 @@ class FacebookFeedsJsonParser: NSObject {
                                 coreDataObj?.fbCommentsCount = count
                             }
                         }
-                        feedsArray.add(coreDataObj!)
+                        feedsArray.addObject(coreDataObj!)
                     }
                 }
             }
@@ -93,30 +93,47 @@ class FacebookFeedsJsonParser: NSObject {
 
     //MARK:- Read file from path and Serialize it
     func readFileFromPathAndSerializeIt(stringData: String) -> AnyObject? {
-        let data = stringData.data(using: String.Encoding.utf8)
+        let data = stringData.dataUsingEncoding(NSUTF8StringEncoding)
         do {
-            let jsonArray = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            return jsonArray as AnyObject?
+            let jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+            return jsonArray
         } catch let error as NSError {
-            print("Error in reading Facebook fetch JSON File\(error.description)")
+            print("Error in reading JSON File\(error.description)")
         }
         return nil
     }
 
-    func replaceOccuranceOfString(inputString: String) -> String {
+    func replaceOccuranceOfString(inputString: String?) -> String {
         print("\n ************* FB Desc Input  \(inputString)")
         if inputString != nil {
-            var replaceString = inputString as NSString
-            var myRange = NSMakeRange(0, (replaceString.length))
-            replaceString = replaceString.replacingOccurrences(of: "&amp;", with: "&") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&apos;", with: "'") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&quot;", with: "\"") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&gt;", with: ">") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&lt;", with: "<") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&#39;", with: "'") as NSString
-            return replaceString as String
+            var replaceString = inputString
+            
+            var myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            var newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&amp;", withString: "&", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            
+            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&apos;", withString: "'", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            
+            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&quot;", withString: "\"", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            
+            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&gt;", withString: ">", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            
+            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&lt;", withString: "<", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            
+            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
+            newRange = inputString!.startIndex.advancedBy(myRange.location)..<inputString!.startIndex.advancedBy(myRange.location + myRange.length)
+            replaceString = replaceString?.stringByReplacingOccurrencesOfString("&#39;", withString: "'", options: NSStringCompareOptions.LiteralSearch, range: newRange)
+            //             print("\n ************* FB Desc Output  \(replaceString)")
+            return replaceString!
         }
         return ""
     }
-
 }

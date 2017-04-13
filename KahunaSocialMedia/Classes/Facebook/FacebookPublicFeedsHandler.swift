@@ -17,7 +17,7 @@ class FacebookPublicFeedsHandler: NSObject {
 
     static let sharedInstance = FacebookPublicFeedsHandler()
     weak var fBFeedFetchDelegate: FacebookFeedDelegate!
-    let userDefault = UserDefaults.standard
+    let userDefault = NSUserDefaults.standardUserDefaults()
 
     override init() {
     }
@@ -31,18 +31,18 @@ class FacebookPublicFeedsHandler: NSObject {
             let basePath = SocialOperationHandler.sharedInstance.serverBaseURL
             let paramString = basePath + stringURL
             let loadURL = NSURL(string: paramString)
-            let request = NSURLRequest(url: loadURL! as URL)
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+            let request = NSURLRequest(URL: loadURL!)
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config)
+            let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
                 if error != nil && self.fBFeedFetchDelegate != nil {
                     self.fBFeedFetchDelegate.facebookFeedFetchError!(error! as NSError)
                 } else if data != nil {
-                    DispatchQueue.main.async {
+                    dispatch_async(dispatch_get_main_queue()) {
                         let parcer = FacebookFeedsJsonParser()
-                        let parsedArray = parcer.parseData(feedsData: data! as NSData)
+                        let parsedArray = parcer.parseData(data! as NSData)
                         if parsedArray != nil && (parsedArray?.count)! > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                            SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(parsedArray as! NSMutableArray)
                         }
                         if self.fBFeedFetchDelegate != nil {
                             self.fBFeedFetchDelegate.facebookFeedFetchSuccess!(parsedArray)
@@ -57,27 +57,27 @@ class FacebookPublicFeedsHandler: NSObject {
     func getPublicFeedsFromUserName(fbUrl: String) -> NSArray? {
         autoreleasepool() {
             var paramFBUrl = fbUrl as NSString
-            paramFBUrl = paramFBUrl.replacingOccurrences(of: " ", with: "+") as NSString
-            paramFBUrl = paramFBUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)! as NSString
+            paramFBUrl = paramFBUrl.stringByReplacingOccurrencesOfString(" ", withString: "+")
+            paramFBUrl = paramFBUrl.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
             var appID = SocialOperationHandler.sharedInstance.fbAppID
             var appSecret = SocialOperationHandler.sharedInstance.fbAppSecret
             var accessToken = ""
             let accessDataURLString = String(format: Constants.kFacebookURL, appID, appSecret)
             let loadURL = NSURL(string: accessDataURLString)
-            let request = NSURLRequest(url: loadURL! as URL)
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+            let request = NSURLRequest(URL: loadURL!)
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config)
+            let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
                 if error != nil && self.fBFeedFetchDelegate != nil {
                     self.fBFeedFetchDelegate?.facebookFeedFetchError!(error! as NSError)
                 } else if data != nil {
                     do {
-                        let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                        let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
                         if let jsonDictionary = json as? NSDictionary, let tempToken = jsonDictionary["access_token"] as? String {
                             accessToken = tempToken
                         } else {
-                            if let jsonString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) {
-                                var seperateArray = jsonString.components(separatedBy: "=")
+                            if let jsonString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+                                var seperateArray = jsonString.componentsSeparatedByString("=")
                                 if seperateArray.count > 1 {
                                     accessToken = seperateArray[1]
                                 }
@@ -86,7 +86,7 @@ class FacebookPublicFeedsHandler: NSObject {
                     } catch let error as NSError {
                         print(error.debugDescription)
                     }
-                    self.loadFacebookFeedsWithAccessToken(accessToken: accessToken, facebookURL: paramFBUrl as String)
+                    self.loadFacebookFeedsWithAccessToken(accessToken, facebookURL: paramFBUrl as String)
                 }
             })
             task.resume()
@@ -96,21 +96,21 @@ class FacebookPublicFeedsHandler: NSObject {
 
     func loadFacebookFeedsWithAccessToken(accessToken: String, facebookURL: String) {
         let accessDataURLString = String(format: facebookURL, accessToken) as NSString
-        var paramFBUrl = accessDataURLString.replacingOccurrences(of: " ", with: "+") as NSString
-        paramFBUrl = paramFBUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)! as NSString
+        var paramFBUrl = accessDataURLString.stringByReplacingOccurrencesOfString(" ", withString: "+")
+        paramFBUrl = paramFBUrl.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
         let loadURL = NSURL(string: paramFBUrl as String)
-        let request = NSURLRequest(url: loadURL! as URL)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+        let request = NSURLRequest(URL: loadURL!)
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
             if error != nil && self.fBFeedFetchDelegate != nil {
                 self.fBFeedFetchDelegate?.facebookFeedFetchError!(error! as NSError)
             } else if data != nil {
-                DispatchQueue.main.async {
+                dispatch_async(dispatch_get_main_queue()) {
                     let parcer = FacebookFeedsJsonParser()
-                    let parsedArray = parcer.parseData(feedsData: data! as NSData)
+                    let parsedArray = parcer.parseData(data! as NSData)
                     if parsedArray != nil && (parsedArray?.count)! > 0 {
-                        SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                        SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(parsedArray as! NSMutableArray)
                     }
                     if self.fBFeedFetchDelegate != nil {
                         self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(parsedArray)

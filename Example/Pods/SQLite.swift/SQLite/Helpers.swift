@@ -22,13 +22,7 @@
 // THE SOFTWARE.
 //
 
-#if SQLITE_SWIFT_STANDALONE
-import sqlite3
-#elseif SQLITE_SWIFT_SQLCIPHER
-import SQLCipher
-#else
 import CSQLite
-#endif
 
 public typealias Star = (Expression<Binding>?, Expression<Binding>?) -> Expression<Void>
 
@@ -49,28 +43,28 @@ extension Optional : _OptionalType {
 }
 
 // let SQLITE_STATIC = unsafeBitCast(0, sqlite3_destructor_type.self)
-let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
+let SQLITE_TRANSIENT = unsafeBitCast(-1, sqlite3_destructor_type.self)
 
 extension String {
 
-    func quote(_ mark: Character = "\"") -> String {
+    @warn_unused_result func quote(mark: Character = "\"") -> String {
         let escaped = characters.reduce("") { string, character in
             string + (character == mark ? "\(mark)\(mark)" : "\(character)")
         }
         return "\(mark)\(escaped)\(mark)"
     }
 
-    func join(_ expressions: [Expressible]) -> Expressible {
+    @warn_unused_result func join(expressions: [Expressible]) -> Expressible {
         var (template, bindings) = ([String](), [Binding?]())
         for expressible in expressions {
             let expression = expressible.expression
             template.append(expression.template)
-            bindings.append(contentsOf: expression.bindings)
+            bindings.appendContentsOf(expression.bindings)
         }
-        return Expression<Void>(template.joined(separator: self), bindings)
+        return Expression<Void>(template.joinWithSeparator(self), bindings)
     }
 
-    func infix<T>(_ lhs: Expressible, _ rhs: Expressible, wrap: Bool = true) -> Expression<T> {
+    @warn_unused_result func infix<T>(lhs: Expressible, _ rhs: Expressible, wrap: Bool = true) -> Expression<T> {
         let expression = Expression<T>(" \(self) ".join([lhs, rhs]).expression)
         guard wrap else {
             return expression
@@ -78,37 +72,37 @@ extension String {
         return "".wrap(expression)
     }
 
-    func prefix(_ expressions: Expressible) -> Expressible {
+    @warn_unused_result func prefix(expressions: Expressible) -> Expressible {
         return "\(self) ".wrap(expressions) as Expression<Void>
     }
 
-    func prefix(_ expressions: [Expressible]) -> Expressible {
+    @warn_unused_result func prefix(expressions: [Expressible]) -> Expressible {
         return "\(self) ".wrap(expressions) as Expression<Void>
     }
 
-    func wrap<T>(_ expression: Expressible) -> Expression<T> {
+    @warn_unused_result func wrap<T>(expression: Expressible) -> Expression<T> {
         return Expression("\(self)(\(expression.expression.template))", expression.expression.bindings)
     }
 
-    func wrap<T>(_ expressions: [Expressible]) -> Expression<T> {
+    @warn_unused_result func wrap<T>(expressions: [Expressible]) -> Expression<T> {
         return wrap(", ".join(expressions))
     }
 
 }
 
-func infix<T>(_ lhs: Expressible, _ rhs: Expressible, wrap: Bool = true, function: String = #function) -> Expression<T> {
+@warn_unused_result func infix<T>(lhs: Expressible, _ rhs: Expressible, wrap: Bool = true, function: String = #function) -> Expression<T> {
     return function.infix(lhs, rhs, wrap: wrap)
 }
 
-func wrap<T>(_ expression: Expressible, function: String = #function) -> Expression<T> {
+@warn_unused_result func wrap<T>(expression: Expressible, function: String = #function) -> Expression<T> {
     return function.wrap(expression)
 }
 
-func wrap<T>(_ expressions: [Expressible], function: String = #function) -> Expression<T> {
+@warn_unused_result func wrap<T>(expressions: [Expressible], function: String = #function) -> Expression<T> {
     return function.wrap(", ".join(expressions))
 }
 
-func transcode(_ literal: Binding?) -> String {
+@warn_unused_result func transcode(literal: Binding?) -> String {
     guard let literal = literal else { return "NULL" }
 
     switch literal {
@@ -121,10 +115,10 @@ func transcode(_ literal: Binding?) -> String {
     }
 }
 
-func value<A: Value>(_ v: Binding) -> A {
+@warn_unused_result func value<A: Value>(v: Binding) -> A {
     return A.fromDatatypeValue(v as! A.Datatype) as! A
 }
 
-func value<A: Value>(_ v: Binding?) -> A {
+@warn_unused_result func value<A: Value>(v: Binding?) -> A {
     return value(v!)
 }

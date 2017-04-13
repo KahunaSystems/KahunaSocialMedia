@@ -10,7 +10,7 @@ import Foundation
 
 class IGData: NSObject {
 
-    var attribution: AnyObject!
+    var attribution: String!
     var caption: IGCaption!
     var comments: IGComment!
     var createdTime: String!
@@ -30,7 +30,9 @@ class IGData: NSObject {
 	 * Instantiate the instance using the passed dictionary values to set the properties values
 	 */
     init(fromDictionary dictionary: NSDictionary) {
-        attribution = dictionary["attribution"] as? AnyObject
+        if let attribute = dictionary["attribution"] as? String {
+            attribution = attribute
+        }
         if let captionData = dictionary["caption"] as? NSDictionary {
             caption = IGCaption(fromDictionary: captionData)
         }

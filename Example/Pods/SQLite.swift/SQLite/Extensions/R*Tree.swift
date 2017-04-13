@@ -22,48 +22,16 @@
 // THE SOFTWARE.
 //
 
-/// A collating function used to compare to strings.
-///
-/// - SeeAlso: <https://www.sqlite.org/datatype3.html#collation>
-public enum Collation {
+extension Module {
 
-    /// Compares string by raw data.
-    case binary
+    @warn_unused_result public static func RTree<T : Value, U : Value where T.Datatype == Int64, U.Datatype == Double>(primaryKey: Expression<T>, _ pairs: (Expression<U>, Expression<U>)...) -> Module {
+        var arguments: [Expressible] = [primaryKey]
 
-    /// Like binary, but folds uppercase ASCII letters into their lowercase
-    /// equivalents.
-    case nocase
-
-    /// Like binary, but strips trailing space.
-    case rtrim
-
-    /// A custom collating sequence identified by the given string, registered
-    /// using `Database.create(collation:…)`
-    case custom(String)
-
-}
-
-extension Collation : Expressible {
-
-    public var expression: Expression<Void> {
-        return Expression(literal: description)
-    }
-
-}
-
-extension Collation : CustomStringConvertible {
-
-    public var description : String {
-        switch self {
-        case .binary:
-            return "BINARY"
-        case .nocase:
-            return "NOCASE"
-        case .rtrim:
-            return "RTRIM"
-        case .custom(let collation):
-            return collation.quote()
+        for pair in pairs {
+            arguments.appendContentsOf([pair.0, pair.1] as [Expressible])
         }
+
+        return Module(name: "rtree", arguments: arguments)
     }
 
 }

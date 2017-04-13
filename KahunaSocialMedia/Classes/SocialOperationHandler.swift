@@ -110,9 +110,9 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
             let fbPublicHandler = FacebookPublicFeedsHandler.sharedInstance
             fbPublicHandler.fBFeedFetchDelegate = self
             if isLoadFromServer {
-                fbPublicHandler.getFacebookFeedListFromURL(stringURL: Constants.ServiceEndPoints.getFacebookList)
+                fbPublicHandler.getFacebookFeedListFromURL(Constants.ServiceEndPoints.getFacebookList)
             } else {
-                fbPublicHandler.getPublicFeedsFromUserName(fbUrl: fbGraphURL)
+                fbPublicHandler.getPublicFeedsFromUserName(fbGraphURL)
             }
         } else {
             self.noConnectivityReset()
@@ -149,7 +149,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
             self.isInstagramLoadIsProcess = true
             let instaPublicHandler = InstagramFeedHandler.sharedInstance
             instaPublicHandler.instaFeedFetchDelegate = self
-            instaPublicHandler.getInstaFeedsFromURL(stringURL: instaURL)
+            instaPublicHandler.getInstaFeedsFromURL(instaURL)
         } else {
             self.noConnectivityReset()
         }
@@ -164,7 +164,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
             let youTubePublicHandler = YouTubePublicFeedsHandler.sharedInstance
             youTubePublicHandler.youTubeDelegate = self
             if isLoadFromServer {
-                youTubePublicHandler.getYouTubeFeedListFromURL(stringURL: Constants.ServiceEndPoints.getYoutubeList)
+                youTubePublicHandler.getYouTubeFeedListFromURL(Constants.ServiceEndPoints.getYoutubeList)
             } else {
                 var loadWithoutSubscriptions = false
                 if isLoadFromSubscriptions == nil {
@@ -176,9 +176,9 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
                 }
                 if loadWithoutSubscriptions {
                     if youTubeURL.characters.count > 0 {
-                        youTubePublicHandler.getYouTubeFeedsFromURL(stringURL: youTubeURL)
+                        youTubePublicHandler.getYouTubeFeedsFromURL(youTubeURL)
                     } else {
-                        youTubePublicHandler.getYouTubeFeedsFromURL(stringURL: Constants.kYoutubeUrl)
+                        youTubePublicHandler.getYouTubeFeedsFromURL(Constants.kYoutubeUrl)
                     }
                 } else {
                     youTubePublicHandler.getUsersSubscriptionsData()
@@ -270,7 +270,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         if isProcessRunning && self.socialDelegate != nil {
             let ViewC = self.socialDelegate as? UIViewController
             if ViewC != nil {
-                DispatchQueue.main.async {
+                dispatch_async(dispatch_get_main_queue()) {
                     //MBProgressHUD.hideAllHUDsForView(ViewC?.view, animated: true)
                 }
             }

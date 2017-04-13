@@ -43,7 +43,7 @@ public class SocialDataHandler: NSObject {
     let fbSharesCount = Expression<String>("fbSharesCount")
 
     //Column name of twitter
-    let updatedDateTime = Expression<Date>("updatedDateTime")
+    let updatedDateTime = Expression<NSDate>("updatedDateTime")
     let youtubeAuthor = Expression<String>("youtubeAuthor")
     let youtubeDescription = Expression<String>("youtubeDescription")
     let youtubeLink = Expression<String>("youtubeLink")
@@ -53,7 +53,7 @@ public class SocialDataHandler: NSObject {
     let youtubeImage = Expression<String>("youtubeImage")
 
     //Column name of instagram
-    let createdDate = Expression<Date>("createdDate")
+    let createdDate = Expression<NSDate>("createdDate")
     let commentCount = Expression<String>("commentCount")
     let feedText = Expression<String>("feedText")
     let userFullName = Expression<String>("userFullName")
@@ -282,7 +282,7 @@ public class SocialDataHandler: NSObject {
                 try database.run(youtTubeTable.delete())
                 for youtubeInfo in youtubeFeedArray {
                     if let info = youtubeInfo as? YouTubeInterfaceDataInfo {
-                        let insert = youtTubeTable.insert(updatedDateTime <- info.updatedDateTime as! Date, youtubeAuthor <- info.youtubeAuthor, youtubeDescription <- info.youtubeDescription, youtubeImage <- info.youtubeImage, youtubeLink <- info.youtubeLink, youtubeTime <- info.youtubeTime, youtubeTitle <- info.youtubeTitle, youtubeViews <- info.youtubeViews)
+                        let insert = youtTubeTable.insert(updatedDateTime <- info.updatedDateTime!, youtubeAuthor <- info.youtubeAuthor, youtubeDescription <- info.youtubeDescription, youtubeImage <- info.youtubeImage, youtubeLink <- info.youtubeLink, youtubeTime <- info.youtubeTime, youtubeTitle <- info.youtubeTitle, youtubeViews <- info.youtubeViews)
                         let rowId = try database.run(insert)
                     }
                 }
@@ -311,8 +311,8 @@ public class SocialDataHandler: NSObject {
                 try database.run(instagramTable.delete())
                 for instagramInfo in instagramFeedArray {
                     if let igdata = instagramInfo as? IGData {
-                        let info = InstagramFeedHandler.sharedInstance.setValueToInstaFeedObject(item: igdata)
-                        let insert = instagramTable.insert(createdDate <- info.createdDate as! Date, webLink <- info.webLink, userFullName <- info.userFullName, userName <- info.userName, userID <- info.userID, likeCount <- info.likeCount, commentCount <- info.commentCount, feedText <- info.feedText, mediaID <- info.mediaID, thumbnailImg <- info.thumbnailImg, standardImg <- info.standardImg)
+                        let info = InstagramFeedHandler.sharedInstance.setValueToInstaFeedObject(igdata)
+                        let insert = instagramTable.insert(createdDate <- info.createdDate!, webLink <- info.webLink, userFullName <- info.userFullName, userName <- info.userName, userID <- info.userID, likeCount <- info.likeCount, commentCount <- info.commentCount, feedText <- info.feedText, mediaID <- info.mediaID, thumbnailImg <- info.thumbnailImg, standardImg <- info.standardImg)
                         let rowId = try database.run(insert)
                     }
                 }
@@ -385,20 +385,20 @@ public class SocialDataHandler: NSObject {
     }
 
     func getDatabasePath() -> String {
-        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        let writableDBPath = documentsDirectory.appending("/" + self.sqliteName)
-        self.checkAndCopyDbIfRequired(databasePath: writableDBPath)
+        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let writableDBPath = documentsDirectory.stringByAppendingString("/" + self.sqliteName)
+        self.checkAndCopyDbIfRequired(writableDBPath)
         return writableDBPath
     }
 
     func checkAndCopyDbIfRequired(databasePath: String) {
         var success: Bool
-        let fileManager = FileManager.default
-        success = fileManager.fileExists(atPath: databasePath)
+        let fileManager = NSFileManager.defaultManager()
+        success = fileManager.fileExistsAtPath(databasePath)
         if success == false {
-            let defaultDBPath = Bundle.main.resourcePath?.appending("/" + self.sqliteName)
+            let defaultDBPath = NSBundle.mainBundle().resourcePath?.stringByAppendingString("/" + self.sqliteName)
             do {
-                try fileManager.copyItem(atPath: defaultDBPath!, toPath: databasePath)
+                try fileManager.copyItemAtPath(defaultDBPath!, toPath: databasePath)
             } catch {
                 // Catch fires here, with an NSError being thrown
                 print("error occurred")

@@ -38,5 +38,5 @@ KahunaSocialMedia helps to retrieve twitter, facebook, instagram and youtube dat
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SQLite.swift', '~> 0.11.2'
+  s.dependency 'SQLite.swift', '~> 0.10.1'
 end

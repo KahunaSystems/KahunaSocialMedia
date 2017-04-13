@@ -29,24 +29,24 @@ class InstagramFeedHandler: NSObject {
         if stringURL != nil {
             let paramString = stringURL!
             let loadURL = NSURL(string: paramString)
-            let request = NSURLRequest(url: loadURL! as URL)
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+            let request = NSURLRequest(URL: loadURL!)
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config)
+            let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
                 if error != nil {
                     if self.instaFeedFetchDelegate != nil {
                         self.instaFeedFetchDelegate?.instagramFeedFetchError!(error! as NSError)
                     }
                 } else if data != nil {
                     do {
-                        let jsonObject = try JSONSerialization.jsonObject(with: data!, options: [])
-                        DispatchQueue.main.async {
+                        let jsonObject = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
+                        dispatch_async(dispatch_get_main_queue()) {
                             let instagramFeeds = IGMain(fromDictionary: jsonObject as! NSDictionary)
                             if instagramFeeds.items.count > 0 {
                                 instagramFeeds.data = instagramFeeds.items
                             }
                             if (instagramFeeds.meta != nil && instagramFeeds.meta.code == 200 && instagramFeeds.data.count > 0) || instagramFeeds.items.count > 0 {
-                                SocialDataHandler.sharedInstance.saveAllFetchedInstagramFeedsToDB(instagramFeedArray: instagramFeeds.data as! NSMutableArray)
+                                SocialDataHandler.sharedInstance.saveAllFetchedInstagramFeedsToDB(instagramFeeds.data as! NSMutableArray)
                             }
                             if self.instaFeedFetchDelegate != nil {
                                 self.instaFeedFetchDelegate?.instagramFeedFetchSuccess!(instagramFeeds.data as! NSMutableArray)
@@ -88,7 +88,7 @@ class InstagramFeedHandler: NSObject {
             coreDataObject.feedText = "N/A"
         }
         if let interval = item.createdTime {
-            let Timeinterval: TimeInterval = Double(interval)!
+            let Timeinterval: NSTimeInterval = Double(interval)!
             let date = NSDate(timeIntervalSince1970: Timeinterval)
             coreDataObject.createdDate = date
         }

@@ -17,7 +17,7 @@ class YouTubePublicFeedsHandler: NSObject {
 
     weak var youTubeDelegate: YouTubeFeedDelegate!
     static let sharedInstance = YouTubePublicFeedsHandler()
-    let userDefault = UserDefaults.standard
+    let userDefault = NSUserDefaults.standardUserDefaults()
 
     override init() {
     }
@@ -30,10 +30,10 @@ class YouTubePublicFeedsHandler: NSObject {
         let basePath = SocialOperationHandler.sharedInstance.serverBaseURL
         let paramString = basePath + stringURL
         let loadURL = NSURL(string: paramString)
-        let request = NSURLRequest(url: loadURL! as URL)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+        let request = NSURLRequest(URL: loadURL!)
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
             if error != nil {
                 if self.youTubeDelegate != nil {
                     self.youTubeDelegate!.youTubeFeedFetchError!(error! as NSError?)
@@ -41,10 +41,10 @@ class YouTubePublicFeedsHandler: NSObject {
             } else if data != nil {
                 let parserArray = NSMutableArray()
                 let parcer = YouTubeJSONParser()
-                let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
-                DispatchQueue.main.async {
+                let parsedArray = parcer.parseYoutubeData(data! as NSData, parserArray: parserArray) as NSMutableArray
+                dispatch_async(dispatch_get_main_queue()) {
                     if parsedArray.count > 0 {
-                        SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
+                        SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(parsedArray)
                     }
                     if self.youTubeDelegate != nil {
                         self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
@@ -57,15 +57,19 @@ class YouTubePublicFeedsHandler: NSObject {
 
     func getYouTubeFeedsFromURL(stringURL: String?) {
         if stringURL != nil {
-            var paramString = "" as NSString
-            let range = stringURL?.range(of: "?")
-            paramString = String(format: "%@/alt=json", stringURL!) as NSString
-            paramString = paramString.replacingOccurrences(of: " ", with: "%20") as NSString
-            let loadURL = NSURL(string: paramString as String)
-            let request = NSURLRequest(url: loadURL! as URL)
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
+            var paramString = ""
+            let range = stringURL!.rangeOfString("?")
+            if range?.endIndex > range?.startIndex {
+                paramString = String(format: "%@/alt=json", stringURL!)
+            } else {
+                paramString = String(format: "%@/alt&json", stringURL!)
+            }
+            paramString = paramString.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            let loadURL = NSURL(string: paramString)
+            let request = NSURLRequest(URL: loadURL!)
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config)
+            let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
                 if error != nil {
                     if self.youTubeDelegate != nil {
                         self.youTubeDelegate!.youTubeFeedFetchError!(error! as NSError?)
@@ -73,10 +77,10 @@ class YouTubePublicFeedsHandler: NSObject {
                 } else if data != nil {
                     let parserArray = NSMutableArray()
                     let parcer = YouTubeJSONParser()
-                    let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
-                    DispatchQueue.main.async {
+                    let parsedArray = parcer.parseYoutubeData(data! as NSData, parserArray: parserArray) as NSMutableArray
+                    dispatch_async(dispatch_get_main_queue()) {
                         if parsedArray.count > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
+                            SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(parsedArray)
                         }
                         if self.youTubeDelegate != nil {
                             self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
@@ -89,7 +93,7 @@ class YouTubePublicFeedsHandler: NSObject {
     }
 
     func getUsersSubscriptionsData() {
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) {
             self.getUploadsForEachSubscription()
         }
     }
@@ -105,11 +109,11 @@ class YouTubePublicFeedsHandler: NSObject {
             for i in 0 ..< subsciptionArray!.count {
                 let subsciptionChannelURL = String(format: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=%@&maxResults=%@&order=date&type=video&fields=items&key=%@", (subsciptionArray![i] as! String), numberOfVideos, SocialOperationHandler.sharedInstance.youTubeAPIKey)
                 let urlToLoad = NSURL(string: subsciptionChannelURL)
-                var response: URLResponse?
+                var response: NSURLResponse?
                 do {
-                    let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(url: urlToLoad! as URL) as URLRequest, returning: &response)
+                    let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(URL: urlToLoad!), returningResponse: &response)
                     let parcer = YouTubeJSONParser()
-                    let parsedArray = parcer.parseYoutubeData(feedsData: data as NSData, parserArray: parserArray)
+                    let parsedArray = parcer.parseYoutubeData(data as NSData, parserArray: parserArray)
                     parserArray = NSMutableArray(array: parsedArray)
                 } catch (let e) {
                     print(e)
@@ -119,9 +123,9 @@ class YouTubePublicFeedsHandler: NSObject {
                 }
             }
         }
-        DispatchQueue.main.async {
+        dispatch_async(dispatch_get_main_queue()) {
             if parserArray.count > 0 {
-                SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
+                SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(parserArray)
             }
             if self.youTubeDelegate != nil {
                 self.youTubeDelegate!.youTubeFeedFetchSuccess!(parserArray)
@@ -141,12 +145,12 @@ class YouTubePublicFeedsHandler: NSObject {
                     numberOfChannels = SocialOperationHandler.sharedInstance.countForSubscribedChannel
                 }
                 var urlString = String(format: "https://www.googleapis.com/youtube/v3/subscriptions?part=snippet&channelId=%@&maxResults=%@&order=relevance&fields=items/snippet&key=%@", channelID!, numberOfChannels, SocialOperationHandler.sharedInstance.youTubeAPIKey) as NSString
-                urlString = urlString.replacingOccurrences(of: " ", with: "%20") as NSString
+                urlString = urlString.stringByReplacingOccurrencesOfString(" ", withString: "%20")
                 let urlToLoad = NSURL(string: urlString as String)
-                var response: URLResponse?
+                var response: NSURLResponse?
                 do {
-                    let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(url: urlToLoad! as URL) as URLRequest, returning: &response)
-                    let subscriptionArray = self.arrayOfParsedSubscriptionsData(subscriptionsData: data as NSData)
+                    let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(URL: urlToLoad!), returningResponse: &response)
+                    let subscriptionArray = self.arrayOfParsedSubscriptionsData(data as NSData)
                     return subscriptionArray
                 }
                 catch (let e) {
@@ -162,15 +166,15 @@ class YouTubePublicFeedsHandler: NSObject {
 
     func arrayOfParsedSubscriptionsData(subscriptionsData: NSData) -> NSMutableArray {
         let subscriptionsArray = NSMutableArray()
-        let stringData = String(data: subscriptionsData as Data, encoding: String.Encoding.utf8)
-        let parseDict = self.readFileFromPathAndSerializeIt(stringData: stringData!, errorMessage: "arrayOfParsedSubscriptionsData")
+        let stringData = String(data: subscriptionsData, encoding: NSUTF8StringEncoding)
+        let parseDict = self.readFileFromPathAndSerializeIt(stringData!, errorMessage: "arrayOfParsedSubscriptionsData")
         if let myArray = parseDict!["items"] {
             let items: NSArray = (myArray as? NSArray)!
             for i in 0 ..< items.count {
                 if let dict = items[i] as? NSDictionary, let arrayFeed = dict["snippet"] as? NSDictionary, let tempDic = arrayFeed["resourceId"] as? NSDictionary {
                     if tempDic.count > 0 {
                         if let feedUrl = tempDic["channelId"] {
-                            subscriptionsArray.add(feedUrl)
+                            subscriptionsArray.addObject(feedUrl)
                         }
                     }
                 }
@@ -184,13 +188,13 @@ class YouTubePublicFeedsHandler: NSObject {
         print("Fetching Current Users Channel ID")
         let userName = SocialOperationHandler.sharedInstance.youTubeUser
         var urlString = String(format: "https://www.googleapis.com/youtube/v3/channels?part=id&forUsername=  %@&fields=items(id,statistics,status,topicDetails)&key=%@", userName, SocialOperationHandler.sharedInstance.youTubeAPIKey) as NSString
-        urlString = urlString.replacingOccurrences(of: " ", with: "%20") as NSString
+        urlString = urlString.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         let url = NSURL(string: urlString as String)
-        var response: URLResponse?
+        var response: NSURLResponse?
         do {
-            let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(url: url! as URL) as URLRequest, returning: &response)
-            let stringData = String(data: data, encoding: String.Encoding.utf8)
-            let parseDict = self.readFileFromPathAndSerializeIt(stringData: stringData!, errorMessage: "Fetching Current Users Channel ID")
+            let data = try NSURLConnection.sendSynchronousRequest(NSURLRequest(URL: url!), returningResponse: &response)
+            let stringData = String(data: data, encoding: NSUTF8StringEncoding)
+            let parseDict = self.readFileFromPathAndSerializeIt(stringData!, errorMessage: "Fetching Current Users Channel ID")
             if parseDict != nil {
                 if let myArray = parseDict!["items"] {
                     let items: NSArray = (myArray as? NSArray)!
@@ -213,10 +217,10 @@ class YouTubePublicFeedsHandler: NSObject {
 
     //MARK:- Read file from path and Serialize it
     func readFileFromPathAndSerializeIt(stringData: String, errorMessage: String) -> AnyObject? {
-        let data = stringData.data(using: String.Encoding.utf8)
+        let data = stringData.dataUsingEncoding(NSUTF8StringEncoding)
         do {
-            let jsonArray = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            return jsonArray as AnyObject?
+            let jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+            return jsonArray
         } catch let error as NSError {
             print("Error in \(errorMessage) fetch JSON File\(error.description)")
         }

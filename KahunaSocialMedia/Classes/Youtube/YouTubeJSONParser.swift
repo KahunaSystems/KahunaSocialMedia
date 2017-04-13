@@ -18,21 +18,21 @@ class YouTubeJSONParser: NSObject {
     }
 
     func parseYoutubeData(feedsData: NSData, parserArray: NSMutableArray) -> NSMutableArray {
-        let stringData = String(data: feedsData as Data, encoding: String.Encoding.utf8)
+        let stringData = String(data: feedsData, encoding: NSUTF8StringEncoding)
         var feedsArray = NSMutableArray()
         if parserArray.count > 0 {
             feedsArray = NSMutableArray(array: parserArray)
         }
         autoreleasepool() {
-            let feedsDict = readFileFromPathAndSerializeIt(stringData: stringData!)
-            if (feedsDict?.isKind(of: NSDictionary.self))! {
+            let feedsDict = readFileFromPathAndSerializeIt(stringData!)
+            if (feedsDict?.isKindOfClass(NSDictionary)) != nil {
                 if let entries = feedsDict!["items"] as? NSArray {
                     for dic in entries {
                         let dict = dic as! NSDictionary
                         let snippet = dict["snippet"] as! NSDictionary
                         let dataObj = YouTubeInterfaceDataInfo()
                         if let publishAt = snippet["publishedAt"] {
-                            dataObj.updatedDateTime = self.formatDateWithStringDate(stringDate: publishAt as! String)
+                            dataObj.updatedDateTime = self.formatDateWithStringDate(publishAt as! String)
                         }
                         if let title = snippet["title"] as? String {
                             dataObj.youtubeTitle = title
@@ -54,8 +54,8 @@ class YouTubeJSONParser: NSObject {
                             let urlString = String(format: "https://www.youtube.com/watch?v=%@", (videoID as! String))
                             dataObj.youtubeLink = urlString
                         }
-                        if dataObj.youtubeLink != nil && dataObj.youtubeLink.characters.count > 0 {
-                            feedsArray.add(dataObj)
+                        if dataObj.youtubeLink.characters.count > 0 {
+                            feedsArray.addObject(dataObj)
                         }
                     }
                 }
@@ -66,10 +66,10 @@ class YouTubeJSONParser: NSObject {
 
     //MARK:- Read file from path and Serialize it
     func readFileFromPathAndSerializeIt(stringData: String) -> AnyObject? {
-        let data = stringData.data(using: String.Encoding.utf8)
+        let data = stringData.dataUsingEncoding(NSUTF8StringEncoding)
         do {
-            let jsonArray = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-            return jsonArray as AnyObject?
+            let jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+            return jsonArray
         } catch let error as NSError {
             print("Error in reading YouTube fetch JSON File\(error.description)")
         }
@@ -78,11 +78,12 @@ class YouTubeJSONParser: NSObject {
 
     func formatDateWithStringDate(stringDate: String) -> NSDate? {
         var dateToReturn: NSDate? = nil
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeZone = NSTimeZone(name: "UTC")
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-        dateToReturn = dateFormatter.date(from: stringDate) as NSDate?
+        dateToReturn = dateFormatter.dateFromString(stringDate)
         return dateToReturn
     }
+
 
 }

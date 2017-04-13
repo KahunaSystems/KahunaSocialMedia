@@ -22,9 +22,6 @@
 // THE SOFTWARE.
 //
 
-import Foundation.NSData
-
-
 extension ExpressionType where UnderlyingType : Number {
 
     /// Builds a copy of the expression wrapped with the `abs` function.
@@ -66,7 +63,7 @@ extension ExpressionType where UnderlyingType == Double {
     ///     // round("salary", 2)
     ///
     /// - Returns: A copy of the expression wrapped with the `round` function.
-    public func round(_ precision: Int? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func round(precision: Int? = nil) -> Expression<UnderlyingType> {
         guard let precision = precision else {
             return wrap([self])
         }
@@ -86,7 +83,7 @@ extension ExpressionType where UnderlyingType == Double? {
     ///     // round("salary", 2)
     ///
     /// - Returns: A copy of the expression wrapped with the `round` function.
-    public func round(_ precision: Int? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func round(precision: Int? = nil) -> Expression<UnderlyingType> {
         guard let precision = precision else {
             return wrap(self)
         }
@@ -103,13 +100,13 @@ extension ExpressionType where UnderlyingType : Value, UnderlyingType.Datatype =
     ///     // random()
     ///
     /// - Returns: An expression calling the `random` function.
-    public static func random() -> Expression<UnderlyingType> {
+    @warn_unused_result public static func random() -> Expression<UnderlyingType> {
         return "random".wrap([])
     }
 
 }
 
-extension ExpressionType where UnderlyingType == Data {
+extension ExpressionType where UnderlyingType == NSData {
 
     /// Builds an expression representing the `randomblob` function.
     ///
@@ -119,7 +116,7 @@ extension ExpressionType where UnderlyingType == Data {
     /// - Parameter length: Length in bytes.
     ///
     /// - Returns: An expression calling the `randomblob` function.
-    public static func random(_ length: Int) -> Expression<UnderlyingType> {
+    @warn_unused_result public static func random(length: Int) -> Expression<UnderlyingType> {
         return "randomblob".wrap([])
     }
 
@@ -131,7 +128,7 @@ extension ExpressionType where UnderlyingType == Data {
     /// - Parameter length: Length in bytes.
     ///
     /// - Returns: An expression calling the `zeroblob` function.
-    public static func allZeros(_ length: Int) -> Expression<UnderlyingType> {
+    @warn_unused_result public static func allZeros(length: Int) -> Expression<UnderlyingType> {
         return "zeroblob".wrap([])
     }
 
@@ -148,7 +145,7 @@ extension ExpressionType where UnderlyingType == Data {
 
 }
 
-extension ExpressionType where UnderlyingType == Data? {
+extension ExpressionType where UnderlyingType == NSData? {
 
     /// Builds a copy of the expression wrapped with the `length` function.
     ///
@@ -216,7 +213,7 @@ extension ExpressionType where UnderlyingType == String {
     ///
     /// - Returns: A copy of the expression appended with a `LIKE` query against
     ///   the given pattern.
-    public func like(_ pattern: String, escape character: Character? = nil) -> Expression<Bool> {
+    @warn_unused_result public func like(pattern: String, escape character: Character? = nil) -> Expression<Bool> {
         guard let character = character else {
             return "LIKE".infix(self, pattern)
         }
@@ -234,7 +231,7 @@ extension ExpressionType where UnderlyingType == String {
     ///
     /// - Returns: A copy of the expression appended with a `GLOB` query against
     ///   the given pattern.
-    public func glob(_ pattern: String) -> Expression<Bool> {
+    @warn_unused_result public func glob(pattern: String) -> Expression<Bool> {
         return "GLOB".infix(self, pattern)
     }
 
@@ -249,7 +246,7 @@ extension ExpressionType where UnderlyingType == String {
     ///
     /// - Returns: A copy of the expression appended with a `MATCH` query
     ///   against the given pattern.
-    public func match(_ pattern: String) -> Expression<Bool> {
+    @warn_unused_result public func match(pattern: String) -> Expression<Bool> {
         return "MATCH".infix(self, pattern)
     }
 
@@ -260,7 +257,7 @@ extension ExpressionType where UnderlyingType == String {
     ///
     /// - Returns: A copy of the expression appended with a `REGEXP` query
     ///   against the given pattern.
-    public func regexp(_ pattern: String) -> Expression<Bool> {
+    @warn_unused_result public func regexp(pattern: String) -> Expression<Bool> {
         return "REGEXP".infix(self, pattern)
     }
 
@@ -275,7 +272,7 @@ extension ExpressionType where UnderlyingType == String {
     ///
     /// - Returns: A copy of the expression appended with a `COLLATE` clause
     ///   with the given sequence.
-    public func collate(_ collation: Collation) -> Expression<UnderlyingType> {
+    @warn_unused_result public func collate(collation: Collation) -> Expression<UnderlyingType> {
         return "COLLATE".infix(self, collation)
     }
 
@@ -290,7 +287,7 @@ extension ExpressionType where UnderlyingType == String {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `ltrim` function.
-    public func ltrim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func ltrim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap(self)
         }
@@ -308,7 +305,7 @@ extension ExpressionType where UnderlyingType == String {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `rtrim` function.
-    public func rtrim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func rtrim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap(self)
         }
@@ -326,7 +323,7 @@ extension ExpressionType where UnderlyingType == String {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `trim` function.
-    public func trim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func trim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap([self])
         }
@@ -346,11 +343,11 @@ extension ExpressionType where UnderlyingType == String {
     ///   - replacement: The replacement string.
     ///
     /// - Returns: A copy of the expression wrapped with the `replace` function.
-    public func replace(_ pattern: String, with replacement: String) -> Expression<UnderlyingType> {
+    @warn_unused_result public func replace(pattern: String, with replacement: String) -> Expression<UnderlyingType> {
         return "replace".wrap([self, pattern, replacement])
     }
 
-    public func substring(_ location: Int, length: Int? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func substring(location: Int, length: Int? = nil) -> Expression<UnderlyingType> {
         guard let length = length else {
             return "substr".wrap([self, location])
         }
@@ -358,7 +355,7 @@ extension ExpressionType where UnderlyingType == String {
     }
 
     public subscript(range: Range<Int>) -> Expression<UnderlyingType> {
-        return substring(range.lowerBound, length: range.upperBound - range.lowerBound)
+        return substring(range.startIndex, length: range.endIndex - range.startIndex)
     }
 
 }
@@ -416,7 +413,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression appended with a `LIKE` query against
     ///   the given pattern.
-    public func like(_ pattern: String, escape character: Character? = nil) -> Expression<Bool?> {
+    @warn_unused_result public func like(pattern: String, escape character: Character? = nil) -> Expression<Bool?> {
         guard let character = character else {
             return "LIKE".infix(self, pattern)
         }
@@ -434,7 +431,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression appended with a `GLOB` query against
     ///   the given pattern.
-    public func glob(_ pattern: String) -> Expression<Bool?> {
+    @warn_unused_result public func glob(pattern: String) -> Expression<Bool?> {
         return "GLOB".infix(self, pattern)
     }
 
@@ -449,7 +446,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression appended with a `MATCH` query
     ///   against the given pattern.
-    public func match(_ pattern: String) -> Expression<Bool> {
+    @warn_unused_result public func match(pattern: String) -> Expression<Bool> {
         return "MATCH".infix(self, pattern)
     }
 
@@ -460,7 +457,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression appended with a `REGEXP` query
     ///   against the given pattern.
-    public func regexp(_ pattern: String) -> Expression<Bool?> {
+    @warn_unused_result public func regexp(pattern: String) -> Expression<Bool?> {
         return "REGEXP".infix(self, pattern)
     }
 
@@ -475,7 +472,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression appended with a `COLLATE` clause
     ///   with the given sequence.
-    public func collate(_ collation: Collation) -> Expression<UnderlyingType> {
+    @warn_unused_result public func collate(collation: Collation) -> Expression<UnderlyingType> {
         return "COLLATE".infix(self, collation)
     }
 
@@ -490,7 +487,7 @@ extension ExpressionType where UnderlyingType == String? {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `ltrim` function.
-    public func ltrim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func ltrim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap(self)
         }
@@ -508,7 +505,7 @@ extension ExpressionType where UnderlyingType == String? {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `rtrim` function.
-    public func rtrim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func rtrim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap(self)
         }
@@ -526,7 +523,7 @@ extension ExpressionType where UnderlyingType == String? {
     /// - Parameter characters: A set of characters to trim.
     ///
     /// - Returns: A copy of the expression wrapped with the `trim` function.
-    public func trim(_ characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func trim(characters: Set<Character>? = nil) -> Expression<UnderlyingType> {
         guard let characters = characters else {
             return wrap(self)
         }
@@ -546,7 +543,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///   - replacement: The replacement string.
     ///
     /// - Returns: A copy of the expression wrapped with the `replace` function.
-    public func replace(_ pattern: String, with replacement: String) -> Expression<UnderlyingType> {
+    @warn_unused_result public func replace(pattern: String, with replacement: String) -> Expression<UnderlyingType> {
         return "replace".wrap([self, pattern, replacement])
     }
 
@@ -565,7 +562,7 @@ extension ExpressionType where UnderlyingType == String? {
     ///   - length: An optional substring length.
     ///
     /// - Returns: A copy of the expression wrapped with the `substr` function.
-    public func substring(_ location: Int, length: Int? = nil) -> Expression<UnderlyingType> {
+    @warn_unused_result public func substring(location: Int, length: Int? = nil) -> Expression<UnderlyingType> {
         guard let length = length else {
             return "substr".wrap([self, location])
         }
@@ -582,12 +579,12 @@ extension ExpressionType where UnderlyingType == String? {
     ///
     /// - Returns: A copy of the expression wrapped with the `substr` function.
     public subscript(range: Range<Int>) -> Expression<UnderlyingType> {
-        return substring(range.lowerBound, length: range.upperBound - range.lowerBound)
+        return substring(range.startIndex, length: range.endIndex - range.startIndex)
     }
 
 }
 
-extension Collection where Iterator.Element : Value, IndexDistance == Int {
+extension CollectionType where Generator.Element : Value, Index.Distance == Int {
 
     /// Builds a copy of the expression prepended with an `IN` check against the
     /// collection.
@@ -600,8 +597,8 @@ extension Collection where Iterator.Element : Value, IndexDistance == Int {
     ///
     /// - Returns: A copy of the expression prepended with an `IN` check against
     ///   the collection.
-    public func contains(_ expression: Expression<Iterator.Element>) -> Expression<Bool> {
-        let templates = [String](repeating: "?", count: count).joined(separator: ", ")
+    @warn_unused_result public func contains(expression: Expression<Generator.Element>) -> Expression<Bool> {
+        let templates = [String](count: count, repeatedValue: "?").joinWithSeparator(", ")
         return "IN".infix(expression, Expression<Void>("(\(templates))", map { $0.datatypeValue }))
     }
 
@@ -616,8 +613,8 @@ extension Collection where Iterator.Element : Value, IndexDistance == Int {
     ///
     /// - Returns: A copy of the expression prepended with an `IN` check against
     ///   the collection.
-    public func contains(_ expression: Expression<Iterator.Element?>) -> Expression<Bool?> {
-        let templates = [String](repeating: "?", count: count).joined(separator: ", ")
+    @warn_unused_result public func contains(expression: Expression<Generator.Element?>) -> Expression<Bool?> {
+        let templates = [String](count: count, repeatedValue: "?").joinWithSeparator(", ")
         return "IN".infix(expression, Expression<Void>("(\(templates))", map { $0.datatypeValue }))
     }
 

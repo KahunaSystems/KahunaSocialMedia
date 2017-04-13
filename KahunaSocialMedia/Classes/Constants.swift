@@ -105,7 +105,7 @@ struct Constants {
         static let queryPageSize = 10
     }
 
-    enum UnidentifiedError: Error {
+    enum UnidentifiedError: ErrorType {
         case emptyHTTPResponse
     }
 
