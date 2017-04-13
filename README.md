@@ -21,7 +21,7 @@ KahunaSocialMedia is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KahunaSocialMedia', '~> 0.1.3’
+pod 'KahunaSocialMedia', '~> 0.1.8’
 ```
 
 ## Set Server URL
@@ -76,13 +76,10 @@ socialHandler.getYouTubeFeeds()
 
 > _Note:_ KahunaSocialMedia requires Swift 3 (and Xcode 8) or greater. If you absolutely
 > need compatibility with Swift 2.3 you can use the swift2.3 branch
-``` swift
-pod 'KahunaSocialMedia', '~> 0.1.9'
+```ruby
+pod 'KahunaSocialMedia', '~> 0.1.9’
 ```
 > New development will happen exclusively on the master/Swift 3 branch.
-```swift
-pod 'KahunaSocialMedia', '~> 0.1.8'
-```
 
 ## Author
 
