@@ -21,7 +21,7 @@ KahunaSocialMedia is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KahunaSocialMedia', '~> 0.1.9’
+pod 'KahunaSocialMedia', '~> 0.1.11’
 ```
 
 ## Give a reference of sqlite db
