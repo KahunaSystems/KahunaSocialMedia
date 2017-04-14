@@ -83,7 +83,7 @@ socialHandler.getYouTubeFeeds()
 > _Note:_ KahunaSocialMedia requires Swift 3 (and Xcode 8) or greater. If you absolutely
 > need compatibility with Swift 2.3 you can use the swift2.3 branch by adding following line to your Podfile:
 ```ruby
-pod 'KahunaSocialMedia', '~> 0.1.9’
+pod 'KahunaSocialMedia', '~> 0.1.11’
 ```
 
 ## Author
