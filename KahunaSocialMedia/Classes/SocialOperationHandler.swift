@@ -24,10 +24,10 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
     var isYoutubeLoadIsInProcess = false
     var isInstagramLoadIsProcess = false
 
-    var isFacebookFirstTime = false
-    var isTwitterFirstTime = false
-    var isYouTubeFirstTime = false
-    var isInstagramFirstTime = false
+    public var isFacebookFirstTime = false
+    public var isTwitterFirstTime = false
+    public var isYouTubeFirstTime = false
+    public var isInstagramFirstTime = false
 
     public var isLoadFromServer = false
 

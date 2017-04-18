@@ -10,16 +10,16 @@ import UIKit
 
 public class InstagramFeedDataInfo: NSObject {
 
-    var createdDate: NSDate?
-    var webLink = String()
-    var userFullName = String()
-    var userName = String()
-    var userID = String()
-    var likeCount = String()
-    var commentCount = String()
-    var feedText = String()
-    var mediaID = String()
-    var thumbnailImg = String()
-    var standardImg = String()
+    public var createdDate: NSDate?
+    public var webLink = String()
+    public var userFullName = String()
+    public var userName = String()
+    public var userID = String()
+    public var likeCount = String()
+    public var commentCount = String()
+    public var feedText = String()
+    public var mediaID = String()
+    public var thumbnailImg = String()
+    public var standardImg = String()
 
 }

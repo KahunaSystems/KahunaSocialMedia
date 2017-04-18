@@ -10,13 +10,13 @@ import UIKit
 
 public class YouTubeInterfaceDataInfo: NSObject {
 
-    var updatedDateTime: NSDate?
-    var youtubeAuthor = String()
-    var youtubeDescription = String()
-    var youtubeImage = String()
-    var youtubeLink = String()
-    var youtubeTime = String()
-    var youtubeTitle = String()
-    var youtubeViews = String()
+    public var updatedDateTime: NSDate?
+    public var youtubeAuthor = String()
+    public var youtubeDescription = String()
+    public var youtubeImage = String()
+    public var youtubeLink = String()
+    public var youtubeTime = String()
+    public var youtubeTitle = String()
+    public var youtubeViews = String()
 
 }
