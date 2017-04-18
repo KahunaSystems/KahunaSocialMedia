@@ -23,6 +23,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'KahunaSocialMedia', '~> 0.1.12’
 ```
+> _Note:_ You need to update your latest xcode name by Xcode.app and it should by in your Application folder
 
 ## Give a reference of sqlite db
 ```swift
