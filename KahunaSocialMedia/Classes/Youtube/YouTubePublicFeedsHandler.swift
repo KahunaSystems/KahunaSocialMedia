@@ -132,8 +132,9 @@ class YouTubePublicFeedsHandler: NSObject {
     func getCurrentUsersSubscriptions() -> NSArray? {
         if SocialOperationHandler.sharedInstance.userChannelOnly {
             if SocialOperationHandler.sharedInstance.userChannelId.characters.count == 0 {
-                let channelID = self.getUserChannelID()
-                return [channelID]
+                if let channelID = self.getUserChannelID() {
+                    return [channelID]
+                }
             }
             return [SocialOperationHandler.sharedInstance.userChannelId]
         } else {
