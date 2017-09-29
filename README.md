@@ -87,6 +87,9 @@ socialHandler.getYouTubeFeeds()
 pod 'KahunaSocialMedia', '~> 0.1.15'
 ```
 
+## Document URL for detail information of library
+> _Note:_ https://docs.google.com/document/d/1khLshiLCzwNXeC8shuySuYqTyxZ1IOakWTRBcszacwA/edit?usp=sharing
+
 ## Author
 
 siddharthchopra, siddharth.chopra@kahunasystems.com
