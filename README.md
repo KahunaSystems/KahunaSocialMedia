@@ -16,7 +16,7 @@ KahunaSocialMedia is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KahunaSocialMedia', :git => 'http://192.168.0.137/KahunaLibraries/KahunaSocialMedia.git', :tag => '1.2.1'
+pod 'KahunaSocialMedia', :tag => '1.2.1'
 ```
 > New development will happen exclusively on the master/Swift 3 branch.
 > _Note:_ You need to update your latest xcode name by Xcode.app and it should by in your Application folder
