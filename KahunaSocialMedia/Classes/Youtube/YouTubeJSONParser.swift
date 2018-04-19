@@ -50,11 +50,11 @@ class YouTubeJSONParser: NSObject {
                         if let channelTitle = snippet["channelTitle"] as? String {
                             dataObj.youtubeAuthor = channelTitle
                         }
-                        if let idDict = dict["id"] as? NSDictionary, let videoID = idDict["videoId"] {
-                            let urlString = String(format: "https://www.youtube.com/watch?v=%@", (videoID as! String))
+                        if let idDict = dict["id"] as? NSDictionary, let videoID = idDict["videoId"] as? String {
+                            let urlString = String(format: "https://www.youtube.com/watch?v=%@", videoID)
                             dataObj.youtubeLink = urlString
                         }
-                        if dataObj.youtubeLink != nil && dataObj.youtubeLink.characters.count > 0 {
+                        if dataObj.youtubeLink.count > 0 {
                             feedsArray.add(dataObj)
                         }
                     }

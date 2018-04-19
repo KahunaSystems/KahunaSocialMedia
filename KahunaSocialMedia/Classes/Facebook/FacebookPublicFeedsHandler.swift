@@ -42,7 +42,7 @@ class FacebookPublicFeedsHandler: NSObject {
                         let parcer = FacebookFeedsJsonParser()
                         let parsedArray = parcer.parseData(feedsData: data! as NSData)
                         if parsedArray != nil && (parsedArray?.count)! > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                            SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
                         }
                         if self.fBFeedFetchDelegate != nil {
                             self.fBFeedFetchDelegate.facebookFeedFetchSuccess!(parsedArray)
@@ -54,13 +54,13 @@ class FacebookPublicFeedsHandler: NSObject {
         }
     }
 
-    func getPublicFeedsFromUserName(fbUrl: String) -> NSArray? {
+    func getPublicFeedsFromUserName(fbUrl: String) {
         autoreleasepool() {
             var paramFBUrl = fbUrl as NSString
             paramFBUrl = paramFBUrl.replacingOccurrences(of: " ", with: "+") as NSString
             paramFBUrl = paramFBUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)! as NSString
-            var appID = SocialOperationHandler.sharedInstance.fbAppID
-            var appSecret = SocialOperationHandler.sharedInstance.fbAppSecret
+            let appID = SocialOperationHandler.sharedInstance.fbAppID
+            let appSecret = SocialOperationHandler.sharedInstance.fbAppSecret
             var accessToken = ""
             let accessDataURLString = String(format: Constants.kFacebookURL, appID, appSecret)
             let loadURL = NSURL(string: accessDataURLString)
@@ -91,7 +91,6 @@ class FacebookPublicFeedsHandler: NSObject {
             })
             task.resume()
         }
-        return nil
     }
 
     func loadFacebookFeedsWithAccessToken(accessToken: String, facebookURL: String) {
@@ -110,7 +109,7 @@ class FacebookPublicFeedsHandler: NSObject {
                     let parcer = FacebookFeedsJsonParser()
                     let parsedArray = parcer.parseData(feedsData: data! as NSData)
                     if parsedArray != nil && (parsedArray?.count)! > 0 {
-                        SocialDataHandler.sharedInstance.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
+                        SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedFacebookFeedsToDB(fbFeedArray: parsedArray as! NSMutableArray)
                     }
                     if self.fBFeedFetchDelegate != nil {
                         self.fBFeedFetchDelegate?.facebookFeedFetchSuccess!(parsedArray)

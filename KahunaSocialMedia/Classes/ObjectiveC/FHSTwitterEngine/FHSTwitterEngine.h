@@ -577,7 +577,6 @@ extern NSString * const FHSErrorDomain;
 
 /**
  Get list timeline.
- @param listID List id.
  @param count Number of tweets.
  @return Tweets.
  */

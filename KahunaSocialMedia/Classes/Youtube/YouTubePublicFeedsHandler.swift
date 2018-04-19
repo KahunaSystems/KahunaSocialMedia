@@ -44,7 +44,7 @@ class YouTubePublicFeedsHandler: NSObject {
                 let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                 DispatchQueue.main.async {
                     if parsedArray.count > 0 {
-                        SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
+                        SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
                     }
                     if self.youTubeDelegate != nil {
                         self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
@@ -58,7 +58,7 @@ class YouTubePublicFeedsHandler: NSObject {
     func getYouTubeFeedsFromURL(stringURL: String?) {
         if stringURL != nil {
             var paramString = "" as NSString
-            let range = stringURL?.range(of: "?")
+            _ = stringURL?.range(of: "?")
             paramString = String(format: "%@/alt=json", stringURL!) as NSString
             paramString = paramString.replacingOccurrences(of: " ", with: "%20") as NSString
             let loadURL = NSURL(string: paramString as String)
@@ -76,7 +76,7 @@ class YouTubePublicFeedsHandler: NSObject {
                     let parsedArray = parcer.parseYoutubeData(feedsData: data! as NSData, parserArray: parserArray) as NSMutableArray
                     DispatchQueue.main.async {
                         if parsedArray.count > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
+                            SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parsedArray)
                         }
                         if self.youTubeDelegate != nil {
                             self.youTubeDelegate!.youTubeFeedFetchSuccess!(parsedArray)
@@ -97,7 +97,7 @@ class YouTubePublicFeedsHandler: NSObject {
     func getUploadsForEachSubscription() {
         let subsciptionArray = self.getCurrentUsersSubscriptions()
         var numberOfVideos = "5"
-        if SocialOperationHandler.sharedInstance.videosCountForSubscriptionChannel.characters.count > 0 {
+        if SocialOperationHandler.sharedInstance.videosCountForSubscriptionChannel.count > 0 {
             numberOfVideos = SocialOperationHandler.sharedInstance.videosCountForSubscriptionChannel
         }
         var parserArray = NSMutableArray()
@@ -121,7 +121,7 @@ class YouTubePublicFeedsHandler: NSObject {
         }
         DispatchQueue.main.async {
             if parserArray.count > 0 {
-                SocialDataHandler.sharedInstance.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
+                SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedYoutubeFeedsToDB(youtubeFeedArray: parserArray)
             }
             if self.youTubeDelegate != nil {
                 self.youTubeDelegate!.youTubeFeedFetchSuccess!(parserArray)
@@ -131,7 +131,7 @@ class YouTubePublicFeedsHandler: NSObject {
 
     func getCurrentUsersSubscriptions() -> NSArray? {
         if SocialOperationHandler.sharedInstance.userChannelOnly {
-            if SocialOperationHandler.sharedInstance.userChannelId.characters.count == 0 {
+            if SocialOperationHandler.sharedInstance.userChannelId.count == 0 {
                 if let channelID = self.getUserChannelID() {
                     return [channelID]
                 }
@@ -142,7 +142,7 @@ class YouTubePublicFeedsHandler: NSObject {
             let channelID = self.getUserChannelID()
             if channelID != nil {
                 var numberOfChannels = "50"
-                if SocialOperationHandler.sharedInstance.countForSubscribedChannel.characters.count > 0 {
+                if SocialOperationHandler.sharedInstance.countForSubscribedChannel.count > 0 {
                     numberOfChannels = SocialOperationHandler.sharedInstance.countForSubscribedChannel
                 }
                 var urlString = String(format: "https://www.googleapis.com/youtube/v3/subscriptions?part=snippet&channelId=%@&maxResults=%@&order=relevance&fields=items/snippet&key=%@", channelID!, numberOfChannels, SocialOperationHandler.sharedInstance.youTubeAPIKey) as NSString

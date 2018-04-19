@@ -1,6 +1,6 @@
 use_frameworks!
 target 'KahunaSocialMedia_Tests' do
   pod 'KahunaSocialMedia', :path => '../'
-  pod 'SQLite.swift', '~> 0.11.2'
-  
+  pod 'FMDB/FTS'
+
 end
