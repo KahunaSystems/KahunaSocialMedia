@@ -7,285 +7,272 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007FBDC24040BA725E3060CFB89E6667 /* IGMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */; };
-		03558CEA3DFFF9522C5D0A460835DDFB /* IGFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */; };
-		062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */; };
-		0C65A1C06DF16E6566F8A780A2D1C22C /* IGUsersInPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */; };
-		1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */; };
-		21F924B76C76AE1EC840BB67E0EE5E8B /* FacebookFeedsJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */; };
-		230C68D05CB7A5EA285FA25B33A2C792 /* SocialDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */; };
-		2A24E6F99C107170CD30CCB1316B5895 /* IGLowResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */; };
-		313A591CE709C33191F06085E82924B5 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */; };
-		37712E190008D63E07846F7D3C4969A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */; };
-		3C9D1BBBC6E021270E33631193BDAA61 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */; };
-		3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680617B7B3999D016982CD479DADCCB0 /* Blob.swift */; };
-		3F1455938F6DA586551E05CBAF4055D0 /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4246330FC78670B8AA91EAE293F2D8E4 /* IGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */; };
-		42B6B8BFAB7C9D67BA841BD9FC8C268A /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42D4CFDF76875B3979DBAC3BB140968C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44F0C85553660857F351B59660E399 /* SQLite.framework */; };
-		42FCA5C50805248D4C10FB75535C5A08 /* TwitterPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */; };
-		4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */; };
-		490A3A4672084C4000CE12FB330DD47C /* KahunaSocialMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */; };
-		4AC1C27F5A4408C081998EC190B12581 /* InstagramFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */; };
-		506C541B1D9E1F915595E72F6615890C /* IGPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */; };
-		52BBD39BE53C2D8815AA0D02BA9FE4BF /* IGPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */; };
-		5436213BB3E5D11534572D6982FBAF63 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7855DE178D22988512E88C68325BE /* Collation.swift */; };
-		5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */; };
-		5E4F90AF9C58EDED680F96EB1E1DF948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA86AD441076D928D0621530CD5E745 /* Operators.swift */; };
-		6954B5A75AFACF701E269CF17B3F45D4 /* IGCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */; };
-		6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */; };
-		7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */; };
-		70C46C838C6519E3516EFD6BD613F898 /* KahunaSocialMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */; };
-		76F31231A4FB158F9E157D43B65A24DF /* YouTubeInterfaceDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */; };
-		788A5D9F53BD1FCEAAA65ED22743CF42 /* SocialOperationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */; };
-		78944736179EEC2BAC0480CF79781FAF /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */; };
-		7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8E299E674DE6451FD8197305D109B386 /* IGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */; };
-		8EE29B3D5EB556A0DE3010CC0D5AF77A /* SocialCheckConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */; };
-		8F94E072C335CB29F87847E29347DB7C /* YouTubePublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */; };
-		9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */; };
-		93F2B5A64CC9E4111F6AC1A76DDBD980 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386864375E51EDE77AE0390F52808C48 /* Constants.swift */; };
-		9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */; };
-		9DC28EBCD74D55FBE69B10B7DEDE0A09 /* FacebookPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */; };
-		A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */; };
-		A8EC7212197FB653AE243C4D99B7A708 /* IGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */; };
-		B1814CE7CDC29C67558098B85DE2161A /* TwitterJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */; };
-		B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */; };
-		B99509E059B0DF8ECCDF4EB0D11A508E /* YouTubeJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */; };
-		BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */; };
-		BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD31C862EAF81720462D1DE7D2BB58D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */; };
-		C1E49CF23D423C6C5E02FDA15B10CC84 /* IGComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */; };
-		C2CBB5BFD4900AB3D1780AD3E61DB4E2 /* IGMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */; };
-		C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */; };
-		CAF7A15F9982D489A2A8F39112CF062C /* InstagramFeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */; };
-		DC9758AEFAF72E0F5EA753F7C4F3E3AF /* FacebookFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */; };
-		DE05705E6B01D7413291B08C6642F6E5 /* TwitterDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */; };
-		E4F26E64D16700CF453FA10DC6CE7A68 /* SocialCheckConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */; };
-		EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */; };
-		FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */; };
+		0100DD89EF09412A3077E4044464106C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA76376561CD6A41B8C8B002F11FE777 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0BD7C59B02B57EDB0DE2EF777A7E0240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B339C607FE63DDDF6BCBABD479561B /* Foundation.framework */; };
+		0EB7B7A7383A5D2870D74CD24BD34F27 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 090F104BFF6B137AF2B424CD1C837269 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F7E840483BFB6D57F99A6A3ACDEC066 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27466291AAECC3C144E59F4B07AD6CE4 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		128336258317005FF4796DE1927ECFEC /* FHSStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 142D57991D8C85AAFF8EDD766017D9D8 /* FHSStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15634EC6FD3C2B7A04D7135CFAE44F00 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C83D7D690B66199168576E706891EE62 /* FHSTwitterEngine.m */; };
+		181A170837EFDA13B63336D744BA6BFD /* IGThumbnailResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB649F24759B8BE2BF0298E3CA8C4B /* IGThumbnailResource.swift */; };
+		1F830481A25041C4E2ECEF1F18EB9D84 /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F964C1B648CEE5F3F0F51ED62973864 /* FMTokenizers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		260C58F2693F7E377466306B6859C721 /* IGOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55D1C1F4DA77C7118B5F31F6B4B751 /* IGOwner.swift */; };
+		2905309EB79E35D53D779F5492E851E9 /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E48465B6B9AEEA297A4E3F889890E /* FHSStream.m */; };
+		29218078487823A433565202C9FC9D11 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 557A37A96A0F901AFCED498AA6089C97 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0F0834CB3BC793F5C7FA13D4A91D19 /* YouTubeInterfaceDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036EBD9702DD8C99DBF781DEF8F7E52 /* YouTubeInterfaceDataInfo.swift */; };
+		37D447B440A7694FA599DCDDE5C1624A /* IGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D974E431092E079C00246041C4C21 /* IGUser.swift */; };
+		3D3BFB9697856093D8968C1EB418A133 /* SocialOperationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FAB3B82113B853D5984F6244A9A2 /* SocialOperationHandler.swift */; };
+		41C5ECCCC7E99060B308D5851D751AC3 /* TwitterJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C7739798B033DA88ABEA8B4053E30F /* TwitterJSONParser.swift */; };
+		4CB75096E91CA89392F542BDD59BA7C0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F0FBCF9E800E5A9373FEBA22FB261 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E2E67F308C57405F84916FB340BB2D5 /* SocialCheckConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAE70703F1A90FF504BE0F1291E6690 /* SocialCheckConnectivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5529C7271C49EFD1016D4A15B85DE5B6 /* KahunaSocialMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 193A8CC59CADD2BAE7FA2062AF0F1914 /* KahunaSocialMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5573D72445C24D7588329AE4ABE835D4 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5915A2C56D1334D40FE8933777478C25 /* YouTubePublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F3062422696752C66C5296BE538E5 /* YouTubePublicFeedsHandler.swift */; };
+		5FD8022244979546743A28FA2F7D7A51 /* IGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F4D2C8D29ADE7D52BD08E3277CFA4 /* IGMedia.swift */; };
+		619F0F58E1C47836DEBCDC510477650E /* IGFollowedBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3856A859B5009F37044F3473A5707283 /* IGFollowedBy.swift */; };
+		65A9E222A06167C1A9EB12FADF849C76 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD4545BFE37C2702D7C3CDB30A7C27F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67BE201A814CD1EEAEDEFC865D4BF9CD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D524C16A745A30E04E6A70ABE6532D /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		685EB7C0961939D9ED1B21559CF92B6C /* SocialDBFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A02D6F7938C2F1948097D11D6F58D3 /* SocialDBFactory.swift */; };
+		70F657127550B65A74CDAA6A53BE2D8A /* FacebookFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CC8CC647D69988F3DFC07AF1875E6 /* FacebookFeedDataInfo.swift */; };
+		712340770FB4287FF1FD9FF81455C61B /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */; };
+		75B96537EE85803F93905E3C4A9F85F1 /* SocialDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AAA08E2197000471D5336579DFC8B /* SocialDBStore.swift */; };
+		787E67CF30B0A0D0BB0354C9F89EDBFF /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3765B21253845CBB1A5C03CBAD0D6032 /* FMDatabase+FTS3.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8049817B805D55BCDF70710048ECBE65 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */; };
+		83D213DBE77456E685CEECDBC84D4AC0 /* TwitterPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59F93F19A22E0AE637C1BD4933F7C6 /* TwitterPublicFeedsHandler.swift */; };
+		8AB8B691B7743FA2B20F8BA91137C974 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7895A810478DF308315DCD764C7FEB0D /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D0C0AE58177457ECCEFBA019B49442A /* TwitterDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E9EBC0B4BE7105B94BB6D4BD47E36 /* TwitterDataInfo.swift */; };
+		906293FEDADDAB8F22C4C8DB26AD1E7A /* SocialDBOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1DAE543B490237AD6D725834764890 /* SocialDBOperation.swift */; };
+		9ACFAB62DBFE1CE40CDF7205D96FA79D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CBAAEF9A1A755688CBB44339BCFBD0 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F4C7011C6E7DEA5A17B00DD4E1DDA4 /* FacebookFeedsJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E7463CA3AB9B2F58A6208652BA59E /* FacebookFeedsJsonParser.swift */; };
+		AEC0F17A4BF23F4A247DDB0A1CCDF6C6 /* InstagramFeedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEAEF40F0E18A76BA80702F73EABA0 /* InstagramFeedHandler.swift */; };
+		B52028F661E9E8AC6293E242FA32D632 /* YouTubeJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C968F3025AD4154BA703F493D497C /* YouTubeJSONParser.swift */; };
+		BC2495A6AF18C6E646B6EB781E2176EB /* IGDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF14FDE7E09EC0724FD6BC6B4E393B /* IGDimension.swift */; };
+		BC8FE2EA811E36466BD41551777AB91F /* KahunaSocialMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F198A90EA0B56B17B5F7DEBE7470B92 /* KahunaSocialMedia-dummy.m */; };
+		C1FABF23EA771D1C4643660FC068EFD7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9818D5466397DE975FA3BECB4A2A1B1 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C317C23C44E56C914B1A323EBC33A583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B339C607FE63DDDF6BCBABD479561B /* Foundation.framework */; };
+		C7ED133BE617D1765D2D5270B5385DDC /* FacebookPublicFeedsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A32556D42780A01E16D5EE20C2C0F6A /* FacebookPublicFeedsHandler.swift */; };
+		CC1FDEA9091000CFCDF4EFF5AC715F2B /* SocialCheckConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 026E978EB64FF0F195096C39E047108B /* SocialCheckConnectivity.m */; };
+		CDF6DE84BE1A94AE89F177F228ABCA6B /* IGNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90127A3A1684F03422D36166F291D44 /* IGNode.swift */; };
+		CFD331B576C6148DCA3DC05B03B62712 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D62E01C94C21F9F89C95F547A4B079DC /* FMDB-dummy.m */; };
+		CFE37C29262E96F6DF31083B426D8A57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAD372FFB90B27B5EA82941C56BB54 /* Constants.swift */; };
+		D22470129BEA9DAC474EB493673E28D9 /* IGMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5C7E917D91F255BC4EA90D6369EE2 /* IGMain.swift */; };
+		D302ECF3991FDAE877480C42A5C642B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B339C607FE63DDDF6BCBABD479561B /* Foundation.framework */; };
+		D33DCA7181B8E903DD7FDF78D22E2035 /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0CA27A980F093E67D66F61334CF853 /* FMTokenizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41582755B6F9508D1AB00391B2E63F2 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE1400D1B21D8509B0CA4B97526E533 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E102C08451C5BCA17ED0CD5D29B79FC3 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = DF77FA34702C4357C44E0B9CB7FEE211 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E231B95559BBC1C52A0A475C65B8542C /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B0B3FA398EB769C5E0AF129A5C1AB0 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F37B68F77954582BAD5543C1B49200 /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9F1B653D00AEF709EC8B3696260481 /* FMDatabase+FTS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9A01669B4E37578C137FBACD59C703E /* FHSTwitterEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC6C04F828B6DA301433F277334D6B2 /* FHSTwitterEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE2125D3E402F3918F50F442B647BD24 /* InstagramFeedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C7B4448989DFA54CF71805967EA43 /* InstagramFeedDataInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		275E3BF6612BFA22D5D887678969E81A /* PBXContainerItemProxy */ = {
+		299D0FC02271C9813F02D2FEF691F3B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F57D0D6628E5E89F38BF6889BD7B623;
-			remoteInfo = SQLite.swift;
+			remoteGlobalIDString = D0F188405F0B3B57D728C5EC34267E4F;
+			remoteInfo = FMDB;
 		};
-		7043A03F2181C60524B56FE2150AEF46 /* PBXContainerItemProxy */ = {
+		60CF5955029C6814A4928D75011EC9DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F57D0D6628E5E89F38BF6889BD7B623;
-			remoteInfo = SQLite.swift;
+			remoteGlobalIDString = D0F188405F0B3B57D728C5EC34267E4F;
+			remoteInfo = FMDB;
 		};
-		B7FA8427E305156F7023D55F207FE34A /* PBXContainerItemProxy */ = {
+		A6C783CA6576632F8B392CD70C62FF30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12CB57BDC6833D72E34C4448C6D9A2AF;
+			remoteGlobalIDString = 2347A785F318A2EB31F3A7064FD2A64C;
 			remoteInfo = KahunaSocialMedia;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KahunaSocialMedia-dummy.m"; sourceTree = "<group>"; };
-		06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KahunaSocialMedia.xcconfig; sourceTree = "<group>"; };
-		0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterPublicFeedsHandler.swift; sourceTree = "<group>"; };
-		0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SocialCheckConnectivity.m; sourceTree = "<group>"; };
-		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
-		1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialOperationHandler.swift; sourceTree = "<group>"; };
-		27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubePublicFeedsHandler.swift; sourceTree = "<group>"; };
-		348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		386864375E51EDE77AE0390F52808C48 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeInterfaceDataInfo.swift; sourceTree = "<group>"; };
+		0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		026E978EB64FF0F195096C39E047108B /* SocialCheckConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SocialCheckConnectivity.m; sourceTree = "<group>"; };
+		04C492339E4D632AFCD49E6B494ABB96 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		090F104BFF6B137AF2B424CD1C837269 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		0E0F0FBCF9E800E5A9373FEBA22FB261 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		142D57991D8C85AAFF8EDD766017D9D8 /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
+		1503B3C6B9EDBBC5728B777A169240AB /* KahunaSocialMedia.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KahunaSocialMedia.xcconfig; sourceTree = "<group>"; };
+		193A8CC59CADD2BAE7FA2062AF0F1914 /* KahunaSocialMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-umbrella.h"; sourceTree = "<group>"; };
+		19857B1A6D1416ED6B1C8E48C003D690 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
+		1A32556D42780A01E16D5EE20C2C0F6A /* FacebookPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookPublicFeedsHandler.swift; sourceTree = "<group>"; };
+		1A53FAB3B82113B853D5984F6244A9A2 /* SocialOperationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialOperationHandler.swift; path = KahunaSocialMedia/Classes/SocialOperationHandler.swift; sourceTree = "<group>"; };
+		1D5D737AD7FCC986C83767D7AFF27794 /* Pods-KahunaSocialMedia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KahunaSocialMedia_Tests.modulemap"; sourceTree = "<group>"; };
+		2036EBD9702DD8C99DBF781DEF8F7E52 /* YouTubeInterfaceDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeInterfaceDataInfo.swift; sourceTree = "<group>"; };
+		27466291AAECC3C144E59F4B07AD6CE4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		2A0CA27A980F093E67D66F61334CF853 /* FMTokenizers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMTokenizers.h; path = src/extra/fts3/FMTokenizers.h; sourceTree = "<group>"; };
+		35A02D6F7938C2F1948097D11D6F58D3 /* SocialDBFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialDBFactory.swift; path = KahunaSocialMedia/Classes/SocialDBFactory.swift; sourceTree = "<group>"; };
+		3765B21253845CBB1A5C03CBAD0D6032 /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FMDatabase+FTS3.m"; path = "src/extra/fts3/FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		3856A859B5009F37044F3473A5707283 /* IGFollowedBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGFollowedBy.swift; sourceTree = "<group>"; };
 		3BC1655EDD9CFA6D921E19350386812F /* Pods-KahunaSocialMedia_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterDataInfo.swift; sourceTree = "<group>"; };
-		4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGFrom.swift; sourceTree = "<group>"; };
-		52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
-		55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedsJsonParser.swift; sourceTree = "<group>"; };
-		5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
-		60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		3CE5C7E917D91F255BC4EA90D6369EE2 /* IGMain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMain.swift; sourceTree = "<group>"; };
+		4AE1400D1B21D8509B0CA4B97526E533 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		4B5CC8CC647D69988F3DFC07AF1875E6 /* FacebookFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedDataInfo.swift; sourceTree = "<group>"; };
+		4C0C7B4448989DFA54CF71805967EA43 /* InstagramFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedDataInfo.swift; sourceTree = "<group>"; };
+		4C55D1C1F4DA77C7118B5F31F6B4B751 /* IGOwner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGOwner.swift; sourceTree = "<group>"; };
+		523F4D2C8D29ADE7D52BD08E3277CFA4 /* IGMedia.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMedia.swift; sourceTree = "<group>"; };
+		54EEAEF40F0E18A76BA80702F73EABA0 /* InstagramFeedHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedHandler.swift; sourceTree = "<group>"; };
+		557A37A96A0F901AFCED498AA6089C97 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		57B339C607FE63DDDF6BCBABD479561B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C8D974E431092E079C00246041C4C21 /* IGUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGUser.swift; sourceTree = "<group>"; };
+		5FAE70703F1A90FF504BE0F1291E6690 /* SocialCheckConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SocialCheckConnectivity.h; sourceTree = "<group>"; };
+		5FDB649F24759B8BE2BF0298E3CA8C4B /* IGThumbnailResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGThumbnailResource.swift; sourceTree = "<group>"; };
+		632DDBF7DD83D9AF94BCCBAF2CFA73F6 /* KahunaSocialMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-prefix.pch"; sourceTree = "<group>"; };
 		6731F2DF4DF29B845540478A6E3E7C37 /* Pods-KahunaSocialMedia_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		680617B7B3999D016982CD479DADCCB0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMain.swift; sourceTree = "<group>"; };
-		69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8AAA08E2197000471D5336579DFC8B /* SocialDBStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialDBStore.swift; path = KahunaSocialMedia/Classes/SocialDBStore.swift; sourceTree = "<group>"; };
+		6D0E48465B6B9AEEA297A4E3F889890E /* FHSStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
 		6D9ADB2B7B94D965897303FEDF4A83BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD4545BFE37C2702D7C3CDB30A7C27F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = src/extra/fts3/fts3_tokenizer.h; sourceTree = "<group>"; };
 		6E2BE7949AC5DF5A76E8D801BBDC678A /* Pods-KahunaSocialMedia_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KahunaSocialMedia_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLocation.swift; sourceTree = "<group>"; };
-		8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterJSONParser.swift; sourceTree = "<group>"; };
-		88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-umbrella.h"; sourceTree = "<group>"; };
-		8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocialDataHandler.swift; sourceTree = "<group>"; };
-		8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KahunaSocialMedia.framework; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookPublicFeedsHandler.swift; sourceTree = "<group>"; };
-		92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPosition.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KahunaSocialMedia.modulemap; sourceTree = "<group>"; };
-		9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		7895A810478DF308315DCD764C7FEB0D /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		78C7739798B033DA88ABEA8B4053E30F /* TwitterJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterJSONParser.swift; sourceTree = "<group>"; };
+		7F964C1B648CEE5F3F0F51ED62973864 /* FMTokenizers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMTokenizers.m; path = src/extra/fts3/FMTokenizers.m; sourceTree = "<group>"; };
+		816E7463CA3AB9B2F58A6208652BA59E /* FacebookFeedsJsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedsJsonParser.swift; sourceTree = "<group>"; };
+		82CBAAEF9A1A755688CBB44339BCFBD0 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		86B0B3FA398EB769C5E0AF129A5C1AB0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8D3E9EBC0B4BE7105B94BB6D4BD47E36 /* TwitterDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterDataInfo.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAF14FDE7E09EC0724FD6BC6B4E393B /* IGDimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGDimension.swift; sourceTree = "<group>"; };
+		9F198A90EA0B56B17B5F7DEBE7470B92 /* KahunaSocialMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KahunaSocialMedia-dummy.m"; sourceTree = "<group>"; };
+		9F3F3062422696752C66C5296BE538E5 /* YouTubePublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubePublicFeedsHandler.swift; sourceTree = "<group>"; };
 		A1D3CC57F9F84E681A90D334884EF607 /* Pods-KahunaSocialMedia_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KahunaSocialMedia_Tests-dummy.m"; sourceTree = "<group>"; };
-		A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KahunaSocialMedia_Tests.framework; path = "Pods-KahunaSocialMedia_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		BDA86AD441076D928D0621530CD5E745 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGMeta.swift; sourceTree = "<group>"; };
-		C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGComment.swift; sourceTree = "<group>"; };
-		CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGUsersInPhoto.swift; sourceTree = "<group>"; };
-		CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGData.swift; sourceTree = "<group>"; };
+		A62C968F3025AD4154BA703F493D497C /* YouTubeJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeJSONParser.swift; sourceTree = "<group>"; };
+		A8D524C16A745A30E04E6A70ABE6532D /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		AD68D8ADDCC768EC84717CA6CA38A588 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		B0729D53A9479B2F03904D4C9CDEF6FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9F1B653D00AEF709EC8B3696260481 /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FMDatabase+FTS3.h"; path = "src/extra/fts3/FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		BDCC4EC71498ACC71DB79DEF366E1A26 /* Pods_KahunaSocialMedia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KahunaSocialMedia_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83D7D690B66199168576E706891EE62 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		C90127A3A1684F03422D36166F291D44 /* IGNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGNode.swift; sourceTree = "<group>"; };
+		C9818D5466397DE975FA3BECB4A2A1B1 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		CB1DAE543B490237AD6D725834764890 /* SocialDBOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialDBOperation.swift; path = KahunaSocialMedia/Classes/SocialDBOperation.swift; sourceTree = "<group>"; };
+		CEF516D36CAA650E6E0A0042A6072F52 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3248DC3C434A9CC395CC8FDCF4C6C3 /* Pods-KahunaSocialMedia_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaSocialMedia_Tests-resources.sh"; sourceTree = "<group>"; };
-		D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGImage.swift; sourceTree = "<group>"; };
+		CF74480DCCBA8208AABEB26F8C091E3D /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FMDB.modulemap; sourceTree = "<group>"; };
 		D2AEDC14326EC0A1E16AF87496E8C90D /* Pods-KahunaSocialMedia_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedDataInfo.swift; sourceTree = "<group>"; };
-		D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
-		D7B7855DE178D22988512E88C68325BE /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		DA1983F1AEDBA6625473EEEBD9E27F56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		DB44F0C85553660857F351B59660E399 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YouTubeJSONParser.swift; sourceTree = "<group>"; };
+		D62E01C94C21F9F89C95F547A4B079DC /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		DAC6C04F828B6DA301433F277334D6B2 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		DCDF89B0ED8038774DED0FC5964473E7 /* KahunaSocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KahunaSocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF63FAE3919C04FC12B055EC04B73ACD /* Pods-KahunaSocialMedia_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KahunaSocialMedia_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FacebookFeedDataInfo.swift; sourceTree = "<group>"; };
-		E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGPagination.swift; sourceTree = "<group>"; };
-		E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		DF77FA34702C4357C44E0B9CB7FEE211 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		E8AA707B5F85EC75E74ECA75C56EC6F0 /* Pods-KahunaSocialMedia_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaSocialMedia_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB479920F3DB923629E92C6775ACE253 /* KahunaSocialMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaSocialMedia-prefix.pch"; sourceTree = "<group>"; };
-		FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SocialCheckConnectivity.h; sourceTree = "<group>"; };
-		FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGLowResolution.swift; sourceTree = "<group>"; };
-		FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstagramFeedHandler.swift; sourceTree = "<group>"; };
-		FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGCaption.swift; sourceTree = "<group>"; };
-		FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		EE59F93F19A22E0AE637C1BD4933F7C6 /* TwitterPublicFeedsHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TwitterPublicFeedsHandler.swift; sourceTree = "<group>"; };
+		F2C3586C776D5EF55DED0226B58E571A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CAD372FFB90B27B5EA82941C56BB54 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = KahunaSocialMedia/Classes/Constants.swift; sourceTree = "<group>"; };
+		FA76376561CD6A41B8C8B002F11FE777 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04422F16EC0E39289D9E633B4DD8DA10 /* Frameworks */ = {
+		150D12D16B1DF4A48988BED90DDE4AA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD31C862EAF81720462D1DE7D2BB58D1 /* Foundation.framework in Frameworks */,
-				42D4CFDF76875B3979DBAC3BB140968C /* SQLite.framework in Frameworks */,
+				712340770FB4287FF1FD9FF81455C61B /* FMDB.framework in Frameworks */,
+				D302ECF3991FDAE877480C42A5C642B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0B4C3287C608F8D107C4CF2A0DC4F16C /* Frameworks */ = {
+		98EF1FC5CA94047146074A3C393BCEB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37712E190008D63E07846F7D3C4969A1 /* Foundation.framework in Frameworks */,
+				C317C23C44E56C914B1A323EBC33A583 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0F39C986DAC8EF6037B765A022574F5 /* Frameworks */ = {
+		B41C82125FB6B8D1D2510420D73FB5E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4F90AF9C58EDED680F96EB1E1DF948 /* Foundation.framework in Frameworks */,
+				0BD7C59B02B57EDB0DE2EF777A7E0240 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01F35DFAD90DFE9B929C4899252AEC7D /* Products */ = {
+		0AEACCCC8754B34F7917D121EC8FFFFF /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */,
-				AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */,
-				69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */,
+				82CBAAEF9A1A755688CBB44339BCFBD0 /* FMDatabase.h */,
+				C9818D5466397DE975FA3BECB4A2A1B1 /* FMDatabase.m */,
+				557A37A96A0F901AFCED498AA6089C97 /* FMDatabaseAdditions.h */,
+				27466291AAECC3C144E59F4B07AD6CE4 /* FMDatabaseAdditions.m */,
+				DF77FA34702C4357C44E0B9CB7FEE211 /* FMDatabasePool.h */,
+				A8D524C16A745A30E04E6A70ABE6532D /* FMDatabasePool.m */,
+				86B0B3FA398EB769C5E0AF129A5C1AB0 /* FMDatabaseQueue.h */,
+				FA76376561CD6A41B8C8B002F11FE777 /* FMDatabaseQueue.m */,
+				090F104BFF6B137AF2B424CD1C837269 /* FMDB.h */,
+				7895A810478DF308315DCD764C7FEB0D /* FMResultSet.h */,
+				0E0F0FBCF9E800E5A9373FEBA22FB261 /* FMResultSet.m */,
 			);
-			name = Products;
+			name = standard;
 			sourceTree = "<group>";
 		};
-		03D47EF4B7737F6065ECE4C39C70C940 /* Twitter */ = {
+		0B2904D05DFE2E85328B720303A9C1D0 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				4EF29966D95A55F1FFBC66D636A8F8D2 /* TwitterDataInfo.swift */,
-				8154038F90194E50AE76A0857337E214 /* TwitterJSONParser.swift */,
-				0F211BEDC7EC4024931F8C237DDA7431 /* TwitterPublicFeedsHandler.swift */,
+				4B5CC8CC647D69988F3DFC07AF1875E6 /* FacebookFeedDataInfo.swift */,
+				816E7463CA3AB9B2F58A6208652BA59E /* FacebookFeedsJsonParser.swift */,
+				1A32556D42780A01E16D5EE20C2C0F6A /* FacebookPublicFeedsHandler.swift */,
 			);
-			name = Twitter;
-			path = Twitter;
+			name = Facebook;
+			path = KahunaSocialMedia/Classes/Facebook;
 			sourceTree = "<group>";
 		};
-		0CE5F9160B067C829D364E72878D0583 /* Support Files */ = {
+		0DD148D0ABD8CED40610CAFD558F6B18 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */,
-				1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */,
-				88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */,
-				2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */,
-				CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */,
-				27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
-			sourceTree = "<group>";
-		};
-		0E9CC0217CE03B66912982F024F7C64D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB44F0C85553660857F351B59660E399 /* SQLite.framework */,
-				5465A1FD5BAF28162C40A82C117432A0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3F0AD42897C8DE7F4A30B2C3D095A376 /* KahunaSocialMedia */ = {
-			isa = PBXGroup;
-			children = (
-				42069ADE14B2E59A5BB94A3559DDD7D7 /* Classes */,
-			);
-			name = KahunaSocialMedia;
-			path = KahunaSocialMedia;
-			sourceTree = "<group>";
-		};
-		42069ADE14B2E59A5BB94A3559DDD7D7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				386864375E51EDE77AE0390F52808C48 /* Constants.swift */,
-				8BC64D210A73C4579748FAE2E6140C11 /* SocialDataHandler.swift */,
-				24399A6688E7D1DF16D1152AD5AF514A /* SocialOperationHandler.swift */,
-				6C32CD08687908A742FE0339261284D6 /* Facebook */,
-				7EA7D5319C59EF672E3A29DF632D5178 /* Instagram */,
-				961C78B85380E344AE660B04968EF5DC /* ObjectiveC */,
-				03D47EF4B7737F6065ECE4C39C70C940 /* Twitter */,
-				EBFC8D0BA07301D2DD77EE5F8AA65F52 /* Youtube */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		42A565AFFAD6D5669C3E9A617B18206F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */,
+				1ECEC1606126AB0BBF185B78622EFBC4 /* FMDB */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1ECEC1606126AB0BBF185B78622EFBC4 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				96AE477DAA20CB62FF30A2F0965F2B06 /* FTS */,
+				0AEACCCC8754B34F7917D121EC8FFFFF /* standard */,
+				35FFB9C56D1FABBB120DE679A9B5DD05 /* Support Files */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		24C97B43DEB33F5DC975D3FD9FF71B72 /* KahunaSocialMedia */ = {
+			isa = PBXGroup;
+			children = (
+				F5CAD372FFB90B27B5EA82941C56BB54 /* Constants.swift */,
+				35A02D6F7938C2F1948097D11D6F58D3 /* SocialDBFactory.swift */,
+				CB1DAE543B490237AD6D725834764890 /* SocialDBOperation.swift */,
+				6C8AAA08E2197000471D5336579DFC8B /* SocialDBStore.swift */,
+				1A53FAB3B82113B853D5984F6244A9A2 /* SocialOperationHandler.swift */,
+				0B2904D05DFE2E85328B720303A9C1D0 /* Facebook */,
+				8A82C2A73E05AE69BC1881F96574B381 /* Instagram */,
+				62DFE078A664E43DD3C542C9C5C06844 /* ObjectiveC */,
+				9465D635E4B587124E1C625C7A6E7E30 /* Support Files */,
+				F64E5A648BBD9673B4F61AB9D3807A79 /* Twitter */,
+				5AACE3A4F0FCB84077140ECA24914DC5 /* Youtube */,
+			);
+			name = KahunaSocialMedia;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		35FFB9C56D1FABBB120DE679A9B5DD05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF74480DCCBA8208AABEB26F8C091E3D /* FMDB.modulemap */,
+				AD68D8ADDCC768EC84717CA6CA38A588 /* FMDB.xcconfig */,
+				D62E01C94C21F9F89C95F547A4B079DC /* FMDB-dummy.m */,
+				04C492339E4D632AFCD49E6B494ABB96 /* FMDB-prefix.pch */,
+				4AE1400D1B21D8509B0CA4B97526E533 /* FMDB-umbrella.h */,
+				B0729D53A9479B2F03904D4C9CDEF6FB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
 		45C3B815A886DA32777A21FA376C9C11 /* Pods-KahunaSocialMedia_Tests */ = {
@@ -306,113 +293,76 @@
 			path = "Target Support Files/Pods-KahunaSocialMedia_Tests";
 			sourceTree = "<group>";
 		};
-		5465A1FD5BAF28162C40A82C117432A0 /* iOS */ = {
+		5AACE3A4F0FCB84077140ECA24914DC5 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
-				CE010265104DFCB5F6118970E4A336F2 /* Foundation.framework */,
+				2036EBD9702DD8C99DBF781DEF8F7E52 /* YouTubeInterfaceDataInfo.swift */,
+				A62C968F3025AD4154BA703F493D497C /* YouTubeJSONParser.swift */,
+				9F3F3062422696752C66C5296BE538E5 /* YouTubePublicFeedsHandler.swift */,
+			);
+			name = Youtube;
+			path = KahunaSocialMedia/Classes/Youtube;
+			sourceTree = "<group>";
+		};
+		60C0472654D243C0326348C856CD0756 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C97B43DEB33F5DC975D3FD9FF71B72 /* KahunaSocialMedia */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		62DFE078A664E43DD3C542C9C5C06844 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				5FAE70703F1A90FF504BE0F1291E6690 /* SocialCheckConnectivity.h */,
+				026E978EB64FF0F195096C39E047108B /* SocialCheckConnectivity.m */,
+				8F6D8179FB73155B701CD31D30D602B6 /* FHSTwitterEngine */,
+			);
+			name = ObjectiveC;
+			path = KahunaSocialMedia/Classes/ObjectiveC;
+			sourceTree = "<group>";
+		};
+		748AC6B0D04488ECD1585656A29E15E1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57B339C607FE63DDDF6BCBABD479561B /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		60646B1F542BE04E505848260A5C079D /* JsonClasses */ = {
-			isa = PBXGroup;
-			children = (
-				FEFA03D4FAEC181082C1054E49A0CFCB /* IGCaption.swift */,
-				C7FA1F2A270302A24D316C80B6061BEC /* IGComment.swift */,
-				CECD89ECB9768CEFE67ABEBE062ABF1D /* IGData.swift */,
-				4FEC30102FE3C94CD816E788A51094F4 /* IGFrom.swift */,
-				D2A52BE529E4848713500539C85CFD7D /* IGImage.swift */,
-				7D2E85306D7EE08FFDFCB24B7A817A1A /* IGLocation.swift */,
-				FBF8069D3425079ED4A9268F03FE1F5F /* IGLowResolution.swift */,
-				69AC1916FEAF57ACCBE61557BFA544DE /* IGMain.swift */,
-				C7264C6B717EBA9D930527FE272FA5F1 /* IGMeta.swift */,
-				E4ACC99F982B00F4B4AF2B0ED910C990 /* IGPagination.swift */,
-				92A41B1E732E1A087F21CB8C8048636A /* IGPosition.swift */,
-				CD69297E02230655D79DBE28E604300A /* IGUsersInPhoto.swift */,
-			);
-			name = JsonClasses;
-			path = JsonClasses;
-			sourceTree = "<group>";
-		};
-		6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */,
-				0CE5F9160B067C829D364E72878D0583 /* Support Files */,
-			);
-			name = SQLite.swift;
-			path = SQLite.swift;
-			sourceTree = "<group>";
-		};
-		6C32CD08687908A742FE0339261284D6 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				E20EC77121870A18E1E35A753F6F84FD /* FacebookFeedDataInfo.swift */,
-				55C147CD9B9B157D42F63A6717F2CF8D /* FacebookFeedsJsonParser.swift */,
-				91A480F8851AC9C186625F274246C7B7 /* FacebookPublicFeedsHandler.swift */,
-			);
-			name = Facebook;
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */,
-				680617B7B3999D016982CD479DADCCB0 /* Blob.swift */,
-				D7B7855DE178D22988512E88C68325BE /* Collation.swift */,
-				CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */,
-				60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */,
-				348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */,
-				44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */,
-				E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */,
-				5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */,
-				B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */,
-				4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */,
-				A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */,
-				BDA86AD441076D928D0621530CD5E745 /* Operators.swift */,
-				3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */,
-				0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */,
-				FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */,
-				DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */,
-				B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */,
-				AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */,
-				0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */,
-				96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */,
-				9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */,
-			);
-			name = standard;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				83DF9252212EBAA039974AFC1AB71A28 /* Development Pods */,
-				0E9CC0217CE03B66912982F024F7C64D /* Frameworks */,
-				42A565AFFAD6D5669C3E9A617B18206F /* Pods */,
-				01F35DFAD90DFE9B929C4899252AEC7D /* Products */,
+				60C0472654D243C0326348C856CD0756 /* Development Pods */,
+				D2304513832E75413DFDFE967D300314 /* Frameworks */,
+				0DD148D0ABD8CED40610CAFD558F6B18 /* Pods */,
+				97BB541C028440EC2E7FB06B610B07CD /* Products */,
 				93D6F33A8D46A338AA73167E595FD6D0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7EA7D5319C59EF672E3A29DF632D5178 /* Instagram */ = {
+		8A82C2A73E05AE69BC1881F96574B381 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				D4BD4113215F800734D1443D065FFCE6 /* InstagramFeedDataInfo.swift */,
-				FE6E0D97709829B6DF4828DF91BFECC7 /* InstagramFeedHandler.swift */,
-				60646B1F542BE04E505848260A5C079D /* JsonClasses */,
+				4C0C7B4448989DFA54CF71805967EA43 /* InstagramFeedDataInfo.swift */,
+				54EEAEF40F0E18A76BA80702F73EABA0 /* InstagramFeedHandler.swift */,
+				D52F41643EA2732A5C78B025D064E589 /* JsonClasses */,
 			);
 			name = Instagram;
-			path = Instagram;
+			path = KahunaSocialMedia/Classes/Instagram;
 			sourceTree = "<group>";
 		};
-		83DF9252212EBAA039974AFC1AB71A28 /* Development Pods */ = {
+		8F6D8179FB73155B701CD31D30D602B6 /* FHSTwitterEngine */ = {
 			isa = PBXGroup;
 			children = (
-				98C562F4D3A3A85FF29B0E8275AA9944 /* KahunaSocialMedia */,
+				142D57991D8C85AAFF8EDD766017D9D8 /* FHSStream.h */,
+				6D0E48465B6B9AEEA297A4E3F889890E /* FHSStream.m */,
+				DAC6C04F828B6DA301433F277334D6B2 /* FHSTwitterEngine.h */,
+				C83D7D690B66199168576E706891EE62 /* FHSTwitterEngine.m */,
 			);
-			name = "Development Pods";
+			path = FHSTwitterEngine;
 			sourceTree = "<group>";
 		};
 		93D6F33A8D46A338AA73167E595FD6D0 /* Targets Support Files */ = {
@@ -423,152 +373,171 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		961C78B85380E344AE660B04968EF5DC /* ObjectiveC */ = {
+		9465D635E4B587124E1C625C7A6E7E30 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB4E6446CB7BAE9BEDE11B8B9535BCCD /* SocialCheckConnectivity.h */,
-				10CB7F49AEF9F3B2CA57E38DDC360639 /* SocialCheckConnectivity.m */,
-				F74F89AD136088F3E5C4044EC1081641 /* FHSTwitterEngine */,
-			);
-			name = ObjectiveC;
-			path = ObjectiveC;
-			sourceTree = "<group>";
-		};
-		98C562F4D3A3A85FF29B0E8275AA9944 /* KahunaSocialMedia */ = {
-			isa = PBXGroup;
-			children = (
-				3F0AD42897C8DE7F4A30B2C3D095A376 /* KahunaSocialMedia */,
-				EDC8D6FEFABCE84F0C65D2B3766E853B /* Support Files */,
-			);
-			name = KahunaSocialMedia;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EBFC8D0BA07301D2DD77EE5F8AA65F52 /* Youtube */ = {
-			isa = PBXGroup;
-			children = (
-				3B8E0053C471072AA40F9A44118D0E61 /* YouTubeInterfaceDataInfo.swift */,
-				DE275FDD6750781213879F92F13B7C1C /* YouTubeJSONParser.swift */,
-				3282763D560B9C0939E96A03C1FFB6F1 /* YouTubePublicFeedsHandler.swift */,
-			);
-			name = Youtube;
-			path = Youtube;
-			sourceTree = "<group>";
-		};
-		EDC8D6FEFABCE84F0C65D2B3766E853B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DA1983F1AEDBA6625473EEEBD9E27F56 /* Info.plist */,
-				9EE920217E0F8811F65B7A3E28916949 /* KahunaSocialMedia.modulemap */,
-				06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */,
-				00A019CC547CF7753291D7F44F7F1D30 /* KahunaSocialMedia-dummy.m */,
-				FB479920F3DB923629E92C6775ACE253 /* KahunaSocialMedia-prefix.pch */,
-				8A085E09B23F583EC42834EF130E8207 /* KahunaSocialMedia-umbrella.h */,
+				F2C3586C776D5EF55DED0226B58E571A /* Info.plist */,
+				19857B1A6D1416ED6B1C8E48C003D690 /* KahunaSocialMedia.modulemap */,
+				1503B3C6B9EDBBC5728B777A169240AB /* KahunaSocialMedia.xcconfig */,
+				9F198A90EA0B56B17B5F7DEBE7470B92 /* KahunaSocialMedia-dummy.m */,
+				632DDBF7DD83D9AF94BCCBAF2CFA73F6 /* KahunaSocialMedia-prefix.pch */,
+				193A8CC59CADD2BAE7FA2062AF0F1914 /* KahunaSocialMedia-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KahunaSocialMedia";
 			sourceTree = "<group>";
 		};
-		F74F89AD136088F3E5C4044EC1081641 /* FHSTwitterEngine */ = {
+		96AE477DAA20CB62FF30A2F0965F2B06 /* FTS */ = {
 			isa = PBXGroup;
 			children = (
-				D670826E4DD009E3AFA0A5018B7C80CB /* FHSStream.h */,
-				52D12BDE4FDBB564FB179190E9CCD24B /* FHSStream.m */,
-				5ECD43F270FD09033E418D18F95E4775 /* FHSTwitterEngine.h */,
-				9FE58FED043565795FBB9252EA780B37 /* FHSTwitterEngine.m */,
+				BD9F1B653D00AEF709EC8B3696260481 /* FMDatabase+FTS3.h */,
+				3765B21253845CBB1A5C03CBAD0D6032 /* FMDatabase+FTS3.m */,
+				2A0CA27A980F093E67D66F61334CF853 /* FMTokenizers.h */,
+				7F964C1B648CEE5F3F0F51ED62973864 /* FMTokenizers.m */,
+				6DD4545BFE37C2702D7C3CDB30A7C27F /* fts3_tokenizer.h */,
 			);
-			name = FHSTwitterEngine;
-			path = FHSTwitterEngine;
+			name = FTS;
+			sourceTree = "<group>";
+		};
+		97BB541C028440EC2E7FB06B610B07CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF516D36CAA650E6E0A0042A6072F52 /* FMDB.framework */,
+				DCDF89B0ED8038774DED0FC5964473E7 /* KahunaSocialMedia.framework */,
+				BDCC4EC71498ACC71DB79DEF366E1A26 /* Pods_KahunaSocialMedia_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2304513832E75413DFDFE967D300314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */,
+				748AC6B0D04488ECD1585656A29E15E1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52F41643EA2732A5C78B025D064E589 /* JsonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF14FDE7E09EC0724FD6BC6B4E393B /* IGDimension.swift */,
+				3856A859B5009F37044F3473A5707283 /* IGFollowedBy.swift */,
+				3CE5C7E917D91F255BC4EA90D6369EE2 /* IGMain.swift */,
+				523F4D2C8D29ADE7D52BD08E3277CFA4 /* IGMedia.swift */,
+				C90127A3A1684F03422D36166F291D44 /* IGNode.swift */,
+				4C55D1C1F4DA77C7118B5F31F6B4B751 /* IGOwner.swift */,
+				5FDB649F24759B8BE2BF0298E3CA8C4B /* IGThumbnailResource.swift */,
+				5C8D974E431092E079C00246041C4C21 /* IGUser.swift */,
+			);
+			path = JsonClasses;
+			sourceTree = "<group>";
+		};
+		F64E5A648BBD9673B4F61AB9D3807A79 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E9EBC0B4BE7105B94BB6D4BD47E36 /* TwitterDataInfo.swift */,
+				78C7739798B033DA88ABEA8B4053E30F /* TwitterJSONParser.swift */,
+				EE59F93F19A22E0AE637C1BD4933F7C6 /* TwitterPublicFeedsHandler.swift */,
+			);
+			name = Twitter;
+			path = KahunaSocialMedia/Classes/Twitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B0F5250F257EEC91CA561148F5D50FEB /* Headers */ = {
+		2D264B4CCFDF3AC9E81E0A3F368A583D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B6B8BFAB7C9D67BA841BD9FC8C268A /* FHSStream.h in Headers */,
-				3F1455938F6DA586551E05CBAF4055D0 /* FHSTwitterEngine.h in Headers */,
-				70C46C838C6519E3516EFD6BD613F898 /* KahunaSocialMedia-umbrella.h in Headers */,
-				E4F26E64D16700CF453FA10DC6CE7A68 /* SocialCheckConnectivity.h in Headers */,
+				5573D72445C24D7588329AE4ABE835D4 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAA8DE4D886E4CE4DDD2769A89EC9FA3 /* Headers */ = {
+		5E0FFA78C6BB79AEB436FB6BBFA0E533 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5436213BB3E5D11534572D6982FBAF63 /* Pods-KahunaSocialMedia_Tests-umbrella.h in Headers */,
+				E9F37B68F77954582BAD5543C1B49200 /* FMDatabase+FTS3.h in Headers */,
+				9ACFAB62DBFE1CE40CDF7205D96FA79D /* FMDatabase.h in Headers */,
+				29218078487823A433565202C9FC9D11 /* FMDatabaseAdditions.h in Headers */,
+				E102C08451C5BCA17ED0CD5D29B79FC3 /* FMDatabasePool.h in Headers */,
+				E231B95559BBC1C52A0A475C65B8542C /* FMDatabaseQueue.h in Headers */,
+				D41582755B6F9508D1AB00391B2E63F2 /* FMDB-umbrella.h in Headers */,
+				0EB7B7A7383A5D2870D74CD24BD34F27 /* FMDB.h in Headers */,
+				8AB8B691B7743FA2B20F8BA91137C974 /* FMResultSet.h in Headers */,
+				D33DCA7181B8E903DD7FDF78D22E2035 /* FMTokenizers.h in Headers */,
+				65A9E222A06167C1A9EB12FADF849C76 /* fts3_tokenizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C98DEBD53EC62731F46F765DA4CBF078 /* Headers */ = {
+		D725AEFA3B01955C4FB7B3C4A3489942 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DD9A8920AD86D1E4D915518B51085B0 /* fts3_tokenizer.h in Headers */,
-				A462AC659C2DE48D373A6F9C3B9B23CB /* SQLite-Bridging.h in Headers */,
-				BD2C977BB0B7DB70D5134B49D76C8639 /* SQLite.h in Headers */,
-				39398AF18EB251A14886E8E91C5AE88A /* SQLite.swift-umbrella.h in Headers */,
+				128336258317005FF4796DE1927ECFEC /* FHSStream.h in Headers */,
+				F9A01669B4E37578C137FBACD59C703E /* FHSTwitterEngine.h in Headers */,
+				5529C7271C49EFD1016D4A15B85DE5B6 /* KahunaSocialMedia-umbrella.h in Headers */,
+				4E2E67F308C57405F84916FB340BB2D5 /* SocialCheckConnectivity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */ = {
+		0CE1C5C1E65CF1EA15848D52882A4558 /* Pods-KahunaSocialMedia_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CF8FACA837D1C84C854B6908E2711B5 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */;
+			buildConfigurationList = 325F5D219DA0C7B997BAE88244EA26F0 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */;
 			buildPhases = (
-				B14AC581EE8A530976F5E2FC4AA58E38 /* Sources */,
-				04422F16EC0E39289D9E633B4DD8DA10 /* Frameworks */,
-				B0F5250F257EEC91CA561148F5D50FEB /* Headers */,
+				42D89065A5968116BB93E86F2A3649AA /* Sources */,
+				98EF1FC5CA94047146074A3C393BCEB1 /* Frameworks */,
+				2D264B4CCFDF3AC9E81E0A3F368A583D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D8E83B15F9A67272D7D885F4C8194F8 /* PBXTargetDependency */,
-			);
-			name = KahunaSocialMedia;
-			productName = KahunaSocialMedia;
-			productReference = 8DF73ECA4B3F319C2F9C407D1BD10B93 /* KahunaSocialMedia.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2B72DB556229CA098BE05DFCF75816A0 /* Pods-KahunaSocialMedia_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B3F45237ABE8686D7BA53C6F385AE75 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */;
-			buildPhases = (
-				4945B0514E595918F28F3E63600D9DBC /* Sources */,
-				0B4C3287C608F8D107C4CF2A0DC4F16C /* Frameworks */,
-				BAA8DE4D886E4CE4DDD2769A89EC9FA3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				99277CE6888D4131A5530D762E934AA6 /* PBXTargetDependency */,
-				FB721BE1248FBE0BD7ACD615AF5A6265 /* PBXTargetDependency */,
+				3B79977D536C78D5B26ED8E49D8CC5C3 /* PBXTargetDependency */,
+				713B032F9A3FEACEE80982D9582BE0EF /* PBXTargetDependency */,
 			);
 			name = "Pods-KahunaSocialMedia_Tests";
 			productName = "Pods-KahunaSocialMedia_Tests";
-			productReference = AB8BCBCCD72F3C67B082173693314C5A /* Pods_KahunaSocialMedia_Tests.framework */;
+			productReference = BDCC4EC71498ACC71DB79DEF366E1A26 /* Pods_KahunaSocialMedia_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */ = {
+		2347A785F318A2EB31F3A7064FD2A64C /* KahunaSocialMedia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EA3C55B9153014FD29CB76FC878D41B /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildConfigurationList = ADC212DDA29D014DC2C7D746266B051D /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */;
 			buildPhases = (
-				508C375DA2E9A84628AD7631736EA6A3 /* Sources */,
-				E0F39C986DAC8EF6037B765A022574F5 /* Frameworks */,
-				C98DEBD53EC62731F46F765DA4CBF078 /* Headers */,
+				DC91B32938AB2A97D60B549646D93F12 /* Sources */,
+				150D12D16B1DF4A48988BED90DDE4AA8 /* Frameworks */,
+				D725AEFA3B01955C4FB7B3C4A3489942 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0685EFD6976FD69582EC41EE3297DCB4 /* PBXTargetDependency */,
+			);
+			name = KahunaSocialMedia;
+			productName = KahunaSocialMedia;
+			productReference = DCDF89B0ED8038774DED0FC5964473E7 /* KahunaSocialMedia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0F188405F0B3B57D728C5EC34267E4F /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51AF66E408DB42831D6F7970112DE7C0 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				3A76502D684AB47FB9B8C5863A7AD629 /* Sources */,
+				B41C82125FB6B8D1D2510420D73FB5E9 /* Frameworks */,
+				5E0FFA78C6BB79AEB436FB6BBFA0E533 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SQLite.swift;
-			productName = SQLite.swift;
-			productReference = 69F3BF149B1C856B4327FFF83AA23245 /* SQLite.framework */;
+			name = FMDB;
+			productName = FMDB;
+			productReference = CEF516D36CAA650E6E0A0042A6072F52 /* FMDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -577,8 +546,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -588,140 +557,155 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 01F35DFAD90DFE9B929C4899252AEC7D /* Products */;
+			productRefGroup = 97BB541C028440EC2E7FB06B610B07CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */,
-				2B72DB556229CA098BE05DFCF75816A0 /* Pods-KahunaSocialMedia_Tests */,
-				9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */,
+				D0F188405F0B3B57D728C5EC34267E4F /* FMDB */,
+				2347A785F318A2EB31F3A7064FD2A64C /* KahunaSocialMedia */,
+				0CE1C5C1E65CF1EA15848D52882A4558 /* Pods-KahunaSocialMedia_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4945B0514E595918F28F3E63600D9DBC /* Sources */ = {
+		3A76502D684AB47FB9B8C5863A7AD629 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C9D1BBBC6E021270E33631193BDAA61 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */,
+				787E67CF30B0A0D0BB0354C9F89EDBFF /* FMDatabase+FTS3.m in Sources */,
+				C1FABF23EA771D1C4643660FC068EFD7 /* FMDatabase.m in Sources */,
+				0F7E840483BFB6D57F99A6A3ACDEC066 /* FMDatabaseAdditions.m in Sources */,
+				67BE201A814CD1EEAEDEFC865D4BF9CD /* FMDatabasePool.m in Sources */,
+				0100DD89EF09412A3077E4044464106C /* FMDatabaseQueue.m in Sources */,
+				CFD331B576C6148DCA3DC05B03B62712 /* FMDB-dummy.m in Sources */,
+				4CB75096E91CA89392F542BDD59BA7C0 /* FMResultSet.m in Sources */,
+				1F830481A25041C4E2ECEF1F18EB9D84 /* FMTokenizers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		508C375DA2E9A84628AD7631736EA6A3 /* Sources */ = {
+		42D89065A5968116BB93E86F2A3649AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4021D06316C2C5E2224E873C3F51D84 /* AggregateFunctions.swift in Sources */,
-				3E33E9D825236669C0D5D104CD525E51 /* Blob.swift in Sources */,
-				5941C1C4ACC75E3A0A5B89D789BB1E9F /* Collation.swift in Sources */,
-				73C1818AB610DF41FDE62108C13E13C3 /* Connection.swift in Sources */,
-				4563414E81FD72F049A41D92CF69C832 /* CoreFunctions.swift in Sources */,
-				5A8878482FAD6429F63A1254B32A8684 /* CustomFunctions.swift in Sources */,
-				FAB175403AF7149B0C7396644E3FE4E8 /* Expression.swift in Sources */,
-				1D44F955475C46D0A421A4E30CD334FD /* Foundation.swift in Sources */,
-				7034FB9CDE2BBC0686DF864532B439BC /* FTS4.swift in Sources */,
-				062E24583D7D50A982B3FBEC88813E05 /* FTS5.swift in Sources */,
-				6B13F5A5E28457F86F263DB1CB9A95FD /* Helpers.swift in Sources */,
-				6634ABAA35F277470277FD57D0220873 /* Operators.swift in Sources */,
-				A6F45B9829C8B6929538309F7A0B9A75 /* Query.swift in Sources */,
-				EAE25ACAFC696F6C025CB63F37127F27 /* RTree.swift in Sources */,
-				9221F0B6D9F524A46F3F824E178E7E56 /* Schema.swift in Sources */,
-				B31DF3029AC4BAB961B61F2F33B8CBD1 /* Setter.swift in Sources */,
-				BC02CB0E6E6B001F941B8E5F8DBF0C24 /* SQLite-Bridging.m in Sources */,
-				3B3AD7969640171B88DE9657ED32B352 /* SQLite.swift-dummy.m in Sources */,
-				9B762C1778F82E8BBD1CDC14781A0E22 /* Statement.swift in Sources */,
-				E90966462BF8F5C92FE5319CACAA1F14 /* Value.swift in Sources */,
+				8049817B805D55BCDF70710048ECBE65 /* Pods-KahunaSocialMedia_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B14AC581EE8A530976F5E2FC4AA58E38 /* Sources */ = {
+		DC91B32938AB2A97D60B549646D93F12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F2B5A64CC9E4111F6AC1A76DDBD980 /* Constants.swift in Sources */,
-				DC9758AEFAF72E0F5EA753F7C4F3E3AF /* FacebookFeedDataInfo.swift in Sources */,
-				21F924B76C76AE1EC840BB67E0EE5E8B /* FacebookFeedsJsonParser.swift in Sources */,
-				9DC28EBCD74D55FBE69B10B7DEDE0A09 /* FacebookPublicFeedsHandler.swift in Sources */,
-				78944736179EEC2BAC0480CF79781FAF /* FHSStream.m in Sources */,
-				313A591CE709C33191F06085E82924B5 /* FHSTwitterEngine.m in Sources */,
-				6954B5A75AFACF701E269CF17B3F45D4 /* IGCaption.swift in Sources */,
-				C1E49CF23D423C6C5E02FDA15B10CC84 /* IGComment.swift in Sources */,
-				4246330FC78670B8AA91EAE293F2D8E4 /* IGData.swift in Sources */,
-				03558CEA3DFFF9522C5D0A460835DDFB /* IGFrom.swift in Sources */,
-				A8EC7212197FB653AE243C4D99B7A708 /* IGImage.swift in Sources */,
-				8E299E674DE6451FD8197305D109B386 /* IGLocation.swift in Sources */,
-				2A24E6F99C107170CD30CCB1316B5895 /* IGLowResolution.swift in Sources */,
-				C2CBB5BFD4900AB3D1780AD3E61DB4E2 /* IGMain.swift in Sources */,
-				007FBDC24040BA725E3060CFB89E6667 /* IGMeta.swift in Sources */,
-				52BBD39BE53C2D8815AA0D02BA9FE4BF /* IGPagination.swift in Sources */,
-				506C541B1D9E1F915595E72F6615890C /* IGPosition.swift in Sources */,
-				0C65A1C06DF16E6566F8A780A2D1C22C /* IGUsersInPhoto.swift in Sources */,
-				4AC1C27F5A4408C081998EC190B12581 /* InstagramFeedDataInfo.swift in Sources */,
-				CAF7A15F9982D489A2A8F39112CF062C /* InstagramFeedHandler.swift in Sources */,
-				490A3A4672084C4000CE12FB330DD47C /* KahunaSocialMedia-dummy.m in Sources */,
-				8EE29B3D5EB556A0DE3010CC0D5AF77A /* SocialCheckConnectivity.m in Sources */,
-				230C68D05CB7A5EA285FA25B33A2C792 /* SocialDataHandler.swift in Sources */,
-				788A5D9F53BD1FCEAAA65ED22743CF42 /* SocialOperationHandler.swift in Sources */,
-				DE05705E6B01D7413291B08C6642F6E5 /* TwitterDataInfo.swift in Sources */,
-				B1814CE7CDC29C67558098B85DE2161A /* TwitterJSONParser.swift in Sources */,
-				42FCA5C50805248D4C10FB75535C5A08 /* TwitterPublicFeedsHandler.swift in Sources */,
-				76F31231A4FB158F9E157D43B65A24DF /* YouTubeInterfaceDataInfo.swift in Sources */,
-				B99509E059B0DF8ECCDF4EB0D11A508E /* YouTubeJSONParser.swift in Sources */,
-				8F94E072C335CB29F87847E29347DB7C /* YouTubePublicFeedsHandler.swift in Sources */,
+				CFE37C29262E96F6DF31083B426D8A57 /* Constants.swift in Sources */,
+				70F657127550B65A74CDAA6A53BE2D8A /* FacebookFeedDataInfo.swift in Sources */,
+				A5F4C7011C6E7DEA5A17B00DD4E1DDA4 /* FacebookFeedsJsonParser.swift in Sources */,
+				C7ED133BE617D1765D2D5270B5385DDC /* FacebookPublicFeedsHandler.swift in Sources */,
+				2905309EB79E35D53D779F5492E851E9 /* FHSStream.m in Sources */,
+				15634EC6FD3C2B7A04D7135CFAE44F00 /* FHSTwitterEngine.m in Sources */,
+				BC2495A6AF18C6E646B6EB781E2176EB /* IGDimension.swift in Sources */,
+				619F0F58E1C47836DEBCDC510477650E /* IGFollowedBy.swift in Sources */,
+				D22470129BEA9DAC474EB493673E28D9 /* IGMain.swift in Sources */,
+				5FD8022244979546743A28FA2F7D7A51 /* IGMedia.swift in Sources */,
+				CDF6DE84BE1A94AE89F177F228ABCA6B /* IGNode.swift in Sources */,
+				260C58F2693F7E377466306B6859C721 /* IGOwner.swift in Sources */,
+				181A170837EFDA13B63336D744BA6BFD /* IGThumbnailResource.swift in Sources */,
+				37D447B440A7694FA599DCDDE5C1624A /* IGUser.swift in Sources */,
+				FE2125D3E402F3918F50F442B647BD24 /* InstagramFeedDataInfo.swift in Sources */,
+				AEC0F17A4BF23F4A247DDB0A1CCDF6C6 /* InstagramFeedHandler.swift in Sources */,
+				BC8FE2EA811E36466BD41551777AB91F /* KahunaSocialMedia-dummy.m in Sources */,
+				CC1FDEA9091000CFCDF4EFF5AC715F2B /* SocialCheckConnectivity.m in Sources */,
+				685EB7C0961939D9ED1B21559CF92B6C /* SocialDBFactory.swift in Sources */,
+				906293FEDADDAB8F22C4C8DB26AD1E7A /* SocialDBOperation.swift in Sources */,
+				75B96537EE85803F93905E3C4A9F85F1 /* SocialDBStore.swift in Sources */,
+				3D3BFB9697856093D8968C1EB418A133 /* SocialOperationHandler.swift in Sources */,
+				8D0C0AE58177457ECCEFBA019B49442A /* TwitterDataInfo.swift in Sources */,
+				41C5ECCCC7E99060B308D5851D751AC3 /* TwitterJSONParser.swift in Sources */,
+				83D213DBE77456E685CEECDBC84D4AC0 /* TwitterPublicFeedsHandler.swift in Sources */,
+				2E0F0834CB3BC793F5C7FA13D4A91D19 /* YouTubeInterfaceDataInfo.swift in Sources */,
+				B52028F661E9E8AC6293E242FA32D632 /* YouTubeJSONParser.swift in Sources */,
+				5915A2C56D1334D40FE8933777478C25 /* YouTubePublicFeedsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		99277CE6888D4131A5530D762E934AA6 /* PBXTargetDependency */ = {
+		0685EFD6976FD69582EC41EE3297DCB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = D0F188405F0B3B57D728C5EC34267E4F /* FMDB */;
+			targetProxy = 299D0FC02271C9813F02D2FEF691F3B8 /* PBXContainerItemProxy */;
+		};
+		3B79977D536C78D5B26ED8E49D8CC5C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = D0F188405F0B3B57D728C5EC34267E4F /* FMDB */;
+			targetProxy = 60CF5955029C6814A4928D75011EC9DE /* PBXContainerItemProxy */;
+		};
+		713B032F9A3FEACEE80982D9582BE0EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KahunaSocialMedia;
-			target = 12CB57BDC6833D72E34C4448C6D9A2AF /* KahunaSocialMedia */;
-			targetProxy = B7FA8427E305156F7023D55F207FE34A /* PBXContainerItemProxy */;
-		};
-		9D8E83B15F9A67272D7D885F4C8194F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = 9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */;
-			targetProxy = 275E3BF6612BFA22D5D887678969E81A /* PBXContainerItemProxy */;
-		};
-		FB721BE1248FBE0BD7ACD615AF5A6265 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = 9F57D0D6628E5E89F38BF6889BD7B623 /* SQLite.swift */;
-			targetProxy = 7043A03F2181C60524B56FE2150AEF46 /* PBXContainerItemProxy */;
+			target = 2347A785F318A2EB31F3A7064FD2A64C /* KahunaSocialMedia */;
+			targetProxy = A6C783CA6576632F8B392CD70C62FF30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5F90610CCA60F0103E5B55F98DF8D4DE /* Debug */ = {
+		0B7AD0D8E4BCC19F892DE7EB84EE6FD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */;
+			baseConfigurationReference = 1503B3C6B9EDBBC5728B777A169240AB /* KahunaSocialMedia.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KahunaSocialMedia/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = KahunaSocialMedia;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		156D06022AB413650B668207264BAC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD68D8ADDCC768EC84717CA6CA38A588 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -729,147 +713,85 @@
 			};
 			name = Debug;
 		};
-		60B5A69F1FE938EA186643B080900994 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2AEDC14326EC0A1E16AF87496E8C90D /* Pods-KahunaSocialMedia_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Pods-KahunaSocialMedia_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KahunaSocialMedia_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		1CDAB5613991E411E5990BAF694995C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C82DF131966F7F6D0A3E5D519EC7DB44 /* Debug */ = {
+		2AE9CD054CE17F4B1CD62866747F48AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8AA707B5F85EC75E74ECA75C56EC6F0 /* Pods-KahunaSocialMedia_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Pods-KahunaSocialMedia_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -877,6 +799,7 @@
 				PRODUCT_NAME = Pods_KahunaSocialMedia_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -884,63 +807,63 @@
 			};
 			name = Debug;
 		};
-		C8F33C3354B78620E14869424255B67A /* Release */ = {
+		5F88F6F5BF2F1E0954DB780F5CCC4A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C0C5F81D8F15372231D6E5F54174D2 /* KahunaSocialMedia.xcconfig */;
+			baseConfigurationReference = D2AEDC14326EC0A1E16AF87496E8C90D /* Pods-KahunaSocialMedia_Tests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KahunaSocialMedia_Tests/Pods-KahunaSocialMedia_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KahunaSocialMedia_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76FA46F06D28959F8381001B4CB05B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1503B3C6B9EDBBC5728B777A169240AB /* KahunaSocialMedia.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KahunaSocialMedia/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KahunaSocialMedia/KahunaSocialMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = KahunaSocialMedia;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DC54ED6850741020580868CB88DA0F73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -949,33 +872,88 @@
 			};
 			name = Debug;
 		};
-		FCA2EF95055A66D4A765E96CBA8CB104 /* Release */ = {
+		7B62A85C412D689EF418FA67DA770A41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E643E73B3F562FA9287468AF064381E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD68D8ADDCC768EC84717CA6CA38A588 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SQLite;
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_NAME = FMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -984,38 +962,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CF8FACA837D1C84C854B6908E2711B5 /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F90610CCA60F0103E5B55F98DF8D4DE /* Debug */,
-				C8F33C3354B78620E14869424255B67A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				1CDAB5613991E411E5990BAF694995C5 /* Debug */,
+				7B62A85C412D689EF418FA67DA770A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EA3C55B9153014FD29CB76FC878D41B /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		325F5D219DA0C7B997BAE88244EA26F0 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC54ED6850741020580868CB88DA0F73 /* Debug */,
-				FCA2EF95055A66D4A765E96CBA8CB104 /* Release */,
+				2AE9CD054CE17F4B1CD62866747F48AF /* Debug */,
+				5F88F6F5BF2F1E0954DB780F5CCC4A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B3F45237ABE8686D7BA53C6F385AE75 /* Build configuration list for PBXNativeTarget "Pods-KahunaSocialMedia_Tests" */ = {
+		51AF66E408DB42831D6F7970112DE7C0 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C82DF131966F7F6D0A3E5D519EC7DB44 /* Debug */,
-				60B5A69F1FE938EA186643B080900994 /* Release */,
+				156D06022AB413650B668207264BAC93 /* Debug */,
+				E643E73B3F562FA9287468AF064381E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADC212DDA29D014DC2C7D746266B051D /* Build configuration list for PBXNativeTarget "KahunaSocialMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FA46F06D28959F8381001B4CB05B39 /* Debug */,
+				0B7AD0D8E4BCC19F892DE7EB84EE6FD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

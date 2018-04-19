@@ -42,19 +42,14 @@ class InstagramFeedHandler: NSObject {
                         let jsonObject = try JSONSerialization.jsonObject(with: data!, options: [])
                         DispatchQueue.main.async {
                             let instagramFeeds = IGMain(fromDictionary: jsonObject as! NSDictionary)
-                            if instagramFeeds.items.count > 0 {
-                                instagramFeeds.data = instagramFeeds.items
-                            }
-                            if (instagramFeeds.meta != nil && instagramFeeds.meta.code == 200 && instagramFeeds.data.count > 0) || instagramFeeds.items.count > 0 {
-                                SocialDataHandler.sharedInstance.saveAllFetchedInstagramFeedsToDB(instagramFeedArray: instagramFeeds.data as! NSMutableArray)
-                            }
-                            if self.instaFeedFetchDelegate != nil {
-                                self.instaFeedFetchDelegate?.instagramFeedFetchSuccess!(instagramFeeds.data as! NSMutableArray)
+                            if instagramFeeds.user != nil && instagramFeeds.user.media != nil && instagramFeeds.user.media.nodes.count > 0 && self.instaFeedFetchDelegate != nil {
+                                SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedInstagramFeedsToDB(instagramFeedArray: instagramFeeds.user.media.nodes! as NSArray, userData: instagramFeeds.user)
+                                self.instaFeedFetchDelegate?.instagramFeedFetchSuccess!(instagramFeeds.user.media.nodes as NSArray?)
                             }
                         }
                     } catch let Error as NSError {
                         print(Error.description)
-                        self.instaFeedFetchDelegate?.instagramFeedFetchError!(error! as NSError)
+                        self.instaFeedFetchDelegate?.instagramFeedFetchError!(Error)
                     }
                 }
             })
@@ -62,19 +57,19 @@ class InstagramFeedHandler: NSObject {
         }
     }
 
-    func setValueToInstaFeedObject(item: IGData) -> InstagramFeedDataInfo {
+    func setValueToInstaFeedObject(item: IGNode, userData: IGUser) -> InstagramFeedDataInfo {
         let coreDataObject = InstagramFeedDataInfo()
-        if let fullName = item.user.fullName {
+        if let fullName = userData.fullName {
             coreDataObject.userFullName = fullName
         }
-        if let userName = item.user.username {
+        if let userName = userData.username {
             coreDataObject.userName = userName
         }
-        if let userID = item.user.id {
-            coreDataObject.userID = item.user.id
+        if let userID = userData.id {
+            coreDataObject.userID = userID
         }
-        if let weblink = item.link {
-            coreDataObject.webLink = weblink
+        if let weblink = item.code, coreDataObject.userName.count > 0 {
+            coreDataObject.webLink = "https://www.instagram.com/p/\(weblink)/?taken-by=\(coreDataObject.userName)"
         }
         if let likes = item.likes.count {
             coreDataObject.likeCount = String(likes)
@@ -82,23 +77,20 @@ class InstagramFeedHandler: NSObject {
         if let CommentCount = item.comments.count {
             coreDataObject.commentCount = String(CommentCount)
         }
-        if let caption = item.caption, let feedText = caption.text {
-            coreDataObject.feedText = feedText
+        if let caption = item.caption {
+            coreDataObject.feedText = caption
         } else {
             coreDataObject.feedText = "N/A"
         }
-        if let interval = item.createdTime {
-            let Timeinterval: TimeInterval = Double(interval)!
+        if let interval = item.date {
+            let Timeinterval: TimeInterval = Double(interval)
             let date = NSDate(timeIntervalSince1970: Timeinterval)
             coreDataObject.createdDate = date
         }
-        if let caption = item.caption, let mediaId = caption.id {
-            coreDataObject.mediaID = mediaId
-        }
-        if let thumbImg = item.images.thumbnail.url {
+        if let thumbImg = item.thumbnailSrc {
             coreDataObject.thumbnailImg = thumbImg
         }
-        if let stdImg = item.images.standardResolution.url {
+        if let stdImg = item.displaySrc {
             coreDataObject.standardImg = stdImg
         }
         return coreDataObject

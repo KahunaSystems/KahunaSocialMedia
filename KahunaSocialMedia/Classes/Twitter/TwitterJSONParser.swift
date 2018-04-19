@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KahunaSocialMedia
 
 class TwitterJSONParser: NSObject {
 
@@ -58,7 +57,7 @@ class TwitterJSONParser: NSObject {
                 coreDataObj?.tweetId = tweetID as? String
             }
             if var tweetText = dict["text"] {
-                tweetText = self.replaceOccuranceOfString(tweetText as? String)
+                tweetText = self.replaceOccuranceOfString(tweetText as? String) ?? ""
                 if let tempStr = tweetText as? String {
                     coreDataObj?.tweetText = tempStr
                 }
@@ -110,28 +109,28 @@ class TwitterJSONParser: NSObject {
         if inputString != nil {
             var replaceString = inputString
 
-            var myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            var newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            var myRange = NSMakeRange(0, (replaceString?.count)!)
+            var newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&amp;", with: "&", options: NSString.CompareOptions.literal, range: newRange)
 
-            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            myRange = NSMakeRange(0, (replaceString?.count)!)
+            newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&apos;", with: "'", options: NSString.CompareOptions.literal, range: newRange)
 
-            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            myRange = NSMakeRange(0, (replaceString?.count)!)
+            newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&quot;", with: "\"", options: NSString.CompareOptions.literal, range: newRange)
 
-            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            myRange = NSMakeRange(0, (replaceString?.count)!)
+            newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&gt;", with: ">", options: NSString.CompareOptions.literal, range: newRange)
 
-            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            myRange = NSMakeRange(0, (replaceString?.count)!)
+            newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&lt;", with: "<", options: NSString.CompareOptions.literal, range: newRange)
 
-            myRange = NSMakeRange(0, (replaceString?.characters.count)!)
-            newRange = inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.characters.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
+            myRange = NSMakeRange(0, (replaceString?.count)!)
+            newRange = inputString!.index(inputString!.startIndex, offsetBy: myRange.location)..<inputString!.index(inputString!.startIndex, offsetBy: myRange.location + myRange.length)
             replaceString = replaceString?.replacingOccurrences(of: "&#39;", with: "'", options: NSString.CompareOptions.literal, range: newRange)
             return replaceString!
         }

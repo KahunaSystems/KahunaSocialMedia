@@ -25,7 +25,7 @@ class FacebookFeedsJsonParser: NSObject {
             var fbFromName = SocialOperationHandler.sharedInstance.fbFromName as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
             fbFromName = fbFromName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
-            if let myArray = feedsDict!["data"], myArray != nil , let arrayFeeds = myArray as? NSArray {
+            if let myArray = feedsDict!["data"], myArray != nil, let arrayFeeds = myArray as? NSArray {
                 for i in 0 ..< arrayFeeds.count {
                     let innerFeedsDict = arrayFeeds[i] as! NSDictionary
                     let fromDict = innerFeedsDict["from"] as! NSDictionary
@@ -33,8 +33,16 @@ class FacebookFeedsJsonParser: NSObject {
                     if message == nil {
                         message = innerFeedsDict["description"] as? String
                     }
-                    if message != nil && (message?.characters.count)! > 0 {
-                        var coreDataObj: FacebookFeedDataInfo? = FacebookFeedDataInfo()
+                    var pictureURL = ""
+                    var linkURL = ""
+                    if let picture = innerFeedsDict["picture"] as? String {
+                        pictureURL = picture
+                    }
+                    if let link = innerFeedsDict["link"] as? String {
+                        linkURL = link
+                    }
+                    if (message != nil && (message?.count)! > 0) || pictureURL.count > 0 || linkURL.count > 0 {
+                        let coreDataObj: FacebookFeedDataInfo? = FacebookFeedDataInfo()
                         var authorName = fromDict["name"] as! NSString
                         authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
                         authorName = authorName.replacingOccurrences(of: "\\u2019", with: "'") as NSString
@@ -42,17 +50,13 @@ class FacebookFeedsJsonParser: NSObject {
                         if let userId = fromDict["id"] as? String {
                             coreDataObj?.fbUserId = userId
                         }
-                        if let msg = message as? String? {
-                            let returnDescString = self.replaceOccuranceOfString(inputString: msg!)
+                        if let msg = message {
+                            let returnDescString = self.replaceOccuranceOfString(inputString: msg)
                             coreDataObj?.fbDescription = returnDescString
                             coreDataObj?.fbMessage = returnDescString
                         }
-                        if let picture = innerFeedsDict["picture"] as? String {
-                            coreDataObj?.fbPostPictureLink = picture
-                        }
-                        if let link = innerFeedsDict["link"] as? String {
-                            coreDataObj?.fbVideoLink = link
-                        }
+                        coreDataObj?.fbPostPictureLink = pictureURL
+                        coreDataObj?.fbVideoLink = linkURL
                         if let icon = innerFeedsDict["icon"] as? String {
                             coreDataObj?.fbUserIcon = icon
                         }
@@ -105,18 +109,15 @@ class FacebookFeedsJsonParser: NSObject {
 
     func replaceOccuranceOfString(inputString: String) -> String {
         print("\n ************* FB Desc Input  \(inputString)")
-        if inputString != nil {
-            var replaceString = inputString as NSString
-            var myRange = NSMakeRange(0, (replaceString.length))
-            replaceString = replaceString.replacingOccurrences(of: "&amp;", with: "&") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&apos;", with: "'") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&quot;", with: "\"") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&gt;", with: ">") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&lt;", with: "<") as NSString
-            replaceString = replaceString.replacingOccurrences(of: "&#39;", with: "'") as NSString
-            return replaceString as String
-        }
-        return ""
+        var replaceString = inputString as NSString
+        _ = NSMakeRange(0, (replaceString.length))
+        replaceString = replaceString.replacingOccurrences(of: "&amp;", with: "&") as NSString
+        replaceString = replaceString.replacingOccurrences(of: "&apos;", with: "'") as NSString
+        replaceString = replaceString.replacingOccurrences(of: "&quot;", with: "\"") as NSString
+        replaceString = replaceString.replacingOccurrences(of: "&gt;", with: ">") as NSString
+        replaceString = replaceString.replacingOccurrences(of: "&lt;", with: "<") as NSString
+        replaceString = replaceString.replacingOccurrences(of: "&#39;", with: "'") as NSString
+        return replaceString as String
     }
 
 }

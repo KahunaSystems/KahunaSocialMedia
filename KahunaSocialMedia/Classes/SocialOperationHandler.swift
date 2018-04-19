@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KahunaSocialMedia
 
 @objc public protocol SocialOperationHandlerDelegate: class {
     @objc optional func socialDataFetchSuccess()
@@ -58,7 +57,14 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
 
     public static let sharedInstance = SocialOperationHandler()
 
+    /// Manage for the SocialDBStore.
+    private(set) var socialDBStore: SocialDBStore!
+
+    /// Factory of a data access objects.
+    private let socialDBFactory = SocialDBFactory()
+
     override init() {
+        self.socialDBStore = SocialDBStore(dbFactory: self.socialDBFactory)
     }
 
     public func initServerBaseURL(serverBaseURL: String) {
@@ -130,7 +136,7 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
             if isLoadFromServer {
                 twitterPublicHandler.getTwitterFeedListFromURL(Constants.ServiceEndPoints.getTwitterList)
             } else {
-                if twitterURL.characters.count > 0 {
+                if twitterURL.count > 0 {
                     twitterPublicHandler.getLatestTweetsFromServerWithURLString(twitterURL)
                 } else {
                     twitterPublicHandler.getLatestTweetsFromServerWithURLString(Constants.kTweetUrl)
@@ -169,13 +175,13 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
                 var loadWithoutSubscriptions = false
                 if isLoadFromSubscriptions == nil {
                     loadWithoutSubscriptions = true
-                } else if isLoadFromSubscriptions.characters.count > 0 {
+                } else if isLoadFromSubscriptions.count > 0 {
                     if Int(isLoadFromSubscriptions) == 1 {
                         loadWithoutSubscriptions = true
                     }
                 }
                 if loadWithoutSubscriptions {
-                    if youTubeURL.characters.count > 0 {
+                    if youTubeURL.count > 0 {
                         youTubePublicHandler.getYouTubeFeedsFromURL(stringURL: youTubeURL)
                     } else {
                         youTubePublicHandler.getYouTubeFeedsFromURL(stringURL: Constants.kYoutubeUrl)
@@ -286,6 +292,58 @@ public class SocialOperationHandler: NSObject, YouTubeFeedDelegate, FacebookFeed
         if self.socialDelegate != nil {
             self.socialDelegate?.socialDataFetchError!()
         }
+    }
+
+    //=================================================
+    /** Fetch data from twitter table from database
+     *@return twitterArray contains the array of twitter feeds
+     */
+    //=================================================
+    public func fetchedTwitterFeedsFromDB() -> [TwitterDataInfo] {
+        var twitterArray = [TwitterDataInfo]()
+        if let socialDBOperation = self.socialDBStore.getDBFactory().socialDBOperation() {
+            twitterArray = socialDBOperation.fetchedTwitterFeedsFromDB()
+        }
+        return twitterArray
+    }
+
+    //=================================================
+    /** Fetch data from twitter table from database
+     *@return twitterArray contains the array of twitter feeds
+     */
+    //=================================================
+    public func fetchedYoutubeFeedsFromDB() -> [YouTubeInterfaceDataInfo] {
+        var youtubeArray = [YouTubeInterfaceDataInfo]()
+        if let socialDBOperation = self.socialDBStore.getDBFactory().socialDBOperation() {
+            youtubeArray = socialDBOperation.fetchedYoutubeFeedsFromDB()
+        }
+        return youtubeArray
+    }
+
+    //=================================================
+    /** Fetch data from facebook table from database
+     *@return fbArray contains the array of twitter feeds
+     */
+    //=================================================
+    public func fetchedFacebookFeedsFromDB() -> [FacebookFeedDataInfo] {
+        var fbArray = [FacebookFeedDataInfo]()
+        if let socialDBOperation = self.socialDBStore.getDBFactory().socialDBOperation() {
+            fbArray = socialDBOperation.fetchedFacebookFeedsFromDB()
+        }
+        return fbArray
+    }
+
+    //=================================================
+    /** Fetch data from facebook table from database
+     *@return fbArray contains the array of twitter feeds
+     */
+    //=================================================
+    public func fetchedInstagramFeedsFromDB() -> [InstagramFeedDataInfo] {
+        var instaArray = [InstagramFeedDataInfo]()
+        if let socialDBOperation = self.socialDBStore.getDBFactory().socialDBOperation() {
+            instaArray = socialDBOperation.fetchedInstagramFeedsFromDB()
+        }
+        return instaArray
     }
 
 }

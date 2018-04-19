@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KahunaSocialMedia
 
 @objc protocol TwitterFeedDelegate: class {
     @objc optional func twitterFeedFetchSuccess(_ feedArray: NSArray?)
@@ -54,7 +53,7 @@ class TwitterPublicFeedsHandler: NSObject {
                         DispatchQueue.main.async {
                             tweetsArray = jsonParser.parseTwitterFeedData(data!, parserArray: parserArray) as NSMutableArray
                             if tweetsArray.count > 0 {
-                                SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
+                                SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
                             }
                             if self.twitterDelegate != nil {
                                 self.twitterDelegate.twitterFeedFetchSuccess!(tweetsArray)
@@ -94,9 +93,9 @@ class TwitterPublicFeedsHandler: NSObject {
                     isNoError = true
                     let jsonParser = TwitterJSONParser()
                     DispatchQueue.main.async {
-                        tweetsArray = jsonParser.parseTwitterData(tweets as? NSArray)
+                        tweetsArray = jsonParser.parseTwitterData(tweets)
                         if tweetsArray.count > 0 {
-                            SocialDataHandler.sharedInstance.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
+                            SocialOperationHandler.sharedInstance.socialDBStore.saveAllFetchedTwitterFeedsToDB(twitterFeedArray: tweetsArray)
                         }
                         if self.twitterDelegate != nil {
                             self.twitterDelegate.twitterFeedFetchSuccess!(tweetsArray)
